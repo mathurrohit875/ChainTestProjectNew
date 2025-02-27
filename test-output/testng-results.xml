@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-27T15:42:08 IST" name="Weekend Loan Apply." finished-at="2025-02-27T15:42:28 IST" duration-ms="20774">
+    <groups>
+      <group name="regression">
+        <method signature="ApplyWeekendLoanWithGuarantorTest.goToLoanPage()[pri:1, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@6eda5c9]" name="goToLoanPage" class="WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest"/>
+      </group> <!-- regression -->
+      <group name="integration">
+        <method signature="ApplyWeekendLoanWithGuarantorTest.applyLoan()[pri:2, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@6eda5c9]" name="applyLoan" class="WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest"/>
+      </group> <!-- integration -->
+    </groups>
+    <test started-at="2025-02-27T15:42:08 IST" name="Weekend loan apply by user" finished-at="2025-02-27T15:42:28 IST" duration-ms="20774">
+      <class name="WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@6eda5c9]" started-at="2025-02-27T15:42:08 IST" name="setup" finished-at="2025-02-27T15:42:21 IST" duration-ms="13341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="goToLoanPage()[pri:1, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@6eda5c9]" started-at="2025-02-27T15:42:21 IST" name="goToLoanPage" finished-at="2025-02-27T15:42:21 IST" duration-ms="283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoanPage -->
+        <test-method signature="applyLoan()[pri:2, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@6eda5c9]" started-at="2025-02-27T15:42:21 IST" name="applyLoan" finished-at="2025-02-27T15:42:28 IST" duration-ms="7081" status="FAIL">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[catching exception for loan number.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: catching exception for loan number.
+at WeekendLoan.AddWeekendLoanPage.getLoanNumber(AddWeekendLoanPage.java:169)
+at WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest.applyLoan(ApplyWeekendLoanWithGuarantorTest.java:105)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyLoan -->
+      </class> <!-- WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest -->
+    </test> <!-- Weekend loan apply by user -->
+  </suite> <!-- Weekend Loan Apply. -->
+</testng-results>
