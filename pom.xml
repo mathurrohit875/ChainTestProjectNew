@@ -21,7 +21,7 @@
                 <version>3.5.2</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>ChainTestProject/TestNg-WeekendLoan.xml</suiteXmlFile>
+                        <suiteXmlFile>ChainTestProject/TestNg/weekendLoan.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
