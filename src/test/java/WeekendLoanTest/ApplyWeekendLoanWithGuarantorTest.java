@@ -96,13 +96,13 @@ public class ApplyWeekendLoanWithGuarantorTest extends BaseClassUAT2 {
     String aadharNumber = excelUtil.getCellData("WeekendLoan", 13, 1);
     String aadharDoc = excelUtil.getCellData("WeekendLoan", 14, 1);
     String cibilDoc = excelUtil.getCellData("WeekendLoan", 15, 1);
-    String walletExposureAmt=excelUtil.getCellData("WeekendLoan",23,1);
-    String resStability=excelUtil.getCellData("WeekendLoan",24,1);
+    String walletExposureAmt = excelUtil.getCellData("WeekendLoan", 23, 1);
+    String resStability = excelUtil.getCellData("WeekendLoan", 24, 1);
     addWeekendLoanPage.fillLoanDetails(spouse, loanAmount, gstStmt, bankStmt, otherDoc,
-          chequeScan, chequeNumber, chequeBank,walletExposureAmt,resStability, chequeOf, apprEmail, panNumber, panDoc, aadharNumber,
+          chequeScan, chequeNumber, chequeBank, walletExposureAmt, resStability, chequeOf, apprEmail, panNumber, panDoc, aadharNumber,
           aadharDoc, cibilDoc);
     addWeekendLoanPage.clickSaveButton();
-    String loanNumber = addWeekendLoanPage.getLoanNumber();
+    /*String loanNumber = addWeekendLoanPage.getLoanNumber();
     File file = new File("loanNumber.txt");
     try {
       // Check if the file exists
@@ -148,9 +148,10 @@ public class ApplyWeekendLoanWithGuarantorTest extends BaseClassUAT2 {
 
     }
     driver.switchTo().window(weekendResult);
-  }
+  }*/
   /*@AfterClass
   public void quit(){
     driver.quit();
   }*/
+  }
 }

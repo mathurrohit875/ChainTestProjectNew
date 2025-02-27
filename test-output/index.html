@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Weekend_Loan_Apply_" class="navigator-link">
-              <span class="suite-name border-failed">Weekend Loan Apply.</span>
+              <span class="suite-name border-passed">Weekend Loan Apply.</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Weekend_Loan_Apply_" class="hide-methods failed suite-Weekend_Loan_Apply_"> (hide)</a> <!-- hide-methods failed suite-Weekend_Loan_Apply_ -->
-                      <a href="#" panel-name="suite-Weekend_Loan_Apply_" class="show-methods failed suite-Weekend_Loan_Apply_"> (show)</a> <!-- show-methods failed suite-Weekend_Loan_Apply_ -->
-                    </span>
-                    <div class="method-list-content failed suite-Weekend_Loan_Apply_">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Weekend_Loan_Apply_" title="WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest" class="method navigator-link" hash-for-method="applyLoan">applyLoan</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Weekend_Loan_Apply_ -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,6 +101,11 @@
                       <a href="#" panel-name="suite-Weekend_Loan_Apply_" class="show-methods passed suite-Weekend_Loan_Apply_"> (show)</a> <!-- show-methods passed suite-Weekend_Loan_Apply_ -->
                     </span>
                     <div class="method-list-content passed suite-Weekend_Loan_Apply_">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Weekend_Loan_Apply_" title="WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest" class="method navigator-link" hash-for-method="applyLoan">applyLoan</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Weekend_Loan_Apply_" title="WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest" class="method navigator-link" hash-for-method="goToLoanPage">goToLoanPage</a> <!-- method navigator-link -->
@@ -132,9 +123,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Weekend_Loan_Apply_" class="panel Weekend_Loan_Apply_">
-          <div class="suite-Weekend_Loan_Apply_-class-failed">
+          <div class="suite-Weekend_Loan_Apply_-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -143,24 +134,8 @@
                   <a name="applyLoan">
                   </a> <!-- applyLoan -->
                   <span class="method-name">applyLoan</span>
-                  <div class="stack-trace">java.lang.Exception: catching exception for loan number.
-	at WeekendLoan.AddWeekendLoanPage.getLoanNumber(AddWeekendLoanPage.java:169)
-	at WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest.applyLoan(ApplyWeekendLoanWithGuarantorTest.java:105)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Weekend_Loan_Apply_-class-failed -->
-          <div class="suite-Weekend_Loan_Apply_-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="goToLoanPage">
@@ -180,6 +155,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Weekend Loan Apply.&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;Base.ChainTestListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Weekend loan apply by user&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest&quot;/&gt;
@@ -242,16 +220,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'applyLoan')
 data.setCell(0, 2, 'WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest')
-data.setCell(0, 3, 7081);
+data.setCell(0, 3, 4448);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'goToLoanPage')
 data.setCell(1, 2, 'WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest')
-data.setCell(1, 3, 283);
+data.setCell(1, 3, 175);
 window.suiteTableData['Weekend_Loan_Apply_']= { tableData: data, tableDiv: 'times-div-Weekend_Loan_Apply_'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Weekend_Loan_Apply_">
               </div> <!-- times-div-Weekend_Loan_Apply_ -->
             </div> <!-- times-div -->
@@ -284,13 +262,11 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">goToLoanPage</span>
-                <span class="method-start">13356 ms</span>
+                <span class="method-start">13158 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">applyLoan</span>
-                <span class="method-start">13650 ms</span>
+                <span class="method-start">13342 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
