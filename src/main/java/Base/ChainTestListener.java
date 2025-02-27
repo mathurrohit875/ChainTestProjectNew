@@ -97,8 +97,8 @@ public class ChainTestListener extends BaseClassUAT2 implements
 
 
     // Generate dynamic file paths with the suite name and timestamp
-    String simpleReportPath = "C:/Users/rohit.mathur/IdeaProjects/ChainTestProject/chainReport/chaintest/"+ suiteName +"/Index/"+ formattedDate + ".html";
-    String emailReportPath = "C:/Users/rohit.mathur/IdeaProjects/ChainTestProject/chainReport/chaintest/" + suiteName + "/Email/" + formattedDate + ".html";
+    String simpleReportPath = "C:/Users/rohit.mathur/ChainProject/ChainTestProject/test-output/chaintest/"+ suiteName +"/Index/"+ formattedDate + ".html";
+    String emailReportPath = "C:/Users/rohit.mathur/ChainProject/ChainTestProject/test-output/chaintest/" + suiteName + "/Email/" + formattedDate + ".html";
 
     // Update the property for ChainTest generators
     System.setProperty("chaintest.generator.simple.output-file", simpleReportPath);
