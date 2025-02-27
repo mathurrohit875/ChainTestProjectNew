@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-27T16:04:15 IST" name="Weekend Loan Apply." finished-at="2025-02-27T16:04:34 IST" duration-ms="19010">
+  <suite started-at="2025-02-27T16:34:08 IST" name="Weekend Loan Apply." finished-at="2025-02-27T16:34:26 IST" duration-ms="18323">
     <groups>
       <group name="regression">
-        <method signature="ApplyWeekendLoanWithGuarantorTest.goToLoanPage()[pri:1, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@6356695f]" name="goToLoanPage" class="WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest"/>
+        <method signature="ApplyWeekendLoanWithGuarantorTest.goToLoanPage()[pri:1, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@1a451d4d]" name="goToLoanPage" class="WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest"/>
       </group> <!-- regression -->
       <group name="integration">
-        <method signature="ApplyWeekendLoanWithGuarantorTest.applyLoan()[pri:2, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@6356695f]" name="applyLoan" class="WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest"/>
+        <method signature="ApplyWeekendLoanWithGuarantorTest.applyLoan()[pri:2, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@1a451d4d]" name="applyLoan" class="WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest"/>
       </group> <!-- integration -->
     </groups>
-    <test started-at="2025-02-27T16:04:15 IST" name="Weekend loan apply by user" finished-at="2025-02-27T16:04:34 IST" duration-ms="19010">
+    <test started-at="2025-02-27T16:34:08 IST" name="Weekend loan apply by user" finished-at="2025-02-27T16:34:26 IST" duration-ms="18323">
       <class name="WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@6356695f]" started-at="2025-02-27T16:04:15 IST" name="setup" finished-at="2025-02-27T16:04:29 IST" duration-ms="14110" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@1a451d4d]" started-at="2025-02-27T16:34:08 IST" name="setup" finished-at="2025-02-27T16:34:21 IST" duration-ms="13146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="goToLoanPage()[pri:1, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@6356695f]" started-at="2025-02-27T16:04:29 IST" name="goToLoanPage" finished-at="2025-02-27T16:04:29 IST" duration-ms="174" status="PASS">
+        <test-method signature="goToLoanPage()[pri:1, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@1a451d4d]" started-at="2025-02-27T16:34:21 IST" name="goToLoanPage" finished-at="2025-02-27T16:34:21 IST" duration-ms="186" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoanPage -->
-        <test-method signature="applyLoan()[pri:2, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@6356695f]" started-at="2025-02-27T16:04:29 IST" name="applyLoan" finished-at="2025-02-27T16:04:34 IST" duration-ms="4672" status="PASS">
+        <test-method signature="applyLoan()[pri:2, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@1a451d4d]" started-at="2025-02-27T16:34:21 IST" name="applyLoan" finished-at="2025-02-27T16:34:26 IST" duration-ms="4942" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- applyLoan -->
