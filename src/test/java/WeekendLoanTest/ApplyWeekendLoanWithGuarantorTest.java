@@ -63,7 +63,7 @@ public class ApplyWeekendLoanWithGuarantorTest extends BaseClassUAT2 {
       channelId = rs.getString("userid");
     }
     String updateWalletBalance = "update tm_channel set availablelimit=100.00 where channelid=" + channelId;
-    dbMTEST.executeQuery(updateWalletBalance);
+    dbMTEST.executeUpdate(updateWalletBalance);
     loginPage.login(cspUser, "roinet@1234", "KMJKN");
     loginPage.Login_With_OTP("222111");
     homePage.ClickonWALLET();
