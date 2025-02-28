@@ -4,17 +4,16 @@ package WeekendLoanTest;
 import Base.BaseClassUAT2;
 import Base.ChainTestListener;
 import Base.DbMTEST;
-import LongTermLoan.AddLongTermLoan;
-import LongTermLoan.LongTermResultPage;
 import Pages.HomePage;
 import Pages.LoginPage;
 import Utility.ExcelUtil;
 import WeekendLoan.AddWeekendLoanPage;
 import WeekendLoan.WeekendGuarantor;
 import WeekendLoan.WeekendLoanResultPage;
-//import com.aventstack.chaintest.plugins.ChainTestListener;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import java.io.File;
@@ -102,7 +101,7 @@ public class ApplyWeekendLoanWithGuarantorTest extends BaseClassUAT2 {
           chequeScan, chequeNumber, chequeBank, walletExposureAmt, resStability, chequeOf, apprEmail, panNumber, panDoc, aadharNumber,
           aadharDoc, cibilDoc);
     addWeekendLoanPage.clickSaveButton();
-    /*String loanNumber = addWeekendLoanPage.getLoanNumber();
+    String loanNumber = addWeekendLoanPage.getLoanNumber();
     File file = new File("loanNumber.txt");
     try {
       // Check if the file exists
@@ -148,10 +147,11 @@ public class ApplyWeekendLoanWithGuarantorTest extends BaseClassUAT2 {
 
     }
     driver.switchTo().window(weekendResult);
-  }*/
-  /*@AfterClass
+  }
+
+  @AfterClass
   public void quit(){
     driver.quit();
-  }*/
   }
+
 }
