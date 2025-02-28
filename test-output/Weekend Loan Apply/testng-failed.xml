@@ -8,8 +8,8 @@
     <classes>
       <class name="WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest">
         <methods>
-          <include name="goToLoanPage"/>
           <include name="setup"/>
+            <include name="quit"/>
           <include name="applyLoan"/>
         </methods>
       </class> <!-- WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest -->
