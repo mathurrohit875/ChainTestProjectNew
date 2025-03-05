@@ -20,7 +20,7 @@ import java.sql.SQLException;
 import java.util.Iterator;
 import java.util.Set;
 
-public class ApplyLongTermWithGuarantor extends BaseClassUAT2 {
+public class ApplyLongTermWithGuarantorTest extends BaseClassUAT2 {
 
   HomePage homePage;
   LoginPage loginPage;

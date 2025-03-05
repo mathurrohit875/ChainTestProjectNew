@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All loan apply with guarantor">
+    <listeners>
+        <listener class-name="Base.ChainTestListener"/>
+    </listeners>
+    <test name="Weekend Loan Apply with guarantor">
+        <classes>
+            <class name="WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest"/>
+        </classes>
+    </test>
+    <test name="Long Term loan with guarantor">
+        <classes>
+            <class name="LongTermLoanTest.ApplyLongTermWithGuarantorTest"/>
+        </classes>
+    </test>
+    <test name="CMS loan with guarantor">
+        <classes>
+            <class name="CMSLoanTest.ApplyCMSLoanWithGuarantorTest"/>
+        </classes>
+    </test>
+    <test name="Other Product Loan with guarantor">
+        <classes>
+            <class name="OtherProductLoanTest.ApplyOtherProductWithGuarantorTest"/>
+        </classes>
+    </test>
+    <test name="Short Term Loan">
+        <classes>
+            <class name="ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest"/>
+        </classes>
+    </test>
+</suite>
