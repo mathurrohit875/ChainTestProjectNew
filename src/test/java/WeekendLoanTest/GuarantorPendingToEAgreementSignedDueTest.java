@@ -2,15 +2,12 @@ package WeekendLoanTest;
 
 import Base.BaseClassUAT2;
 import Base.DbMTEST;
-import LongTermLoan.AddLongTermLoan;
-import LongTermLoan.LongTermResultPage;
 import Pages.HomePage;
 import Pages.LoginPage;
 import Utility.ExcelUtil;
 import WeekendLoan.AddWeekendLoanPage;
 import WeekendLoan.WeekendLoanResultPage;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -19,8 +16,6 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
 
 //This test will test the loan status change from Pending to EAreementSignedDue and
 //EAgreementSignedDue to Pending for loan where guarantor is made mandatory from admin
@@ -40,7 +35,7 @@ public class GuarantorPendingToEAgreementSignedDueTest extends BaseClassUAT2 {
 
   @BeforeMethod
   public void setup() throws IOException {
-    String excelPath = "C:\\Users\\rohit.mathur\\IdeaProjects\\ChainTestProject\\src\\main\\data\\LendingData.xlsx";
+    String excelPath = "src/main/java/data/LendingData.xlsx";
     Browserintialize("chrome", "https://uatxpresso.roinet.in/Login.aspx");
     excelUtil = new ExcelUtil(excelPath);
     weekendLoanResultPage=new WeekendLoanResultPage();

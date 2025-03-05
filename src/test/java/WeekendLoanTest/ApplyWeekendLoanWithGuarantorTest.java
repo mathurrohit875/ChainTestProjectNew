@@ -4,11 +4,11 @@ package WeekendLoanTest;
 import Base.BaseClassUAT2;
 import Base.ChainTestListener;
 import Base.DbMTEST;
+import Base.GuarantorPage;
 import Pages.HomePage;
 import Pages.LoginPage;
 import Utility.ExcelUtil;
 import WeekendLoan.AddWeekendLoanPage;
-import WeekendLoan.WeekendGuarantor;
 import WeekendLoan.WeekendLoanResultPage;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterClass;
@@ -37,12 +37,13 @@ public class ApplyWeekendLoanWithGuarantorTest extends BaseClassUAT2 {
   DbMTEST dbMTEST;
   WeekendLoanResultPage weekendLoanResultPage;
   AddWeekendLoanPage addWeekendLoanPage;
-  WeekendGuarantor weekendGuarantor;
+  GuarantorPage guarantorPage;
   Map<String, String> loan = new HashMap<>();
 
   @BeforeClass
   public void setup() throws IOException, SQLException {
-    String excelPath = "C:\\Users\\rohit.mathur\\IdeaProjects\\ChainTestProject\\src\\main\\data\\LendingData.xlsx";
+    //
+    String excelPath = "src/main/java/data/LendingData.xlsx";
     Browserintialize("chrome", "https://uatxpresso.roinet.in/Login.aspx");
     ChainTestListener.log("log chrom");
     excelUtil = new ExcelUtil(excelPath);
@@ -50,10 +51,11 @@ public class ApplyWeekendLoanWithGuarantorTest extends BaseClassUAT2 {
     loginPage = new LoginPage();
     weekendLoanResultPage = new WeekendLoanResultPage();
     addWeekendLoanPage = new AddWeekendLoanPage();
-    weekendGuarantor = new WeekendGuarantor();
+    guarantorPage = new GuarantorPage();
     softAssert = new SoftAssert();
     dbMTEST = new DbMTEST();
     String cspUser = excelUtil.getCellData("WeekendLoan", 16, 1).trim();
+    System.out.println("checking the user.: " + cspUser);
     String getChannelId = "select userid from tm_user where usercode='" + cspUser + "'";
 
     ResultSet rs = dbMTEST.executeQuery(getChannelId);
@@ -139,10 +141,10 @@ public class ApplyWeekendLoanWithGuarantorTest extends BaseClassUAT2 {
       if (!weekendResult.equals(guarantorWindow)) {
         driver.switchTo().window(guarantorWindow);
 
-        weekendGuarantor.enterGuarantorDetail("DELHI & NCR", "GURGAON", "Rohit Mathur", "8290336521", "rohit.mathur@roinet.in",
+        guarantorPage.enterGuarantorDetail("DELHI & NCR", "GURGAON", "Rohit Mathur", "8290336521", "rohit.mathur@roinet.in",
               "Salaried", "friend", "3", "ABCDE TOWER 10, FLAT 903, NEAR HUDA MARKET, TWIN TOWER", "123456"
               , "536350660843", "BXRPM9931K", panDoc, aadharDoc, bankStmt, "no","22/07/1993","Male");
-       weekendGuarantor.clickSaveButton();
+        guarantorPage.clickSaveButton();
       }
 
     }

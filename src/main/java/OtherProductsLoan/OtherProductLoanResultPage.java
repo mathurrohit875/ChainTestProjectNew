@@ -218,6 +218,10 @@ public class OtherProductLoanResultPage extends BaseClassUAT2 {
     addLoanButton.click();
   }
 
+  public void clickView() {
+    wait.until(ExpectedConditions.visibilityOf(viewButton));
+    viewButton.click();
+  }
   public Map<String, String> getDataResultGrid() {
     Map<String, String> fieldsText = new HashMap<>();
 

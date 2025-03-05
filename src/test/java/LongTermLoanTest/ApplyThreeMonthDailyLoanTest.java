@@ -8,8 +8,6 @@ import LongTermLoan.LongTermResultPage;
 import Pages.HomePage;
 import Pages.LoginPage;
 import Utility.ExcelUtil;
-import WeekendLoan.AddWeekendLoanPage;
-import WeekendLoan.WeekendLoanResultPage;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -35,7 +33,7 @@ public class ApplyThreeMonthDailyLoanTest extends BaseClassUAT2 {
 
   @BeforeClass
   public void setup() throws IOException {
-    String excelPath = "C:\\Users\\rohit.mathur\\IdeaProjects\\Lending\\src\\LoanLending\\Data\\LongTermData.xlsx";
+    String excelPath = "src/main/java/data/LendingData.xlsx";
     Browserintialize("chrome", "https://uatxpresso.roinet.in/Login.aspx");
 
     excelUtil = new ExcelUtil(excelPath);
@@ -55,7 +53,11 @@ public class ApplyThreeMonthDailyLoanTest extends BaseClassUAT2 {
   @Test(priority = 1, testName = "adding loan request")
   public void addlongtermloan() throws IOException {
     longTermResultPage.clickAddLoanButton();
-    addLongTermLoan.enterLoanAmount("20000");
+    String walletExposureAmt = excelUtil.getCellData("LoanDetail", 34, 1);
+    String resStability = excelUtil.getCellData("LoanDetail", 35, 1);
+    String spouse = excelUtil.getCellData("LoanDetail", 36, 1);
+
+    addLongTermLoan.enterLoanAmount("20000", walletExposureAmt, resStability, spouse);
     addLongTermLoan.DurationInMonth("3 Months");
     addLongTermLoan.SelectFrequency("Daily");
     addLongTermLoan.clickCheckbox();

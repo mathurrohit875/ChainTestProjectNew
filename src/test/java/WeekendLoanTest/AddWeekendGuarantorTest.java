@@ -2,13 +2,11 @@ package WeekendLoanTest;
 
 import Base.BaseClassUAT2;
 import Base.DbMTEST;
-import LongTermLoan.AddLongTermLoan;
-import LongTermLoan.LongTermResultPage;
+import Base.GuarantorPage;
 import Pages.HomePage;
 import Pages.LoginPage;
 import Utility.ExcelUtil;
 import WeekendLoan.AddWeekendLoanPage;
-import WeekendLoan.WeekendGuarantor;
 import WeekendLoan.WeekendLoanResultPage;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterClass;
@@ -36,13 +34,13 @@ public class AddWeekendGuarantorTest extends BaseClassUAT2 {
   DbMTEST dbMTEST;
   WeekendLoanResultPage weekendLoanResultPage;
   AddWeekendLoanPage addWeekendLoanPage;
-  WeekendGuarantor weekendGuarantor;
+  GuarantorPage guarantorPage;
   Map<String, String> loan = new HashMap<>();
   String loanNumber = "";
 
   @BeforeClass
   public void setup() throws IOException, SQLException {
-    String excelPath = "C:\\Users\\rohit.mathur\\IdeaProjects\\Lending\\src\\LoanLending\\Data\\LongTermData.xlsx";
+    String excelPath = "src/main/java/data/LendingData.xlsx";
     Browserintialize("chrome", "https://uatxpresso.roinet.in/Login.aspx");
 
     excelUtil = new ExcelUtil(excelPath);
@@ -53,7 +51,7 @@ public class AddWeekendGuarantorTest extends BaseClassUAT2 {
     softAssert = new SoftAssert();
     dbMTEST = new DbMTEST();
 
-    weekendGuarantor = new WeekendGuarantor();
+    guarantorPage = new GuarantorPage();
     String cspUser = excelUtil.getCellData("WeekendLoan", 16, 1).trim();
     //String getChannelId = "select userid from tm_user where usercode='" + cspUser + "'";
 
@@ -102,10 +100,10 @@ public class AddWeekendGuarantorTest extends BaseClassUAT2 {
       if (!weekendResult.equals(guarantorWindow)) {
         driver.switchTo().window(guarantorWindow);
 
-        weekendGuarantor.enterGuarantorDetail("DELHI & NCR", "GURGAON", "Rohit Mathur", "8290336521", "rohit.mathur@roinet.in",
+        guarantorPage.enterGuarantorDetail("DELHI & NCR", "GURGAON", "Rohit Mathur", "8290336521", "rohit.mathur@roinet.in",
               "Salaried", "friend", "3", "ABCDE TOWER 10, FLAT 903, NEAR HUDA MARKET, TWIN TOWER", "123456"
               , "536350660843", "BXRAQ0901Q", panDoc, aadharDoc, bankStmt, "no","22/07/1993","Male");
-        weekendGuarantor.clickSaveButton();
+        guarantorPage.clickSaveButton();
         acceptAlert();
       }
     }

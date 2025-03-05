@@ -205,46 +205,74 @@ public class HomePage extends BaseClassUAT2 {
   }
 
   public void goToLongTermLoan() {
-    wait.until(ExpectedConditions.visibilityOf(walletAdvance));
-    actions.moveToElement(walletAdvance).perform();
+    try {
+      wait.until(ExpectedConditions.visibilityOf(walletAdvance));
+      actions.moveToElement(walletAdvance).perform();
+
+    } catch (Exception e) {
+      wait.until(ExpectedConditions.visibilityOf(lending));
+      actions.moveToElement(lending).perform();
+
+    }
     wait.until(ExpectedConditions.visibilityOf(longTermWalletAdvance));
     actions.moveToElement(longTermWalletAdvance).click().perform();
+
   }
 
   public void goToWeekendLoan(String str){
     System.out.println("str: "+str);
     System.out.println("condition check: "+(str.equalsIgnoreCase("MONA.SHARMA")));
-    if(str.equalsIgnoreCase("MONA.SHARMA")){
+    try {
       wait.until(ExpectedConditions.visibilityOf(walletAdvance));
       actions.moveToElement(walletAdvance).perform();
-      wait.until(ExpectedConditions.visibilityOf(weekendWalletAdvance));
-      actions.moveToElement(weekendWalletAdvance).click().perform();
-    } else{
+
+    } catch (Exception e) {
       wait.until(ExpectedConditions.visibilityOf(lending));
       actions.moveToElement(lending).perform();
-      wait.until(ExpectedConditions.visibilityOf(weekendWalletAdvance));
-      actions.moveToElement(weekendWalletAdvance).click().perform();
     }
+    wait.until(ExpectedConditions.visibilityOf(weekendWalletAdvance));
+    actions.moveToElement(weekendWalletAdvance).click().perform();
 
   }
 
   public void goToShortTermLoan(){
-    wait.until(ExpectedConditions.visibilityOf(walletAdvance));
-    actions.moveToElement(walletAdvance).perform();
+    try {
+      wait.until(ExpectedConditions.visibilityOf(walletAdvance));
+      actions.moveToElement(walletAdvance).perform();
+
+    } catch (Exception e) {
+      wait.until(ExpectedConditions.visibilityOf(lending));
+      actions.moveToElement(lending).perform();
+    }
+
     wait.until(ExpectedConditions.visibilityOf(shorttermWalletAdvance));
     actions.moveToElement(shorttermWalletAdvance).click().perform();
   }
 
   public void goToOtherProductLoan(){
-    wait.until(ExpectedConditions.visibilityOf(walletAdvance));
-    actions.moveToElement(walletAdvance).perform();
+    try {
+      wait.until(ExpectedConditions.visibilityOf(walletAdvance));
+      actions.moveToElement(walletAdvance).perform();
+
+    } catch (Exception e) {
+      wait.until(ExpectedConditions.visibilityOf(lending));
+      actions.moveToElement(lending).perform();
+    }
+
     wait.until(ExpectedConditions.visibilityOf(otherProductWalletAdvance));
     actions.moveToElement(otherProductWalletAdvance).click().perform();
 
   }
   public void goToCMSLoan(){
-    wait.until(ExpectedConditions.visibilityOf(walletAdvance));
-    actions.moveToElement(walletAdvance).perform();
+    try {
+      wait.until(ExpectedConditions.visibilityOf(walletAdvance));
+      actions.moveToElement(walletAdvance).perform();
+
+    } catch (Exception e) {
+      wait.until(ExpectedConditions.visibilityOf(lending));
+      actions.moveToElement(lending).perform();
+    }
+
     wait.until(ExpectedConditions.visibilityOf(cmsWalletAdvance));
     actions.moveToElement(cmsWalletAdvance).click().perform();
   }

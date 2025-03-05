@@ -77,6 +77,16 @@ public class AddLongTermLoan extends BaseClassUAT2 {
   Actions action;
   Select select;
   Map<String, Double> loanDetail = new HashMap<>();
+
+  @FindBy(name = "ctl00$ContentPlaceHolder1$txtResidenceStability")
+  WebElement txtResidenceStability;
+
+  @FindBy(name = "ctl00$ContentPlaceHolder1$txtTotalLoanExposure")
+  WebElement txtTotalLoanExposure;
+
+  @FindBy(name = "ctl00$ContentPlaceHolder1$txtSpouseName")
+  WebElement txtSpouseName;
+
   @FindBy(name = "ctl00$ContentPlaceHolder1$txtPANNo")
   WebElement panNumber;
   @FindBy(id = "ContentPlaceHolder1_updPAN")
@@ -113,7 +123,8 @@ public class AddLongTermLoan extends BaseClassUAT2 {
   WebElement otherLoan;
   @FindBy(name = "ctl00$ContentPlaceHolder1$updCIBIL")
   WebElement cibilDoc;
-
+  @FindBy(name = "ctl00$ContentPlaceHolder1$btnView")
+  WebElement viewButton;
   //Submit Button to submit loan request
   @FindBy(name = "ctl00$ContentPlaceHolder1$btnAssign")
   WebElement submit;
@@ -129,7 +140,8 @@ public class AddLongTermLoan extends BaseClassUAT2 {
 
   @FindBy(name = "ctl00$ContentPlaceHolder1$txtApprovedRemarks")
   WebElement txtApprovedRemarks;
-
+  @FindBy(xpath = "//a[text()='View']")
+  WebElement guarantor;
   public AddLongTermLoan() {
     PageFactory.initElements(driver, this);
     wait = new WebDriverWait(driver, Duration.ofSeconds(60));
@@ -177,6 +189,7 @@ public class AddLongTermLoan extends BaseClassUAT2 {
   public void submitLoanRequest() {
     wait.until(ExpectedConditions.visibilityOf(submit));
     submit.click();
+
   }
 
   public void confirmLoanRequest(){
@@ -188,7 +201,7 @@ public class AddLongTermLoan extends BaseClassUAT2 {
     String alertBoxText = driver.switchTo().alert().getText();
     System.out.println("this is alert box text: " + alertBoxText);
     // Define the regex pattern for extracting the loan number after "loan no: " and before " has been processed"
-    String pattern = "Your request with loan no: (\\S+) has been processed successfully.";
+    String pattern = "RO\\w+";
 
     // Create a Pattern object
     Pattern r = Pattern.compile(pattern);
@@ -196,13 +209,19 @@ public class AddLongTermLoan extends BaseClassUAT2 {
     // Create a matcher object
     Matcher m = r.matcher(alertBoxText);
     String loanNumber = "";
-    // Check if the pattern matches and extract the loan number
+    while (m.find()) {
+      loanNumber = m.group();
+      System.out.println("loan number from alert box: " + m.group());
+    }
+
+    /*// Check if the pattern matches and extract the loan number
     if (m.find()) {
       // Group 1 will contain the loan number
       loanNumber = m.group(1);
     } else {
       throw new Exception("catching exception for loan number.");
-    }
+    }*/
+    driver.switchTo().alert().accept();
     return loanNumber;
   }
 
@@ -271,8 +290,11 @@ public class AddLongTermLoan extends BaseClassUAT2 {
     addLoanButton.click();
   }
 
-  public void enterLoanAmount(String loan) {
+  public void enterLoanAmount(String loan, String exposure, String stability, String spouse) {
     wait.until(ExpectedConditions.visibilityOf(loanAmount));
+    txtTotalLoanExposure.sendKeys(exposure);
+    txtResidenceStability.sendKeys(stability);
+    txtSpouseName.sendKeys(spouse);
     /*loanAmount.clear();
     try{
       driver.switchTo().alert().accept();
@@ -282,6 +304,8 @@ public class AddLongTermLoan extends BaseClassUAT2 {
     }*/
     loanAmount.sendKeys(loan);
     action.sendKeys(Keys.TAB).perform();
+
+
   }
 
   public Map<String, String> verifyEMIDetails() {

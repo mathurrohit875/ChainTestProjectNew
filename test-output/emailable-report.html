@@ -8,14 +8,16 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Weekend Loan Apply.</th></tr>
     <tr>
-        <td><a href="#t0">Weekend loan apply by user</a></td>
-        <td class="num">1</td>
+        <th colspan="8">Weekend Loan Apply with Guarantor</th>
+    </tr>
+    <tr>
+        <td><a href="#t0">Weekend loan apply by user with guarantor</a></td>
+        <td class="num">2</td>
         <td class="num">0</td>
         <td class="num">0</td>
-        <td class="num attn">1</td>
-        <td class="num">17,715</td>
+        <td class="num">0</td>
+        <td class="num">99,033</td>
         <td></td>
         <td></td>
     </tr>
@@ -31,74 +33,31 @@
     </thead>
     <tbody>
     <tr>
-        <th colspan="4">Weekend Loan Apply.</th>
+        <th colspan="4">Weekend Loan Apply with Guarantor</th>
     </tr>
     </tbody>
     <tbody id="t0">
     <tr>
-        <th colspan="4">Weekend loan apply by user &#8212; failed</th>
-    </tr>
-    <tr class="failedeven">
-        <td rowspan="1">WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest</td>
-        <td><a href="#m0">applyLoan</a></td>
-        <td rowspan="1">1740716267603</td>
-        <td rowspan="1">4164</td>
-    </tr>
-    <tr>
-        <th colspan="4">Weekend loan apply by user &#8212; passed</th>
+        <th colspan="4">Weekend loan apply by user with guarantor &#8212; passed</th>
     </tr>
     <tr class="passedeven">
-        <td rowspan="1">WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest</td>
+        <td rowspan="2">WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest</td>
+        <td><a href="#m0">applyLoan</a></td>
+        <td rowspan="1">1741152426069</td>
+        <td rowspan="1">15327</td>
+    </tr>
+    <tr class="passedeven">
         <td><a href="#m1">goToLoanPage</a></td>
-        <td rowspan="1">1740716267357</td>
-        <td rowspan="1">235</td>
+        <td rowspan="1">1741152425890</td>
+        <td rowspan="1">169</td>
     </tr>
     </tbody>
 </table>
-<h2>Weekend loan apply by user</h2>
+<h2>Weekend loan apply by user with guarantor</h2>
 <h3 id="m0">WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest#applyLoan</h3>
 <table class="result">
     <tr>
-        <th>Exception</th>
-    </tr>
-    <tr>
-        <td>
-            <div class="stacktrace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text :
-                {*} Either a Wallet Advance Acc is already running or in process for this user.}
-                (Session info: chrome=133.0.6943.142): {*} Either a Wallet Advance Acc is already running or in process
-                for this user.
-                Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-                System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;,
-                java.version: &apos;22.0.1&apos;
-                Driver info: org.openqa.selenium.chrome.ChromeDriver
-                Command: [0ecbc10dcec13fab0515598cfe7e1b03, screenshot {}]
-                Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome:
-                {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\ROHIT~1.MAT\AppDat...},
-                fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51965}, networkConnectionEnabled:
-                false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp:
-                ws://localhost:51965/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true,
-                strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000},
-                unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true,
-                webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true,
-                webauthn:virtualAuthenticators: true}
-                Session ID: 0ecbc10dcec13fab0515598cfe7e1b03
-                at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
-                at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-                at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-                at
-                org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-                at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-                at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-                at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-                at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-                at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:334)
-                at Base.ChainTestListener.onTestFailure(ChainTestListener.java:216)
-                at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-                at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-                at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-                ... Removed 21 stack frames
-            </div>
-        </td>
+        <th class="invisible"/>
     </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>

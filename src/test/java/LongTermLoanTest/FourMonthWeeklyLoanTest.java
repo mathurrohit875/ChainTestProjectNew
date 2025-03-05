@@ -1,19 +1,16 @@
 package LongTermLoanTest;
 
 import Base.BaseClassUAT2;
-import Base.DbMTEST;
 import LongTermLoan.AddLongTermLoan;
-import LongTermLoan.LongTermResultPage;
 import Pages.HomePage;
 import Pages.LoginPage;
 import Utility.ExcelUtil;
-import WeekendLoan.AddWeekendLoanPage;
-import WeekendLoan.WeekendLoanResultPage;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Map;
 
@@ -26,10 +23,12 @@ public class FourMonthWeeklyLoanTest extends BaseClassUAT2 {
   AddLongTermLoan addLongTermLoan;
   SoftAssert softAssert;
   Actions action;
-
+  ExcelUtil excelUtil;
   @BeforeClass
   public void setup() {
+    String excelPath = "src/main/java/data/LendingData.xlsx";
     Browserintialize("chrome", "https://uatxpresso.roinet.in/Login.aspx");
+    excelUtil = new ExcelUtil(excelPath);
     homePage = new HomePage();
     loginPage = new LoginPage();
     addLongTermLoan = new AddLongTermLoan();
@@ -43,9 +42,13 @@ public class FourMonthWeeklyLoanTest extends BaseClassUAT2 {
   }
 
   @Test(priority = 1, testName = "adding loan request")
-  public void addlongtermloan() {
+  public void addlongtermloan() throws IOException {
     addLongTermLoan.clickAddLoanButton();
-    addLongTermLoan.enterLoanAmount("20000");
+    String walletExposureAmt = excelUtil.getCellData("LoanDetail", 34, 1);
+    String resStability = excelUtil.getCellData("LoanDetail", 35, 1);
+    String spouse = excelUtil.getCellData("LoanDetail", 36, 1);
+
+    addLongTermLoan.enterLoanAmount("20000", walletExposureAmt, resStability, spouse);
     Map<String, String> loanDetails = addLongTermLoan.verifyEMIDetails();
     softAssert.assertEquals("020000", loanDetails.get("baseLoanAmt"), "base amount is not equal");
     softAssert.assertEquals("100.00", loanDetails.get("bounceCharge"), "emi bounce charge not match");

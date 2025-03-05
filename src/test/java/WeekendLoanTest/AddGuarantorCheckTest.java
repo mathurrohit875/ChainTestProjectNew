@@ -32,7 +32,7 @@ public class AddGuarantorCheckTest extends BaseClassUAT2 {
   String loanNumber="";
   @BeforeMethod
   public void setup() throws IOException {
-    String excelPath = "C:\\Users\\rohit.mathur\\IdeaProjects\\Lending\\src\\LoanLending\\Data\\LongTermData.xlsx";
+    String excelPath = "src/main/java/data/LendingData.xlsx";
     Browserintialize("chrome", "https://uatxpresso.roinet.in/Login.aspx");
     excelUtil = new ExcelUtil(excelPath);
     weekendLoanResultPage=new WeekendLoanResultPage();

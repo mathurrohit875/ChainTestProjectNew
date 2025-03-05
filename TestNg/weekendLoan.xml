@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Weekend Loan Apply.">
+<suite name="Weekend Loan Apply with Guarantor">
     <listeners>
         <listener class-name="Base.ChainTestListener"/>
     </listeners>
-    <test name="Weekend loan apply by user">
+    <test name="Weekend loan apply by user with guarantor">
     <classes>
         <class name="WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest"/>
     </classes>

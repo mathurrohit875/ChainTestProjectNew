@@ -9,8 +9,6 @@ package WeekendLoanTest;
 
 import Base.BaseClassUAT2;
 import Base.DbMTEST;
-import LongTermLoan.AddLongTermLoan;
-import LongTermLoan.LongTermResultPage;
 import Pages.HomePage;
 import Pages.LoginPage;
 import Utility.ExcelUtil;
@@ -47,7 +45,7 @@ public class VerifyLoanDetailAdminAccountTest extends BaseClassUAT2 {
   Map<String, String> loan = new HashMap<>();
   @BeforeClass
   public void setup() throws IOException {
-    String excelPath = "C:\\Users\\rohit.mathur\\IdeaProjects\\Lending\\src\\LoanLending\\Data\\LongTermData.xlsx";
+    String excelPath = "src/main/java/data/LendingData.xlsx";
     Browserintialize("chrome", "https://uatxpresso.roinet.in/Login.aspx");
     excelUtil = new ExcelUtil(excelPath);
     weekendLoanResultPage=new WeekendLoanResultPage();

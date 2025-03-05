@@ -204,6 +204,8 @@ public class LongTermResultPage extends BaseClassUAT2 {
   @FindBy(name="ctl00$ContentPlaceHolder1$grdList$ctl02$btnViewDetails")
   WebElement btnViewDetails;
 
+  @FindBy(xpath = "//a[contains(.,'Guarantor Detail')]")
+  WebElement guarantor;
   public LongTermResultPage() {
     PageFactory.initElements(driver, this);
     wait = new WebDriverWait(driver, Duration.ofSeconds(60));
@@ -215,6 +217,13 @@ public class LongTermResultPage extends BaseClassUAT2 {
     addLoanButton.click();
   }
 
+  public void clickGuarantorDetailButton() {
+    wait.until(ExpectedConditions.visibilityOf(guarantor)).click();
+  }
+
+  public void clickViewButton() {
+    viewButton.click();
+  }
   public Map<String, String> getDataResultGrid() {
     Map<String, String> fieldsText = new HashMap<>();
 

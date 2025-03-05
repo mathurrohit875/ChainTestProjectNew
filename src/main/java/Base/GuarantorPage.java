@@ -1,6 +1,5 @@
-package WeekendLoan;
+package Base;
 
-import Base.BaseClassUAT2;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -12,9 +11,11 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-
-public class WeekendGuarantor extends BaseClassUAT2 {
+public class GuarantorPage extends BaseClassUAT2 {
 
   WebDriverWait wait;
   Actions action;
@@ -84,7 +85,8 @@ public class WeekendGuarantor extends BaseClassUAT2 {
 
 
   JavascriptExecutor js;
-  public WeekendGuarantor() {
+
+  public GuarantorPage() {
     PageFactory.initElements(driver, this);
     wait = new WebDriverWait(driver, Duration.ofSeconds(60));
     action = new Actions(driver);
@@ -96,7 +98,7 @@ public class WeekendGuarantor extends BaseClassUAT2 {
                                    String guarantorMobileNumber, String guarantorEmail,
                                    String guarantorProfile, String guarantorRelation,
                                    String guarantorYearKnown,String guarantorAddress, String guarantorPinCode,String guaarantorAadhar
-  ,String panNumber,String guarantorPanDoc,String guarantorAadharDoc,String guarantorBankStmt,
+        , String panNumber, String guarantorPanDoc, String guarantorAadharDoc, String guarantorBankStmt,
                                    String guarantorTotalLoan,String dob,String gender) {
     wait.until(ExpectedConditions.visibilityOf(txtGuarantorName));
     action.moveToElement(ddlState).perform();
@@ -127,6 +129,22 @@ public class WeekendGuarantor extends BaseClassUAT2 {
 
   }
 
+  public Map<String, String> getText() {
+    Map<String, String> guarantorDetail = new HashMap<>();
+    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//table[@id='ContentPlaceHolder1_grdList']//tbody//tr[1]//th")));
+    action.moveToElement(driver.findElement(By.xpath("//table[@id='ContentPlaceHolder1_grdList']//tbody//tr[1]//th"))).perform();
+    List<WebElement> result = driver.findElements(By.xpath("//table[@id='ContentPlaceHolder1_grdList']//tbody//tr[1]//th"));
+    System.out.println("size result: " + result.size());
+    for (int i = 0; i < result.size(); i++) {
+      String walletAdvanceAmount = result.get(i).getText().trim();
+      WebElement columnXPath = driver.findElement(By.xpath("//table[@id='ContentPlaceHolder1_grdList']//th[contains(text(), '" + walletAdvanceAmount + "')]//ancestor::tbody//tr[2]//td[" + (i + 1) + "]"));
+      /*System.out.println("print wallet text at "+i+": "+walletAdvanceAmount);
+      System.out.println("column xpath at "+i+": "+columnXPath.getText().trim());
+      System.out.println(" "+walletAdvanceAmount+": " + columnXPath.getText().trim());*/
+      guarantorDetail.put(walletAdvanceAmount, columnXPath.getText().trim());
+    }
+    return guarantorDetail;
+  }
   public void clickSaveButton(){
     btnSave.click();
 

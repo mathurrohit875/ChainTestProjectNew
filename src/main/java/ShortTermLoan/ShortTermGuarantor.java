@@ -1,4 +1,5 @@
-package OtherProductsLoan;
+package ShortTermLoan;
+
 
 import Base.BaseClassUAT2;
 import org.openqa.selenium.By;
@@ -14,7 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 
-public class OtherProductGuarantor extends BaseClassUAT2 {
+public class ShortTermGuarantor extends BaseClassUAT2 {
 
   WebDriverWait wait;
   Actions action;
@@ -84,7 +85,8 @@ public class OtherProductGuarantor extends BaseClassUAT2 {
 
 
   JavascriptExecutor js;
-  public OtherProductGuarantor() {
+
+  public ShortTermGuarantor() {
     PageFactory.initElements(driver, this);
     wait = new WebDriverWait(driver, Duration.ofSeconds(60));
     action = new Actions(driver);

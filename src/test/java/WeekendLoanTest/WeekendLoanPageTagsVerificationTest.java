@@ -2,13 +2,11 @@ package WeekendLoanTest;
 
 import Base.BaseClassUAT2;
 import Base.DbMTEST;
-import LongTermLoan.AddLongTermLoan;
-import LongTermLoan.LongTermResultPage;
+import Base.GuarantorPage;
 import Pages.HomePage;
 import Pages.LoginPage;
 import Utility.ExcelUtil;
 import WeekendLoan.AddWeekendLoanPage;
-import WeekendLoan.WeekendGuarantor;
 import WeekendLoan.WeekendLoanResultPage;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterClass;
@@ -35,13 +33,13 @@ public class WeekendLoanPageTagsVerificationTest extends BaseClassUAT2 {
   DbMTEST dbMTEST;
   WeekendLoanResultPage weekendLoanResultPage;
   AddWeekendLoanPage addWeekendLoanPage;
-  WeekendGuarantor weekendGuarantor;
+  GuarantorPage guarantorPage;
   Map<String, String> loan = new HashMap<>();
   String loanNumber = "";
 
   @BeforeClass
   public void setup() throws IOException, SQLException {
-    String excelPath = "C:\\Users\\rohit.mathur\\IdeaProjects\\Lending\\src\\LoanLending\\Data\\LongTermData.xlsx";
+    String excelPath = "src/main/java/data/LendingData.xlsx";
     Browserintialize("chrome", "https://uatxpresso.roinet.in/Login.aspx");
 
     excelUtil = new ExcelUtil(excelPath);
@@ -52,7 +50,7 @@ public class WeekendLoanPageTagsVerificationTest extends BaseClassUAT2 {
     softAssert = new SoftAssert();
     dbMTEST = new DbMTEST();
 
-    weekendGuarantor = new WeekendGuarantor();
+    guarantorPage = new GuarantorPage();
     String adminLending = excelUtil.getCellData("WeekendLoan", 17, 1).trim();
     loginPage.login(adminLending, "roinet@1234", "KMJKN");
     loginPage.Login_With_OTP("222111");

@@ -7,8 +7,6 @@ import LongTermLoan.LongTermResultPage;
 import Pages.HomePage;
 import Pages.LoginPage;
 import Utility.ExcelUtil;
-import WeekendLoan.AddWeekendLoanPage;
-import WeekendLoan.WeekendLoanResultPage;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -33,7 +31,7 @@ public class ApproveLongTermLoanAdminAccountTest extends BaseClassUAT2 {
   Map<String, String> loan = new HashMap<>();
   @BeforeClass
   public void setup() throws IOException {
-    String excelPath = "C:\\Users\\rohit.mathur\\IdeaProjects\\Lending\\src\\LoanLending\\Data\\LongTermData.xlsx";
+    String excelPath = "src/main/java/data/LendingData.xlsx";
     Browserintialize("chrome", "https://uatxpresso.roinet.in/Login.aspx");
     excelUtil = new ExcelUtil(excelPath);
     longTermResultPage = new LongTermResultPage();

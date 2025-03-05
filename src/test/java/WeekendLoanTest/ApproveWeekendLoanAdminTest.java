@@ -3,15 +3,12 @@ package WeekendLoanTest;
 import Base.BaseClassUAT2;
 import Base.DbMTEST;
 import Base.LendingUtility;
-import LongTermLoan.AddLongTermLoan;
-import LongTermLoan.LongTermResultPage;
 import Pages.HomePage;
 import Pages.LoginPage;
 import Utility.ExcelUtil;
 import WeekendLoan.AddWeekendLoanPage;
 import WeekendLoan.WeekendLoanResultPage;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -41,7 +38,7 @@ public class ApproveWeekendLoanAdminTest extends BaseClassUAT2 {
 
   @BeforeClass
   public void setup() throws IOException {
-    String excelPath = "C:\\Users\\rohit.mathur\\IdeaProjects\\ChainTestProject\\src\\main\\data\\LendingData.xlsx";
+    String excelPath = "src/main/java/data/LendingData.xlsx";
     Browserintialize("chrome", "https://uatxpresso.roinet.in/Login.aspx");
     excelUtil = new ExcelUtil(excelPath);
     weekendLoanResultPage = new WeekendLoanResultPage();
