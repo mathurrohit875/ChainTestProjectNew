@@ -17,7 +17,7 @@ import java.util.Properties;
 
 public class BaseClassUAT2 {
 
-  private static final String CONFIG_FILE_PATH = "C:/Users/rohit.mathur/IdeaProjects/Lending/config.properties";
+  private static final String CONFIG_FILE_PATH = "config.properties";
   /*private static String browserNameUAT;
   private static String browserVersionUAT;*/
   //public static WebDriver driverUAT;
@@ -73,6 +73,10 @@ public class BaseClassUAT2 {
     wait=new WebDriverWait(driver,Duration.ofSeconds(60));
     wait.until(ExpectedConditions.alertIsPresent());
     driver.switchTo().alert().accept();
+  }
+
+  public String getProperty(String key) {
+    return prop.getProperty(key);
   }
  /* public String getProperty(String key) {
     return prop.getProperty(key);

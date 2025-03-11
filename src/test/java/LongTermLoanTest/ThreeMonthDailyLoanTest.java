@@ -27,7 +27,7 @@ public class ThreeMonthDailyLoanTest extends BaseClassUAT2 {
 
   @BeforeClass
   public void setup() throws IOException {
-    String excelPath = "src/main/java/data/LendingData.xlsx";
+    String excelPath = getProperty("excelpath");
     Browserintialize("chrome", "https://uatxpresso.roinet.in/Login.aspx");
     excelUtil = new ExcelUtil(excelPath);
 
@@ -40,7 +40,6 @@ public class ThreeMonthDailyLoanTest extends BaseClassUAT2 {
     homePage.ClickonWALLET();
     homePage.goToLongTermLoan();
     action = new Actions(driver);
-
 
   }
 
