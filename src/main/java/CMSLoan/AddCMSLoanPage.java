@@ -2,6 +2,7 @@ package CMSLoan;
 
 
 import Base.BaseClassUAT2;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -121,8 +122,8 @@ public class AddCMSLoanPage extends BaseClassUAT2 {
     txtTotalLoanExposure.sendKeys(exposure);
     txtLoanAmountReq.sendKeys(loanAmt);
     action.sendKeys(Keys.TAB).perform();
-    wait.until(ExpectedConditions.visibilityOf(txtLoanTenureDays));
-
+    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//label[contains(.,'Max Wallet Advance Amount')]")));
+    action.moveToElement(txtLoanTenureDays).perform();
     wait.until(ExpectedConditions.visibilityOf(txtPenaltyAmount));
     txtLoanTenureDays.sendKeys(tenureDays);
     action.moveToElement(ddlChequeOf).perform();

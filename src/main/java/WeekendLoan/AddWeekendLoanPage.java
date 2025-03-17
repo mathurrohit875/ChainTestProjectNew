@@ -123,6 +123,7 @@ public class AddWeekendLoanPage extends BaseClassUAT2 {
     wait.until(ExpectedConditions.visibilityOf(txtSpouseName)).sendKeys(spouseName);
     txtLoanAmountReq.sendKeys(loanAmt);
     action.sendKeys(Keys.TAB).perform();
+    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//label[contains(.,'Residence Stability (Number of Years')]")));
     wait.until(ExpectedConditions.visibilityOf(txtPenaltyAmount));
     action.moveToElement(ddlChequeOf).perform();
     Select select = new Select(ddlChequeOf);

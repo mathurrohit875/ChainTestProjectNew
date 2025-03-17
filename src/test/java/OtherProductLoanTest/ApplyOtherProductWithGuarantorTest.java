@@ -15,6 +15,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import java.io.*;
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -39,7 +40,7 @@ public class ApplyOtherProductWithGuarantorTest extends BaseClassUAT2 {
   public void setup() throws IOException {
     String excelPath = "src/main/java/data/LendingData.xlsx";
     Browserintialize("chrome", "https://uatxpresso.roinet.in/Login.aspx");
-
+    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     excelUtil = new ExcelUtil(excelPath);
     otherProductLoanResultPage = new OtherProductLoanResultPage();
     homePage = new HomePage();

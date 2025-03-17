@@ -21,6 +21,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -46,6 +47,7 @@ public class ApplyWeekendLoanWithGuarantorTest extends BaseClassUAT2 {
     String excelPath = "src/main/java/data/LendingData.xlsx";
     Browserintialize("chrome", "https://uatxpresso.roinet.in/Login.aspx");
     ChainTestListener.log("log chrom");
+    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     excelUtil = new ExcelUtil(excelPath);
     homePage = new HomePage();
     loginPage = new LoginPage();

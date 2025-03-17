@@ -17,6 +17,7 @@ import org.testng.asserts.SoftAssert;
 import java.io.*;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -39,6 +40,7 @@ public class ApplyLongTermWithGuarantorTest extends BaseClassUAT2 {
     String excelPath = "src/main/java/data/LendingData.xlsx";
     Browserintialize("chrome", "https://uatxpresso.roinet.in/Login.aspx");
     ChainTestListener.log("log chrom");
+    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     excelUtil = new ExcelUtil(excelPath);
     homePage = new HomePage();
     loginPage = new LoginPage();
