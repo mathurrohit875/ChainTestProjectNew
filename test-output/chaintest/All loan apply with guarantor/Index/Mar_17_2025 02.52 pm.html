@@ -20,9 +20,9 @@
             <span class="ms-3 fs-6">Report</span>
         </div>
         <div>
-            <span class="badge badge-outline text-lg"><i class="bi bi-hourglass me-1"></i> 1m 46s</span>
-            <span class="badge badge-outline text-lg"><i class="bi bi-clock me-1 text-success"></i> 2025-03-17 02:04:38 pm</span>
-            <span class="badge badge-outline text-lg me-3"><i class="bi bi-clock me-1 text-danger"></i> 2025-03-17 02:06:24 pm</span>
+            <span class="badge badge-outline text-lg"><i class="bi bi-hourglass me-1"></i> 1m 27s</span>
+            <span class="badge badge-outline text-lg"><i class="bi bi-clock me-1 text-success"></i> 2025-03-17 02:52:41 pm</span>
+            <span class="badge badge-outline text-lg me-3"><i class="bi bi-clock me-1 text-danger"></i> 2025-03-17 02:54:08 pm</span>
             <button class="btn btn-outline-primary smaller" id="sys-info" role="button" title="View System Info">
                 <i class="bi bi-pc-display-horizontal"></i></button>
             <button class="btn btn-outline-primary smaller" id="shortcuts" role="button" title="Shortcuts">
@@ -47,8 +47,8 @@
                             </div>
                         </div>
                         <div class="card-footer small">
-                            <span id="sp1">0</span> Passed,
-                            <span id="sf1">1</span> Failed,
+                            <span id="sp1">1</span> Passed,
+                            <span id="sf1">0</span> Failed,
                             <span id="ss1">0</span> Skipped
                         </div>
                     </div>
@@ -64,8 +64,8 @@
                             </div>
                         </div>
                         <div class="card-footer small">
-                            <span id="sp2">4</span> Passed,
-                            <span id="sf2">1</span> Failed,
+                            <span id="sp2">5</span> Passed,
+                            <span id="sf2">0</span> Failed,
                             <span id="ss2">0</span> Skipped
                         </div>
                     </div>
@@ -81,8 +81,8 @@
                             </div>
                         </div>
                         <div class="card-footer small">
-                            <span id="sp3">10</span> Passed,
-                            <span id="sf3">2</span> Failed,
+                            <span id="sp3">12</span> Passed,
+                            <span id="sf3">0</span> Failed,
                             <span id="ss3">0</span> Skipped
                         </div>
                     </div>
@@ -115,7 +115,7 @@
                         <td>1</td>
                         <td>1</td>
                         <td>0</td>
-                        <td>202ms</td>
+                        <td>208ms</td>
                     </tr>
                     <tr>
                         <td><a class="secondary tag" href="#">integration</a></td>
@@ -149,17 +149,17 @@
             </div>
         </div>
     </div>
-    <div class="test-container failed">
+    <div class="test-container passed">
         <div class="container">
             <div class="row">
                 <div class="col-4">
-                    <h6 class="mb-3 testname fs-6 failed">All loan apply with guarantor</h6>
+                    <h6 class="mb-3 testname fs-6 passed">All loan apply with guarantor</h6>
                     <div class="small">
-                        <span class="badge badge-outline"><i class="bi bi-hourglass me-1"></i> 1m 45s</span>
+                        <span class="badge badge-outline"><i class="bi bi-hourglass me-1"></i> 1m 26s</span>
                         <span class="badge text-bg-info"><i class="bi bi-clock me-1"></i>
-                  2025-03-17 02:04:38 pm</span>
+                  2025-03-17 02:52:41 pm</span>
                         <span class="badge text-bg-warning"><i class="bi bi-clock me-1"></i>
-                  2025-03-17 02:06:24 pm</span>
+                  2025-03-17 02:54:08 pm</span>
                     </div>
                     <div class="my-2">
                         <span class="badge rounded-pill text-bg-secondary">regression</span>
@@ -197,7 +197,7 @@
                 <span class="badge rounded-pill text-bg-secondary">regression</span>
             </span>
                                             <span class="mx-1">&middot;</span>
-                                            <span class="badge text-dark bg-light">202ms</span>
+                                            <span class="badge text-dark bg-light">208ms</span>
                                         </div>
                                     </div>
                                     <p class="desc"></p>
@@ -299,15 +299,15 @@ test is completed.
 
                         </div>
                     </div>
-                    <div class="card mb-3 result failed">
+                    <div class="card mb-3 result passed">
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
                                 <div>
-                                    <i class="bi bi-exclamation-octagon-fill text-danger"></i>
+                                    <i class="bi bi-check-circle-fill text-success"></i>
                                     <span class="fs-6 ms-2">CMSLoanTest.ApplyCMSLoanWithGuarantorTest</span>
                                 </div>
                                 <div>
-                                    <span class="badge text-dark bg-light">33s</span>
+                                    <span class="badge text-dark bg-light">14s</span>
                                 </div>
                             </div>
 
@@ -319,7 +319,7 @@ test is completed.
                                             <span class="fs-6 ms-2">goToLoanPage</span>
                                         </div>
                                         <div>
-                                            <span class="badge text-dark bg-light">182ms</span>
+                                            <span class="badge text-dark bg-light">130ms</span>
                                         </div>
                                     </div>
                                     <p class="desc"></p>
@@ -335,159 +335,42 @@ test is completed.
           </pre>
                                     </div>
                                 </div>
-                                <div class="leaf failed pb-1">
+                                <div class="leaf passed pb-1">
                                     <div class="d-flex justify-content-between mt-3">
                                         <div>
-                                            <i class="bi bi-exclamation-octagon-fill text-danger"></i>
+                                            <i class="bi bi-check-circle-fill text-success"></i>
                                             <span class="fs-6 ms-2">applyLoan</span>
                                         </div>
                                         <div>
-                                            <span class="badge text-dark bg-light">1s</span>
+                                            <span class="badge text-dark bg-light">3s</span>
                                         </div>
                                     </div>
                                     <p class="desc"></p>
-                                    <pre class="py-2 mt-2 mb-4">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=134.0.6998.89)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9dd0711d5285b880ed068d2c998fd980, sendKeysToElement {value=[Ljava.lang.CharSequence;@2b6fcca1, id=f.3C7183E3676DF37B39A3715B6F1555BF.d.FEA347B2BC314016A055D2143D4F5F86.e.232}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\ROHIT~1.MAT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54853}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54853/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (9dd0711d5285b880ed068d2c998fd980)] -> name: ctl00$ContentPlaceHolder1$txtLoanTenureDays]
-Session ID: 9dd0711d5285b880ed068d2c998fd980
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
-	at CMSLoan.AddCMSLoanPage.fillLoanDetails(AddCMSLoanPage.java:127)
-	at CMSLoanTest.ApplyCMSLoanWithGuarantorTest.applyLoan(ApplyCMSLoanWithGuarantorTest.java:94)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-</pre>
                                     <div class="mt-3">
           <pre class="pb-0">
 test is started
-failed.......... applyLoan
+on Test success
 test is completed.
           </pre>
                                     </div>
-                                    <div class="row mt-3">
-                                        <div class="embed col-2 mb-1">
-                                            <img src="resources/3ae46fde-98ef-48e9-8a12-1180c9e81d62.png"/>
-                                        </div>
-                                    </div>
                                 </div>
-                                <div class="leaf failed pb-1">
+                                <div class="leaf passed pb-1">
                                     <div class="d-flex justify-content-between mt-3">
                                         <div>
-                                            <i class="bi bi-exclamation-octagon-fill text-danger"></i>
+                                            <i class="bi bi-check-circle-fill text-success"></i>
                                             <span class="fs-6 ms-2">addGuarantor</span>
                                         </div>
                                         <div>
-                                            <span class="badge text-dark bg-light">24s</span>
+                                            <span class="badge text-dark bg-light">4s</span>
                                         </div>
                                     </div>
                                     <p class="desc"></p>
-                                    <pre class="py-2 mt-2 mb-4">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Your request with Wallet Advance no: ROID05752 has been processed successfully.}
-  (Session info: chrome=134.0.6998.89): Your request with Wallet Advance no: ROID05752 has been processed successfully.
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9dd0711d5285b880ed068d2c998fd980, findElement {using=name, value=ctl00$ContentPlaceHolder1$txtLoanNo}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\ROHIT~1.MAT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54853}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54853/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9dd0711d5285b880ed068d2c998fd980
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at CMSLoan.CMSLoanResultPage.enterLoanNumber(CMSLoanResultPage.java:50)
-	at CMSLoanTest.ApplyCMSLoanWithGuarantorTest.addGuarantor(ApplyCMSLoanWithGuarantorTest.java:134)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-</pre>
                                     <div class="mt-3">
           <pre class="pb-0">
 test is started
-failed.......... addGuarantor
+on Test success
 test is completed.
           </pre>
-                                    </div>
-                                    <div class="row mt-3">
-                                        <div class="embed col-2 mb-1">
-                                            <img src="resources/8bf1e151-1268-4b5c-8bcc-702851bcbea9.png"/>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -502,7 +385,7 @@ test is completed.
                                     <span class="fs-6 ms-2">OtherProductLoanTest.ApplyOtherProductWithGuarantorTest</span>
                                 </div>
                                 <div>
-                                    <span class="badge text-dark bg-light">17s</span>
+                                    <span class="badge text-dark bg-light">18s</span>
                                 </div>
                             </div>
 
@@ -514,7 +397,7 @@ test is completed.
                                             <span class="fs-6 ms-2">addlongtermloan</span>
                                         </div>
                                         <div>
-                                            <span class="badge text-dark bg-light">5s</span>
+                                            <span class="badge text-dark bg-light">6s</span>
                                         </div>
                                     </div>
                                     <p class="desc"></p>
@@ -538,7 +421,7 @@ test is completed.
                                             <span class="fs-6 ms-2">addGuarantor</span>
                                         </div>
                                         <div>
-                                            <span class="badge text-dark bg-light">4s</span>
+                                            <span class="badge text-dark bg-light">5s</span>
                                         </div>
                                     </div>
                                     <p class="desc"></p>
@@ -562,7 +445,7 @@ test is completed.
                                     <span class="fs-6 ms-2">ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest</span>
                                 </div>
                                 <div>
-                                    <span class="badge text-dark bg-light">17s</span>
+                                    <span class="badge text-dark bg-light">16s</span>
                                 </div>
                             </div>
 
@@ -574,7 +457,7 @@ test is completed.
                                             <span class="fs-6 ms-2">goToLoanPage</span>
                                         </div>
                                         <div>
-                                            <span class="badge text-dark bg-light">944ms</span>
+                                            <span class="badge text-dark bg-light">630ms</span>
                                         </div>
                                     </div>
                                     <p class="desc"></p>
@@ -616,7 +499,7 @@ test is completed.
                                             <span class="fs-6 ms-2">addGuarantor</span>
                                         </div>
                                         <div>
-                                            <span class="badge text-dark bg-light">5s</span>
+                                            <span class="badge text-dark bg-light">4s</span>
                                         </div>
                                     </div>
                                     <p class="desc"></p>
@@ -640,22 +523,22 @@ test is completed.
 </div>
 
 <script>
-    const stats1Annotation = {'total': 1, 'passed': 0};
+    const stats1Annotation = {'total': 1, 'passed': 1};
     const stats1 = [
-      { result: 'Passed', count: 0, bg: 'rgb(140, 197, 83)' },
-      { result: 'Failed', count: 1, bg: 'rgb(233,80,113)' },
+      { result: 'Passed', count: 1, bg: 'rgb(140, 197, 83)' },
+      { result: 'Failed', count: 0, bg: 'rgb(233,80,113)' },
       { result: 'Skipped', count: 0, bg: 'rgb(221, 91, 96)' }
     ];
-      const stats2Annotation = {'total': 5, 'passed': 4};
+      const stats2Annotation = {'total': 5, 'passed': 5};
       const stats2 = [
-        { result: 'Passed', count: 4, bg: 'rgb(140, 197, 83)' },
-        { result: 'Failed', count: 1, bg: 'rgb(233,80,113)' },
+        { result: 'Passed', count: 5, bg: 'rgb(140, 197, 83)' },
+        { result: 'Failed', count: 0, bg: 'rgb(233,80,113)' },
         { result: 'Skipped', count: 0, bg: 'rgb(221, 91, 96)' }
       ];
-      const stats3Annotation = {'total': 12, 'passed': 10};
+      const stats3Annotation = {'total': 12, 'passed': 12};
       const stats3 = [
-        { result: 'Passed', count: 10, bg: 'rgb(140, 197, 83)' },
-        { result: 'Failed', count: 2, bg: 'rgb(233,80,113)' },
+        { result: 'Passed', count: 12, bg: 'rgb(140, 197, 83)' },
+        { result: 'Failed', count: 0, bg: 'rgb(233,80,113)' },
         { result: 'Skipped', count: 0, bg: 'rgb(221, 91, 96)' }
       ];
 
@@ -765,7 +648,8 @@ test is completed.
         <div class="modal-content">
             <div class="modal-header">
                 <h6 class="modal-title">Attachment</h6>
-                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" onclick="toggleAttachmentModal(false)"
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"
+                        onclick="toggleAttachmentModal(false)"
                         type="button"></button>
             </div>
             <div class="modal-body">
