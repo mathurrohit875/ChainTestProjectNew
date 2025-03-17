@@ -9,17 +9,66 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
     <tr>
-        <th colspan="8">Weekend Loan Apply with Guarantor</th>
+        <th colspan="8">All loan apply with guarantor</th>
     </tr>
     <tr>
-        <td><a href="#t0">Weekend loan apply by user with guarantor</a></td>
+        <td><a href="#t0">Weekend Loan Apply with guarantor</a></td>
         <td class="num">2</td>
         <td class="num">0</td>
         <td class="num">0</td>
         <td class="num">0</td>
-        <td class="num">99,033</td>
+        <td class="num">17,695</td>
         <td></td>
         <td></td>
+    </tr>
+    <tr class="stripe">
+        <td><a href="#t1">Long Term loan with guarantor</a></td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">18,135</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#t2">CMS loan with guarantor</a></td>
+        <td class="num">3</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">15,834</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr class="stripe">
+        <td><a href="#t3">Other Product Loan with guarantor</a></td>
+        <td class="num">2</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">24,603</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#t4">Short Term Loan</a></td>
+        <td class="num">3</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">0</td>
+        <td class="num">16,393</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th>Total</th>
+        <th class="num">12</th>
+        <th class="num">0</th>
+        <th class="num">0</th>
+        <th class="num">0</th>
+        <th class="num">92,660</th>
+        <th colspan="2"></th>
     </tr>
 </table>
 <table id='summary'>
@@ -33,27 +82,101 @@
     </thead>
     <tbody>
     <tr>
-        <th colspan="4">Weekend Loan Apply with Guarantor</th>
+        <th colspan="4">All loan apply with guarantor</th>
     </tr>
     </tbody>
     <tbody id="t0">
     <tr>
-        <th colspan="4">Weekend loan apply by user with guarantor &#8212; passed</th>
+        <th colspan="4">Weekend Loan Apply with guarantor &#8212; passed</th>
     </tr>
     <tr class="passedeven">
         <td rowspan="2">WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest</td>
         <td><a href="#m0">applyLoan</a></td>
-        <td rowspan="1">1741152426069</td>
-        <td rowspan="1">15327</td>
+        <td rowspan="1">1742201485491</td>
+        <td rowspan="1">8804</td>
     </tr>
     <tr class="passedeven">
         <td><a href="#m1">goToLoanPage</a></td>
-        <td rowspan="1">1741152425890</td>
-        <td rowspan="1">169</td>
+        <td rowspan="1">1742201485265</td>
+        <td rowspan="1">206</td>
+    </tr>
+    </tbody>
+    <tbody id="t1">
+    <tr>
+        <th colspan="4">Long Term loan with guarantor &#8212; passed</th>
+    </tr>
+    <tr class="passedeven">
+        <td rowspan="2">LongTermLoanTest.ApplyLongTermWithGuarantorTest</td>
+        <td><a href="#m2">addGuarantor</a></td>
+        <td rowspan="1">1742201507618</td>
+        <td rowspan="1">5092</td>
+    </tr>
+    <tr class="passedeven">
+        <td><a href="#m3">addlongtermloan</a></td>
+        <td rowspan="1">1742201501868</td>
+        <td rowspan="1">5749</td>
+    </tr>
+    </tbody>
+    <tbody id="t2">
+    <tr>
+        <th colspan="4">CMS loan with guarantor &#8212; passed</th>
+    </tr>
+    <tr class="passedeven">
+        <td rowspan="3">CMSLoanTest.ApplyCMSLoanWithGuarantorTest</td>
+        <td><a href="#m4">addGuarantor</a></td>
+        <td rowspan="1">1742201523811</td>
+        <td rowspan="1">4738</td>
+    </tr>
+    <tr class="passedeven">
+        <td><a href="#m5">applyLoan</a></td>
+        <td rowspan="1">1742201519913</td>
+        <td rowspan="1">3896</td>
+    </tr>
+    <tr class="passedeven">
+        <td><a href="#m6">goToLoanPage</a></td>
+        <td rowspan="1">1742201519728</td>
+        <td rowspan="1">182</td>
+    </tr>
+    </tbody>
+    <tbody id="t3">
+    <tr>
+        <th colspan="4">Other Product Loan with guarantor &#8212; passed</th>
+    </tr>
+    <tr class="passedeven">
+        <td rowspan="2">OtherProductLoanTest.ApplyOtherProductWithGuarantorTest</td>
+        <td><a href="#m7">addGuarantor</a></td>
+        <td rowspan="1">1742201548004</td>
+        <td rowspan="1">5155</td>
+    </tr>
+    <tr class="passedeven">
+        <td><a href="#m8">addlongtermloan</a></td>
+        <td rowspan="1">1742201541114</td>
+        <td rowspan="1">6888</td>
+    </tr>
+    </tbody>
+    <tbody id="t4">
+    <tr>
+        <th colspan="4">Short Term Loan &#8212; passed</th>
+    </tr>
+    <tr class="passedeven">
+        <td rowspan="3">ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest</td>
+        <td><a href="#m9">addGuarantor</a></td>
+        <td rowspan="1">1742201564826</td>
+        <td rowspan="1">4730</td>
+    </tr>
+    <tr class="passedeven">
+        <td><a href="#m10">applyLoan</a></td>
+        <td rowspan="1">1742201560637</td>
+        <td rowspan="1">4188</td>
+    </tr>
+    <tr class="passedeven">
+        <td><a href="#m11">goToLoanPage</a></td>
+        <td rowspan="1">1742201560067</td>
+        <td rowspan="1">565</td>
     </tr>
     </tbody>
 </table>
-<h2>Weekend loan apply by user with guarantor</h2>
+<h2>Weekend Loan Apply with guarantor</h2>
 <h3 id="m0">WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest#applyLoan</h3>
 <table class="result">
     <tr>
@@ -62,5 +185,79 @@
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest#goToLoanPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Long Term loan with guarantor</h2>
+<h3 id="m2">LongTermLoanTest.ApplyLongTermWithGuarantorTest#addGuarantor</h3>
+<table class="result">
+    <tr>
+        <th class="invisible"/>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">LongTermLoanTest.ApplyLongTermWithGuarantorTest#addlongtermloan</h3>
+<table class="result">
+    <tr>
+        <th class="invisible"/>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2>CMS loan with guarantor</h2>
+<h3 id="m4">CMSLoanTest.ApplyCMSLoanWithGuarantorTest#addGuarantor</h3>
+<table class="result">
+    <tr>
+        <th class="invisible"/>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">CMSLoanTest.ApplyCMSLoanWithGuarantorTest#applyLoan</h3>
+<table class="result">
+    <tr>
+        <th class="invisible"/>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">CMSLoanTest.ApplyCMSLoanWithGuarantorTest#goToLoanPage</h3>
+<table class="result">
+    <tr>
+        <th class="invisible"/>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Other Product Loan with guarantor</h2>
+<h3 id="m7">OtherProductLoanTest.ApplyOtherProductWithGuarantorTest#addGuarantor</h3>
+<table class="result">
+    <tr>
+        <th class="invisible"/>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">OtherProductLoanTest.ApplyOtherProductWithGuarantorTest#addlongtermloan</h3>
+<table class="result">
+    <tr>
+        <th class="invisible"/>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Short Term Loan</h2>
+<h3 id="m9">ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest#addGuarantor</h3>
+<table class="result">
+    <tr>
+        <th class="invisible"/>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest#applyLoan</h3>
+<table class="result">
+    <tr>
+        <th class="invisible"/>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest#goToLoanPage</h3>
+<table class="result">
+    <tr>
+        <th class="invisible"/>
+    </tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
