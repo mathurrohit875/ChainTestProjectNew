@@ -2,163 +2,163 @@
 <testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-    <suite started-at="2025-03-17T15:18:50 IST" name="All loan apply with guarantor"
-           finished-at="2025-03-17T15:20:17 IST" duration-ms="86799">
+    <suite started-at="2025-03-17T17:41:29 IST" name="All loan apply with guarantor"
+           finished-at="2025-03-17T17:42:57 IST" duration-ms="87968">
     <groups>
       <group name="regression">
-          <method signature="ApplyWeekendLoanWithGuarantorTest.goToLoanPage()[pri:1, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@4f6ee6e4]"
+          <method signature="ApplyWeekendLoanWithGuarantorTest.goToLoanPage()[pri:1, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@4fb0f2b9]"
                   name="goToLoanPage" class="WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest"/>
       </group> <!-- regression -->
       <group name="integration">
-          <method signature="ApplyWeekendLoanWithGuarantorTest.applyLoan()[pri:2, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@4f6ee6e4]"
+          <method signature="ApplyWeekendLoanWithGuarantorTest.applyLoan()[pri:2, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@4fb0f2b9]"
                   name="applyLoan" class="WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest"/>
       </group> <!-- integration -->
     </groups>
-        <test started-at="2025-03-17T15:18:50 IST" name="Weekend Loan Apply with guarantor"
-              finished-at="2025-03-17T15:19:09 IST" duration-ms="19104">
+        <test started-at="2025-03-17T17:41:29 IST" name="Weekend Loan Apply with guarantor"
+              finished-at="2025-03-17T17:41:49 IST" duration-ms="19504">
       <class name="WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest">
           <test-method is-config="true"
-                       signature="setup()[pri:0, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@4f6ee6e4]"
-                       started-at="2025-03-17T15:18:50 IST" name="setup" finished-at="2025-03-17T15:19:00 IST"
-                       duration-ms="9833" status="PASS">
+                       signature="setup()[pri:0, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@4fb0f2b9]"
+                       started-at="2025-03-17T17:41:29 IST" name="setup" finished-at="2025-03-17T17:41:39 IST"
+                       duration-ms="9979" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
           <test-method
-                  signature="goToLoanPage()[pri:1, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@4f6ee6e4]"
-                  started-at="2025-03-17T15:19:00 IST" name="goToLoanPage" finished-at="2025-03-17T15:19:00 IST"
-                  duration-ms="190" status="PASS">
+                  signature="goToLoanPage()[pri:1, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@4fb0f2b9]"
+                  started-at="2025-03-17T17:41:39 IST" name="goToLoanPage" finished-at="2025-03-17T17:41:39 IST"
+                  duration-ms="179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoanPage -->
           <test-method
-                  signature="applyLoan()[pri:2, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@4f6ee6e4]"
-                  started-at="2025-03-17T15:19:00 IST" name="applyLoan" finished-at="2025-03-17T15:19:09 IST"
-                  duration-ms="8730" status="PASS">
+                  signature="applyLoan()[pri:2, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@4fb0f2b9]"
+                  started-at="2025-03-17T17:41:39 IST" name="applyLoan" finished-at="2025-03-17T17:41:48 IST"
+                  duration-ms="9032" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- applyLoan -->
           <test-method is-config="true"
-                       signature="quit()[pri:0, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@4f6ee6e4]"
-                       started-at="2025-03-17T15:19:09 IST" name="quit" finished-at="2025-03-17T15:19:09 IST"
-                       duration-ms="290" status="PASS">
+                       signature="quit()[pri:0, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@4fb0f2b9]"
+                       started-at="2025-03-17T17:41:48 IST" name="quit" finished-at="2025-03-17T17:41:49 IST"
+                       duration-ms="266" status="PASS">
               <reporter-output>
               </reporter-output>
           </test-method> <!-- quit -->
       </class> <!-- WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest -->
         </test> <!-- Weekend Loan Apply with guarantor -->
-        <test started-at="2025-03-17T15:19:10 IST" name="Long Term loan with guarantor"
-              finished-at="2025-03-17T15:19:28 IST" duration-ms="18135">
+        <test started-at="2025-03-17T17:41:49 IST" name="Long Term loan with guarantor"
+              finished-at="2025-03-17T17:42:06 IST" duration-ms="17713">
             <class name="LongTermLoanTest.ApplyLongTermWithGuarantorTest">
                 <test-method is-config="true"
-                             signature="setup()[pri:0, instance:LongTermLoanTest.ApplyLongTermWithGuarantorTest@35e2d654]"
-                             started-at="2025-03-17T15:19:10 IST" name="setup" finished-at="2025-03-17T15:19:16 IST"
-                             duration-ms="6961" status="PASS">
+                             signature="setup()[pri:0, instance:LongTermLoanTest.ApplyLongTermWithGuarantorTest@130d63be]"
+                             started-at="2025-03-17T17:41:49 IST" name="setup" finished-at="2025-03-17T17:41:56 IST"
+                             duration-ms="7139" status="PASS">
                     <reporter-output>
                     </reporter-output>
                 </test-method> <!-- setup -->
                 <test-method
-                        signature="addlongtermloan()[pri:1, instance:LongTermLoanTest.ApplyLongTermWithGuarantorTest@35e2d654]"
-                        started-at="2025-03-17T15:19:16 IST" name="addlongtermloan"
-                        finished-at="2025-03-17T15:19:23 IST" duration-ms="6133" status="PASS">
+                        signature="addlongtermloan()[pri:1, instance:LongTermLoanTest.ApplyLongTermWithGuarantorTest@130d63be]"
+                        started-at="2025-03-17T17:41:56 IST" name="addlongtermloan"
+                        finished-at="2025-03-17T17:42:02 IST" duration-ms="5879" status="PASS">
                     <reporter-output>
                     </reporter-output>
                 </test-method> <!-- addlongtermloan -->
                 <test-method
-                        signature="addGuarantor()[pri:2, instance:LongTermLoanTest.ApplyLongTermWithGuarantorTest@35e2d654]"
-                        started-at="2025-03-17T15:19:23 IST" name="addGuarantor" finished-at="2025-03-17T15:19:28 IST"
-                        duration-ms="5036" status="PASS">
+                        signature="addGuarantor()[pri:2, instance:LongTermLoanTest.ApplyLongTermWithGuarantorTest@130d63be]"
+                        started-at="2025-03-17T17:42:02 IST" name="addGuarantor" finished-at="2025-03-17T17:42:06 IST"
+                        duration-ms="4689" status="PASS">
                     <reporter-output>
                     </reporter-output>
                 </test-method> <!-- addGuarantor -->
             </class> <!-- LongTermLoanTest.ApplyLongTermWithGuarantorTest -->
         </test> <!-- Long Term loan with guarantor -->
-        <test started-at="2025-03-17T15:19:28 IST" name="CMS loan with guarantor" finished-at="2025-03-17T15:19:43 IST"
-              duration-ms="15797">
+        <test started-at="2025-03-17T17:42:06 IST" name="CMS loan with guarantor" finished-at="2025-03-17T17:42:23 IST"
+              duration-ms="16469">
             <class name="CMSLoanTest.ApplyCMSLoanWithGuarantorTest">
                 <test-method is-config="true"
-                             signature="setup()[pri:0, instance:CMSLoanTest.ApplyCMSLoanWithGuarantorTest@4f83df68]"
-                             started-at="2025-03-17T15:19:28 IST" name="setup" finished-at="2025-03-17T15:19:35 IST"
-                             duration-ms="7615" status="PASS">
+                             signature="setup()[pri:0, instance:CMSLoanTest.ApplyCMSLoanWithGuarantorTest@6aeb35e6]"
+                             started-at="2025-03-17T17:42:06 IST" name="setup" finished-at="2025-03-17T17:42:13 IST"
+                             duration-ms="7036" status="PASS">
                     <reporter-output>
                     </reporter-output>
                 </test-method> <!-- setup -->
                 <test-method
-                        signature="goToLoanPage()[pri:1, instance:CMSLoanTest.ApplyCMSLoanWithGuarantorTest@4f83df68]"
-                        started-at="2025-03-17T15:19:35 IST" name="goToLoanPage" finished-at="2025-03-17T15:19:35 IST"
-                        duration-ms="194" status="PASS">
+                        signature="goToLoanPage()[pri:1, instance:CMSLoanTest.ApplyCMSLoanWithGuarantorTest@6aeb35e6]"
+                        started-at="2025-03-17T17:42:13 IST" name="goToLoanPage" finished-at="2025-03-17T17:42:14 IST"
+                        duration-ms="175" status="PASS">
                     <reporter-output>
                     </reporter-output>
                 </test-method> <!-- goToLoanPage -->
-                <test-method signature="applyLoan()[pri:2, instance:CMSLoanTest.ApplyCMSLoanWithGuarantorTest@4f83df68]"
-                             started-at="2025-03-17T15:19:35 IST" name="applyLoan" finished-at="2025-03-17T15:19:39 IST"
-                             duration-ms="3486" status="PASS">
+                <test-method signature="applyLoan()[pri:2, instance:CMSLoanTest.ApplyCMSLoanWithGuarantorTest@6aeb35e6]"
+                             started-at="2025-03-17T17:42:14 IST" name="applyLoan" finished-at="2025-03-17T17:42:18 IST"
+                             duration-ms="4313" status="PASS">
                     <reporter-output>
                     </reporter-output>
                 </test-method> <!-- applyLoan -->
                 <test-method
-                        signature="addGuarantor()[pri:3, instance:CMSLoanTest.ApplyCMSLoanWithGuarantorTest@4f83df68]"
-                        started-at="2025-03-17T15:19:39 IST" name="addGuarantor" finished-at="2025-03-17T15:19:43 IST"
-                        duration-ms="4497" status="PASS">
+                        signature="addGuarantor()[pri:3, instance:CMSLoanTest.ApplyCMSLoanWithGuarantorTest@6aeb35e6]"
+                        started-at="2025-03-17T17:42:18 IST" name="addGuarantor" finished-at="2025-03-17T17:42:23 IST"
+                        duration-ms="4936" status="PASS">
                     <reporter-output>
                     </reporter-output>
                 </test-method> <!-- addGuarantor -->
             </class> <!-- CMSLoanTest.ApplyCMSLoanWithGuarantorTest -->
         </test> <!-- CMS loan with guarantor -->
-        <test started-at="2025-03-17T15:19:43 IST" name="Other Product Loan with guarantor"
-              finished-at="2025-03-17T15:20:00 IST" duration-ms="16906">
+        <test started-at="2025-03-17T17:42:23 IST" name="Other Product Loan with guarantor"
+              finished-at="2025-03-17T17:42:39 IST" duration-ms="16588">
             <class name="OtherProductLoanTest.ApplyOtherProductWithGuarantorTest">
                 <test-method is-config="true"
-                             signature="setup()[pri:0, instance:OtherProductLoanTest.ApplyOtherProductWithGuarantorTest@42a48628]"
-                             started-at="2025-03-17T15:19:43 IST" name="setup" finished-at="2025-03-17T15:19:50 IST"
-                             duration-ms="6996" status="PASS">
+                             signature="setup()[pri:0, instance:OtherProductLoanTest.ApplyOtherProductWithGuarantorTest@3c19aaa5]"
+                             started-at="2025-03-17T17:42:23 IST" name="setup" finished-at="2025-03-17T17:42:29 IST"
+                             duration-ms="6473" status="PASS">
                     <reporter-output>
                     </reporter-output>
                 </test-method> <!-- setup -->
                 <test-method
-                        signature="addlongtermloan()[pri:1, instance:OtherProductLoanTest.ApplyOtherProductWithGuarantorTest@42a48628]"
-                        started-at="2025-03-17T15:19:50 IST" name="addlongtermloan"
-                        finished-at="2025-03-17T15:19:56 IST" duration-ms="5268" status="PASS">
+                        signature="addlongtermloan()[pri:1, instance:OtherProductLoanTest.ApplyOtherProductWithGuarantorTest@3c19aaa5]"
+                        started-at="2025-03-17T17:42:29 IST" name="addlongtermloan"
+                        finished-at="2025-03-17T17:42:35 IST" duration-ms="5245" status="PASS">
                     <reporter-output>
                     </reporter-output>
                 </test-method> <!-- addlongtermloan -->
                 <test-method
-                        signature="addGuarantor()[pri:2, instance:OtherProductLoanTest.ApplyOtherProductWithGuarantorTest@42a48628]"
-                        started-at="2025-03-17T15:19:56 IST" name="addGuarantor" finished-at="2025-03-17T15:20:00 IST"
-                        duration-ms="4638" status="PASS">
+                        signature="addGuarantor()[pri:2, instance:OtherProductLoanTest.ApplyOtherProductWithGuarantorTest@3c19aaa5]"
+                        started-at="2025-03-17T17:42:35 IST" name="addGuarantor" finished-at="2025-03-17T17:42:39 IST"
+                        duration-ms="4864" status="PASS">
                     <reporter-output>
                     </reporter-output>
                 </test-method> <!-- addGuarantor -->
             </class> <!-- OtherProductLoanTest.ApplyOtherProductWithGuarantorTest -->
         </test> <!-- Other Product Loan with guarantor -->
-        <test started-at="2025-03-17T15:20:00 IST" name="Short Term Loan" finished-at="2025-03-17T15:20:17 IST"
-              duration-ms="16816">
+        <test started-at="2025-03-17T17:42:39 IST" name="Short Term Loan" finished-at="2025-03-17T17:42:57 IST"
+              duration-ms="17631">
             <class name="ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest">
                 <test-method is-config="true"
-                             signature="setup()[pri:0, instance:ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest@74f0ea28]"
-                             started-at="2025-03-17T15:20:00 IST" name="setup" finished-at="2025-03-17T15:20:07 IST"
-                             duration-ms="6661" status="PASS">
+                             signature="setup()[pri:0, instance:ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest@49e53c76]"
+                             started-at="2025-03-17T17:42:39 IST" name="setup" finished-at="2025-03-17T17:42:47 IST"
+                             duration-ms="7120" status="PASS">
                     <reporter-output>
                     </reporter-output>
                 </test-method> <!-- setup -->
                 <test-method
-                        signature="goToLoanPage()[pri:1, instance:ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest@74f0ea28]"
-                        started-at="2025-03-17T15:20:07 IST" name="goToLoanPage" finished-at="2025-03-17T15:20:08 IST"
-                        duration-ms="619" status="PASS">
+                        signature="goToLoanPage()[pri:1, instance:ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest@49e53c76]"
+                        started-at="2025-03-17T17:42:47 IST" name="goToLoanPage" finished-at="2025-03-17T17:42:48 IST"
+                        duration-ms="1042" status="PASS">
                     <reporter-output>
                     </reporter-output>
                 </test-method> <!-- goToLoanPage -->
                 <test-method
-                        signature="applyLoan()[pri:2, instance:ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest@74f0ea28]"
-                        started-at="2025-03-17T15:20:08 IST" name="applyLoan" finished-at="2025-03-17T15:20:12 IST"
-                        duration-ms="4432" status="PASS">
+                        signature="applyLoan()[pri:2, instance:ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest@49e53c76]"
+                        started-at="2025-03-17T17:42:48 IST" name="applyLoan" finished-at="2025-03-17T17:42:52 IST"
+                        duration-ms="4553" status="PASS">
                     <reporter-output>
                     </reporter-output>
                 </test-method> <!-- applyLoan -->
                 <test-method
-                        signature="addGuarantor()[pri:3, instance:ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest@74f0ea28]"
-                        started-at="2025-03-17T15:20:12 IST" name="addGuarantor" finished-at="2025-03-17T15:20:17 IST"
-                        duration-ms="5096" status="PASS">
+                        signature="addGuarantor()[pri:3, instance:ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest@49e53c76]"
+                        started-at="2025-03-17T17:42:52 IST" name="addGuarantor" finished-at="2025-03-17T17:42:57 IST"
+                        duration-ms="4911" status="PASS">
                     <reporter-output>
                     </reporter-output>
                 </test-method> <!-- addGuarantor -->

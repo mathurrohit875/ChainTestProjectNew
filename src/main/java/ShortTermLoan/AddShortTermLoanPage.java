@@ -146,10 +146,12 @@ public class AddShortTermLoanPage extends BaseClassUAT2 {
     wait.until(ExpectedConditions.visibilityOf(chkTNC));
     action.moveToElement(chkTNC).perform();
     chkTNC.click();
+    wait.until(ExpectedConditions.visibilityOf(updGstStatement));
+    action.moveToElement(updGstStatement).perform();
     wait.until(ExpectedConditions.visibilityOf(ddlChequeOf));
     Select select = new Select(ddlChequeOf);
     select.selectByVisibleText(chequeOf);
-    wait.until(ExpectedConditions.visibilityOf(updGstStatement));
+
     action.moveToElement(updGstStatement).perform();
     updGstStatement.sendKeys(gstFile);
     updBankStatement.sendKeys(bankstmt);
