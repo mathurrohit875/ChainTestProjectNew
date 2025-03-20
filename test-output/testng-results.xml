@@ -1,288 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="10" failed="2" skipped="0">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-    <suite started-at="2025-03-20T11:55:00 IST" name="All loan apply with guarantor"
-           finished-at="2025-03-20T11:57:51 IST" duration-ms="171008">
+    <suite started-at="2025-03-20T12:20:14 IST" name="All loan apply with guarantor"
+           finished-at="2025-03-20T12:21:48 IST" duration-ms="94008">
     <groups>
       <group name="regression">
-          <method signature="ApplyWeekendLoanWithGuarantorTest.goToLoanPage()[pri:1, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@402bba4f]"
+          <method signature="ApplyWeekendLoanWithGuarantorTest.goToLoanPage()[pri:1, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@294425a7]"
                   name="goToLoanPage" class="WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest"/>
       </group> <!-- regression -->
       <group name="integration">
-          <method signature="ApplyWeekendLoanWithGuarantorTest.applyLoan()[pri:2, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@402bba4f]"
+          <method signature="ApplyWeekendLoanWithGuarantorTest.applyLoan()[pri:2, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@294425a7]"
                   name="applyLoan" class="WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest"/>
       </group> <!-- integration -->
     </groups>
-        <test started-at="2025-03-20T11:55:00 IST" name="Weekend Loan Apply with guarantor"
-              finished-at="2025-03-20T11:55:23 IST" duration-ms="23524">
+        <test started-at="2025-03-20T12:20:14 IST" name="Weekend Loan Apply with guarantor"
+              finished-at="2025-03-20T12:20:34 IST" duration-ms="19499">
       <class name="WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest">
           <test-method is-config="true"
-                       signature="setup()[pri:0, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@402bba4f]"
-                       started-at="2025-03-20T11:55:00 IST" name="setup" finished-at="2025-03-20T11:55:13 IST"
-                       duration-ms="13134" status="PASS">
+                       signature="setup()[pri:0, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@294425a7]"
+                       started-at="2025-03-20T12:20:14 IST" name="setup" finished-at="2025-03-20T12:20:24 IST"
+                       duration-ms="9878" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
           <test-method
-                  signature="goToLoanPage()[pri:1, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@402bba4f]"
-                  started-at="2025-03-20T11:55:13 IST" name="goToLoanPage" finished-at="2025-03-20T11:55:13 IST"
-                  duration-ms="202" status="PASS">
+                  signature="goToLoanPage()[pri:1, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@294425a7]"
+                  started-at="2025-03-20T12:20:24 IST" name="goToLoanPage" finished-at="2025-03-20T12:20:24 IST"
+                  duration-ms="200" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoanPage -->
           <test-method
-                  signature="applyLoan()[pri:2, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@402bba4f]"
-                  started-at="2025-03-20T11:55:13 IST" name="applyLoan" finished-at="2025-03-20T11:55:23 IST"
-                  duration-ms="9850" status="PASS">
+                  signature="applyLoan()[pri:2, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@294425a7]"
+                  started-at="2025-03-20T12:20:24 IST" name="applyLoan" finished-at="2025-03-20T12:20:33 IST"
+                  duration-ms="9066" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- applyLoan -->
           <test-method is-config="true"
-                       signature="quit()[pri:0, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@402bba4f]"
-                       started-at="2025-03-20T11:55:23 IST" name="quit" finished-at="2025-03-20T11:55:23 IST"
-                       duration-ms="278" status="PASS">
+                       signature="quit()[pri:0, instance:WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest@294425a7]"
+                       started-at="2025-03-20T12:20:33 IST" name="quit" finished-at="2025-03-20T12:20:34 IST"
+                       duration-ms="277" status="PASS">
               <reporter-output>
               </reporter-output>
           </test-method> <!-- quit -->
       </class> <!-- WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest -->
         </test> <!-- Weekend Loan Apply with guarantor -->
-        <test started-at="2025-03-20T11:55:23 IST" name="Long Term loan with guarantor"
-              finished-at="2025-03-20T11:55:43 IST" duration-ms="19610">
+        <test started-at="2025-03-20T12:20:34 IST" name="Long Term loan with guarantor"
+              finished-at="2025-03-20T12:20:53 IST" duration-ms="19431">
             <class name="LongTermLoanTest.ApplyLongTermWithGuarantorTest">
                 <test-method is-config="true"
-                             signature="setup()[pri:0, instance:LongTermLoanTest.ApplyLongTermWithGuarantorTest@38c6f217]"
-                             started-at="2025-03-20T11:55:23 IST" name="setup" finished-at="2025-03-20T11:55:31 IST"
-                             duration-ms="7877" status="PASS">
+                             signature="setup()[pri:0, instance:LongTermLoanTest.ApplyLongTermWithGuarantorTest@f6efaab]"
+                             started-at="2025-03-20T12:20:34 IST" name="setup" finished-at="2025-03-20T12:20:42 IST"
+                             duration-ms="8381" status="PASS">
                     <reporter-output>
                     </reporter-output>
                 </test-method> <!-- setup -->
                 <test-method
-                        signature="addlongtermloan()[pri:1, instance:LongTermLoanTest.ApplyLongTermWithGuarantorTest@38c6f217]"
-                        started-at="2025-03-20T11:55:31 IST" name="addlongtermloan"
-                        finished-at="2025-03-20T11:55:38 IST" duration-ms="6386" status="PASS">
+                        signature="addlongtermloan()[pri:1, instance:LongTermLoanTest.ApplyLongTermWithGuarantorTest@f6efaab]"
+                        started-at="2025-03-20T12:20:42 IST" name="addlongtermloan"
+                        finished-at="2025-03-20T12:20:48 IST" duration-ms="5809" status="PASS">
                     <reporter-output>
                     </reporter-output>
                 </test-method> <!-- addlongtermloan -->
                 <test-method
-                        signature="addGuarantor()[pri:2, instance:LongTermLoanTest.ApplyLongTermWithGuarantorTest@38c6f217]"
-                        started-at="2025-03-20T11:55:38 IST" name="addGuarantor" finished-at="2025-03-20T11:55:43 IST"
-                        duration-ms="5344" status="PASS">
+                        signature="addGuarantor()[pri:2, instance:LongTermLoanTest.ApplyLongTermWithGuarantorTest@f6efaab]"
+                        started-at="2025-03-20T12:20:48 IST" name="addGuarantor" finished-at="2025-03-20T12:20:53 IST"
+                        duration-ms="5239" status="PASS">
                     <reporter-output>
                     </reporter-output>
                 </test-method> <!-- addGuarantor -->
             </class> <!-- LongTermLoanTest.ApplyLongTermWithGuarantorTest -->
         </test> <!-- Long Term loan with guarantor -->
-        <test started-at="2025-03-20T11:55:43 IST" name="CMS loan with guarantor" finished-at="2025-03-20T11:57:12 IST"
-              duration-ms="89210">
+        <test started-at="2025-03-20T12:20:53 IST" name="CMS loan with guarantor" finished-at="2025-03-20T12:21:10 IST"
+              duration-ms="16856">
             <class name="CMSLoanTest.ApplyCMSLoanWithGuarantorTest">
                 <test-method is-config="true"
-                             signature="setup()[pri:0, instance:CMSLoanTest.ApplyCMSLoanWithGuarantorTest@3a93b025]"
-                             started-at="2025-03-20T11:55:43 IST" name="setup" finished-at="2025-03-20T11:56:53 IST"
-                             duration-ms="69576" status="PASS">
+                             signature="setup()[pri:0, instance:CMSLoanTest.ApplyCMSLoanWithGuarantorTest@409bf450]"
+                             started-at="2025-03-20T12:20:53 IST" name="setup" finished-at="2025-03-20T12:21:00 IST"
+                             duration-ms="7067" status="PASS">
                     <reporter-output>
                     </reporter-output>
                 </test-method> <!-- setup -->
                 <test-method
-                        signature="goToLoanPage()[pri:1, instance:CMSLoanTest.ApplyCMSLoanWithGuarantorTest@3a93b025]"
-                        started-at="2025-03-20T11:56:53 IST" name="goToLoanPage" finished-at="2025-03-20T11:56:54 IST"
-                        duration-ms="1267" status="PASS">
+                        signature="goToLoanPage()[pri:1, instance:CMSLoanTest.ApplyCMSLoanWithGuarantorTest@409bf450]"
+                        started-at="2025-03-20T12:21:00 IST" name="goToLoanPage" finished-at="2025-03-20T12:21:00 IST"
+                        duration-ms="130" status="PASS">
                     <reporter-output>
                     </reporter-output>
                 </test-method> <!-- goToLoanPage -->
-                <test-method signature="applyLoan()[pri:2, instance:CMSLoanTest.ApplyCMSLoanWithGuarantorTest@3a93b025]"
-                             started-at="2025-03-20T11:56:54 IST" name="applyLoan" finished-at="2025-03-20T11:57:02 IST"
-                             duration-ms="7805" status="FAIL">
-                    <exception class="org.openqa.selenium.UnhandledAlertException">
-                        <message>
-                            <![CDATA[unexpected alert open: {Alert text : {*} Eligibility Error: Applicant age must be between 18 and 57 years to qualify for a Wallet Advance.}
-  (Session info: chrome=134.0.6998.89): {*} Eligibility Error: Applicant age must be between 18 and 57 years to qualify for a Wallet Advance.
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [43a6623e21f0e1ccb8f0aa7d6295ffc6, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\ROHIT~1.MAT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59838}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59838/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 43a6623e21f0e1ccb8f0aa7d6295ffc6]]>
-                        </message>
-                        <full-stacktrace>
-                            <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : {*} Eligibility Error: Applicant age must be between 18 and 57 years to qualify for a Wallet Advance.}
-  (Session info: chrome=134.0.6998.89): {*} Eligibility Error: Applicant age must be between 18 and 57 years to qualify for a Wallet Advance.
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [43a6623e21f0e1ccb8f0aa7d6295ffc6, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\ROHIT~1.MAT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59838}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59838/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 43a6623e21f0e1ccb8f0aa7d6295ffc6
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:334)
-at Base.ChainTestListener.onTestFailure(ChainTestListener.java:216)
-at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:115)
-at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:285)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:774)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-]]>
-                        </full-stacktrace>
-                    </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+                <test-method signature="applyLoan()[pri:2, instance:CMSLoanTest.ApplyCMSLoanWithGuarantorTest@409bf450]"
+                             started-at="2025-03-20T12:21:00 IST" name="applyLoan" finished-at="2025-03-20T12:21:05 IST"
+                             duration-ms="4345" status="PASS">
                     <reporter-output>
                     </reporter-output>
                 </test-method> <!-- applyLoan -->
                 <test-method
-                        signature="addGuarantor()[pri:3, instance:CMSLoanTest.ApplyCMSLoanWithGuarantorTest@3a93b025]"
-                        started-at="2025-03-20T11:57:02 IST" name="addGuarantor" finished-at="2025-03-20T11:57:11 IST"
-                        duration-ms="9254" status="FAIL">
-                    <exception class="org.openqa.selenium.UnhandledAlertException">
-                        <message>
-                            <![CDATA[unexpected alert open: {Alert text : {*} Eligibility Error: Applicant age must be between 18 and 57 years to qualify for a Wallet Advance.}
-  (Session info: chrome=134.0.6998.89): {*} Eligibility Error: Applicant age must be between 18 and 57 years to qualify for a Wallet Advance.
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [43a6623e21f0e1ccb8f0aa7d6295ffc6, findElement {value=ctl00$ContentPlaceHolder1$txtLoanNo, using=name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\ROHIT~1.MAT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59838}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59838/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 43a6623e21f0e1ccb8f0aa7d6295ffc6]]>
-                        </message>
-                        <full-stacktrace>
-                            <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : {*} Eligibility Error: Applicant age must be between 18 and 57 years to qualify for a Wallet Advance.}
-  (Session info: chrome=134.0.6998.89): {*} Eligibility Error: Applicant age must be between 18 and 57 years to qualify for a Wallet Advance.
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [43a6623e21f0e1ccb8f0aa7d6295ffc6, findElement {value=ctl00$ContentPlaceHolder1$txtLoanNo, using=name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\ROHIT~1.MAT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59838}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59838/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 43a6623e21f0e1ccb8f0aa7d6295ffc6
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-at CMSLoan.CMSLoanResultPage.enterLoanNumber(CMSLoanResultPage.java:50)
-at CMSLoanTest.ApplyCMSLoanWithGuarantorTest.addGuarantor(ApplyCMSLoanWithGuarantorTest.java:135)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-]]>
-                        </full-stacktrace>
-                    </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+                        signature="addGuarantor()[pri:3, instance:CMSLoanTest.ApplyCMSLoanWithGuarantorTest@409bf450]"
+                        started-at="2025-03-20T12:21:05 IST" name="addGuarantor" finished-at="2025-03-20T12:21:10 IST"
+                        duration-ms="5308" status="PASS">
                     <reporter-output>
                     </reporter-output>
                 </test-method> <!-- addGuarantor -->
             </class> <!-- CMSLoanTest.ApplyCMSLoanWithGuarantorTest -->
         </test> <!-- CMS loan with guarantor -->
-        <test started-at="2025-03-20T11:57:12 IST" name="Other Product Loan with guarantor"
-              finished-at="2025-03-20T11:57:31 IST" duration-ms="19045">
+        <test started-at="2025-03-20T12:21:10 IST" name="Other Product Loan with guarantor"
+              finished-at="2025-03-20T12:21:29 IST" duration-ms="18663">
             <class name="OtherProductLoanTest.ApplyOtherProductWithGuarantorTest">
                 <test-method is-config="true"
-                             signature="setup()[pri:0, instance:OtherProductLoanTest.ApplyOtherProductWithGuarantorTest@36bc55de]"
-                             started-at="2025-03-20T11:57:12 IST" name="setup" finished-at="2025-03-20T11:57:21 IST"
-                             duration-ms="8350" status="PASS">
+                             signature="setup()[pri:0, instance:OtherProductLoanTest.ApplyOtherProductWithGuarantorTest@2a3b5b47]"
+                             started-at="2025-03-20T12:21:10 IST" name="setup" finished-at="2025-03-20T12:21:18 IST"
+                             duration-ms="7908" status="PASS">
                     <reporter-output>
                     </reporter-output>
                 </test-method> <!-- setup -->
                 <test-method
-                        signature="addlongtermloan()[pri:1, instance:OtherProductLoanTest.ApplyOtherProductWithGuarantorTest@36bc55de]"
-                        started-at="2025-03-20T11:57:21 IST" name="addlongtermloan"
-                        finished-at="2025-03-20T11:57:26 IST" duration-ms="5731" status="PASS">
+                        signature="addlongtermloan()[pri:1, instance:OtherProductLoanTest.ApplyOtherProductWithGuarantorTest@2a3b5b47]"
+                        started-at="2025-03-20T12:21:18 IST" name="addlongtermloan"
+                        finished-at="2025-03-20T12:21:23 IST" duration-ms="5717" status="PASS">
                     <reporter-output>
                     </reporter-output>
                 </test-method> <!-- addlongtermloan -->
                 <test-method
-                        signature="addGuarantor()[pri:2, instance:OtherProductLoanTest.ApplyOtherProductWithGuarantorTest@36bc55de]"
-                        started-at="2025-03-20T11:57:26 IST" name="addGuarantor" finished-at="2025-03-20T11:57:31 IST"
-                        duration-ms="4961" status="PASS">
+                        signature="addGuarantor()[pri:2, instance:OtherProductLoanTest.ApplyOtherProductWithGuarantorTest@2a3b5b47]"
+                        started-at="2025-03-20T12:21:23 IST" name="addGuarantor" finished-at="2025-03-20T12:21:29 IST"
+                        duration-ms="5030" status="PASS">
                     <reporter-output>
                     </reporter-output>
                 </test-method> <!-- addGuarantor -->
             </class> <!-- OtherProductLoanTest.ApplyOtherProductWithGuarantorTest -->
         </test> <!-- Other Product Loan with guarantor -->
-        <test started-at="2025-03-20T11:57:31 IST" name="Short Term Loan" finished-at="2025-03-20T11:57:51 IST"
-              duration-ms="19567">
+        <test started-at="2025-03-20T12:21:29 IST" name="Short Term Loan" finished-at="2025-03-20T12:21:48 IST"
+              duration-ms="19520">
             <class name="ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest">
                 <test-method is-config="true"
-                             signature="setup()[pri:0, instance:ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest@1d2adfbe]"
-                             started-at="2025-03-20T11:57:31 IST" name="setup" finished-at="2025-03-20T11:57:40 IST"
-                             duration-ms="8627" status="PASS">
+                             signature="setup()[pri:0, instance:ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest@18078bef]"
+                             started-at="2025-03-20T12:21:29 IST" name="setup" finished-at="2025-03-20T12:21:36 IST"
+                             duration-ms="7329" status="PASS">
                     <reporter-output>
                     </reporter-output>
                 </test-method> <!-- setup -->
                 <test-method
-                        signature="goToLoanPage()[pri:1, instance:ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest@1d2adfbe]"
-                        started-at="2025-03-20T11:57:40 IST" name="goToLoanPage" finished-at="2025-03-20T11:57:41 IST"
-                        duration-ms="1007" status="PASS">
+                        signature="goToLoanPage()[pri:1, instance:ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest@18078bef]"
+                        started-at="2025-03-20T12:21:36 IST" name="goToLoanPage" finished-at="2025-03-20T12:21:37 IST"
+                        duration-ms="1076" status="PASS">
                     <reporter-output>
                     </reporter-output>
                 </test-method> <!-- goToLoanPage -->
                 <test-method
-                        signature="applyLoan()[pri:2, instance:ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest@1d2adfbe]"
-                        started-at="2025-03-20T11:57:41 IST" name="applyLoan" finished-at="2025-03-20T11:57:46 IST"
-                        duration-ms="4738" status="PASS">
+                        signature="applyLoan()[pri:2, instance:ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest@18078bef]"
+                        started-at="2025-03-20T12:21:37 IST" name="applyLoan" finished-at="2025-03-20T12:21:42 IST"
+                        duration-ms="5039" status="PASS">
                     <reporter-output>
                     </reporter-output>
                 </test-method> <!-- applyLoan -->
                 <test-method
-                        signature="addGuarantor()[pri:3, instance:ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest@1d2adfbe]"
-                        started-at="2025-03-20T11:57:46 IST" name="addGuarantor" finished-at="2025-03-20T11:57:51 IST"
-                        duration-ms="5190" status="PASS">
+                        signature="addGuarantor()[pri:3, instance:ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest@18078bef]"
+                        started-at="2025-03-20T12:21:42 IST" name="addGuarantor" finished-at="2025-03-20T12:21:48 IST"
+                        duration-ms="6073" status="PASS">
                     <reporter-output>
                     </reporter-output>
                 </test-method> <!-- addGuarantor -->
