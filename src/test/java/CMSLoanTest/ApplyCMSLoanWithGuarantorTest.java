@@ -148,7 +148,7 @@ public class ApplyCMSLoanWithGuarantorTest extends BaseClassUAT2 {
         String aadharDoc = excelUtil.getCellData("CMSLoan", 14, 1);
         guarantorPage.enterGuarantorDetail("DELHI & NCR", "GURGAON", "Rohit Mathur", "8290336521", "rohit.mathur@roinet.in",
               "Salaried", "friend", "3", "ABCDE TOWER 10, FLAT 903, NEAR HUDA MARKET, TWIN TOWER", "123456"
-              , "536350660843", "BXRPM9931K", panDoc, aadharDoc, bankStmt, "no", "22/07/1993", "Male");
+              , "536350660843", "BXROE9931K", panDoc, aadharDoc, bankStmt, "no", "22/07/1993", "Male");
         guarantorPage.clickSaveButton();
       }
     }

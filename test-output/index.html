@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
               <a class="navigator-link" href="#" panel-name="suite-All_loan_apply_with_guarantor">
-                  <span class="suite-name border-passed">All loan apply with guarantor</span>
+                  <span class="suite-name border-failed">All loan apply with guarantor</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,8 +92,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                      <span class="method-stats">12 methods,   12 passed</span>
+                      <span class="method-stats">12 methods, 2 failed,   10 passed</span>
                   </li>
+                    <li>
+                        <span class="method-list-title failed">Failed methods</span>
+                        <span class="show-or-hide-methods failed">
+                      <a class="hide-methods failed suite-All_loan_apply_with_guarantor" href="#"
+                         panel-name="suite-All_loan_apply_with_guarantor"> (hide)</a>
+                            <!-- hide-methods failed suite-All_loan_apply_with_guarantor -->
+                      <a class="show-methods failed suite-All_loan_apply_with_guarantor" href="#"
+                         panel-name="suite-All_loan_apply_with_guarantor"> (show)</a>
+                            <!-- show-methods failed suite-All_loan_apply_with_guarantor -->
+                    </span>
+                        <div class="method-list-content failed suite-All_loan_apply_with_guarantor">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a class="method navigator-link" hash-for-method="addGuarantor"
+                           href="#" panel-name="suite-All_loan_apply_with_guarantor"
+                           title="CMSLoanTest.ApplyCMSLoanWithGuarantorTest">addGuarantor</a> <!-- method navigator-link -->
+                      </span>
+                            <br/>
+                            <span>
+                        <img src="failed.png" width="3%"/>
+                        <a class="method navigator-link" hash-for-method="applyLoan"
+                           href="#" panel-name="suite-All_loan_apply_with_guarantor"
+                           title="CMSLoanTest.ApplyCMSLoanWithGuarantorTest">applyLoan</a> <!-- method navigator-link -->
+                      </span>
+                            <br/>
+                        </div> <!-- method-list-content failed suite-All_loan_apply_with_guarantor -->
+                    </li>
                     <li>
                         <span class="method-list-title passed">Passed methods</span>
                         <span class="show-or-hide-methods passed">
@@ -110,13 +137,6 @@
                         <a class="method navigator-link" hash-for-method="addGuarantor"
                            href="#" panel-name="suite-All_loan_apply_with_guarantor"
                            title="LongTermLoanTest.ApplyLongTermWithGuarantorTest">addGuarantor</a> <!-- method navigator-link -->
-                      </span>
-                            <br/>
-                            <span>
-                        <img src="passed.png" width="3%"/>
-                        <a class="method navigator-link" hash-for-method="addGuarantor"
-                           href="#" panel-name="suite-All_loan_apply_with_guarantor"
-                           title="CMSLoanTest.ApplyCMSLoanWithGuarantorTest">addGuarantor</a> <!-- method navigator-link -->
                       </span>
                             <br/>
                             <span>
@@ -140,7 +160,7 @@
                            title="LongTermLoanTest.ApplyLongTermWithGuarantorTest">addlongtermloan</a> <!-- method navigator-link -->
                       </span>
                             <br/>
-                            <span>
+                      <span>
                         <img src="passed.png" width="3%"/>
                         <a class="method navigator-link" hash-for-method="addlongtermloan"
                            href="#" panel-name="suite-All_loan_apply_with_guarantor"
@@ -152,13 +172,6 @@
                         <a class="method navigator-link" hash-for-method="applyLoan"
                            href="#" panel-name="suite-All_loan_apply_with_guarantor"
                            title="WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest">applyLoan</a> <!-- method navigator-link -->
-                      </span>
-                            <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a class="method navigator-link" hash-for-method="applyLoan"
-                           href="#" panel-name="suite-All_loan_apply_with_guarantor"
-                           title="CMSLoanTest.ApplyCMSLoanWithGuarantorTest">applyLoan</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                             <span>
@@ -201,11 +214,155 @@
     <div class="wrapper">
       <div class="main-panel-root">
           <div class="panel All_loan_apply_with_guarantor" panel-name="suite-All_loan_apply_with_guarantor">
+              <div class="suite-All_loan_apply_with_guarantor-class-failed">
+                  <div class="main-panel-header rounded-window-top">
+                      <img src="failed.png"/>
+                      <span class="class-name">CMSLoanTest.ApplyCMSLoanWithGuarantorTest</span>
+                  </div> <!-- main-panel-header rounded-window-top -->
+                  <div class="main-panel-content rounded-window-bottom">
+                      <div class="method">
+                          <div class="method-content">
+                              <a name="addGuarantor">
+                              </a> <!-- addGuarantor -->
+                              <span class="method-name">addGuarantor</span>
+                              <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert
+                                  open: {Alert text : {*} Eligibility Error: Applicant age must be between 18 and 57
+                                  years to qualify for a Wallet Advance.}
+                                  (Session info: chrome=134.0.6998.89): {*} Eligibility Error: Applicant age must be
+                                  between 18 and 57 years to qualify for a Wallet Advance.
+                                  Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+                                  System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version:
+                                  &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+                                  Driver info: org.openqa.selenium.chrome.ChromeDriver
+                                  Command: [43a6623e21f0e1ccb8f0aa7d6295ffc6, findElement
+                                  {value=ctl00$ContentPlaceHolder1$txtLoanNo, using=name}]
+                                  Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion:
+                                  134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc...,
+                                  userDataDir: C:\Users\ROHIT~1.MAT\AppDat...}, fedcm:accounts: true,
+                                  goog:chromeOptions: {debuggerAddress: localhost:59838}, networkConnectionEnabled:
+                                  false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp:
+                                  ws://localhost:59838/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true,
+                                  strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script:
+                                  30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob:
+                                  true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true,
+                                  webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+                                  Session ID: 43a6623e21f0e1ccb8f0aa7d6295ffc6
+                                  at
+                                  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+                                  at
+                                  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+                                  at
+                                  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+                                  at
+                                  org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+                                  at
+                                  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+                                  at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+                                  at
+                                  org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+                                  at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+                                  at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+                                  at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+                                  at
+                                  org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+                                  at
+                                  org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+                                  at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+                                  at
+                                  org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+                                  at
+                                  org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+                                  at
+                                  org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+                                  at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+                                  at CMSLoan.CMSLoanResultPage.enterLoanNumber(CMSLoanResultPage.java:50)
+                                  at
+                                  CMSLoanTest.ApplyCMSLoanWithGuarantorTest.addGuarantor(ApplyCMSLoanWithGuarantorTest.java:135)
+                                  at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+                                  at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+                                  at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+                                  ... Removed 22 stack frames
+                              </div> <!-- stack-trace -->
+                          </div> <!-- method-content -->
+                      </div> <!-- method -->
+                      <div class="method">
+                          <div class="method-content">
+                              <a name="applyLoan">
+                              </a> <!-- applyLoan -->
+                              <span class="method-name">applyLoan</span>
+                              <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert
+                                  open: {Alert text : {*} Eligibility Error: Applicant age must be between 18 and 57
+                                  years to qualify for a Wallet Advance.}
+                                  (Session info: chrome=134.0.6998.89): {*} Eligibility Error: Applicant age must be
+                                  between 18 and 57 years to qualify for a Wallet Advance.
+                                  Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+                                  System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version:
+                                  &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+                                  Driver info: org.openqa.selenium.chrome.ChromeDriver
+                                  Command: [43a6623e21f0e1ccb8f0aa7d6295ffc6, screenshot {}]
+                                  Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion:
+                                  134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc...,
+                                  userDataDir: C:\Users\ROHIT~1.MAT\AppDat...}, fedcm:accounts: true,
+                                  goog:chromeOptions: {debuggerAddress: localhost:59838}, networkConnectionEnabled:
+                                  false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp:
+                                  ws://localhost:59838/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true,
+                                  strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script:
+                                  30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob:
+                                  true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true,
+                                  webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+                                  Session ID: 43a6623e21f0e1ccb8f0aa7d6295ffc6
+                                  at
+                                  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+                                  at
+                                  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+                                  at
+                                  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+                                  at
+                                  org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+                                  at
+                                  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+                                  at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+                                  at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+                                  at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+                                  at
+                                  org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:334)
+                                  at Base.ChainTestListener.onTestFailure(ChainTestListener.java:216)
+                                  at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+                                  at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+                                  at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+                                  ... Removed 21 stack frames
+                              </div> <!-- stack-trace -->
+                          </div> <!-- method-content -->
+                      </div> <!-- method -->
+                  </div> <!-- main-panel-content rounded-window-bottom -->
+              </div> <!-- suite-All_loan_apply_with_guarantor-class-failed -->
               <div class="suite-All_loan_apply_with_guarantor-class-passed">
                   <div class="main-panel-header rounded-window-top">
                       <img src="passed.png"/>
-                      <span class="class-name">ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest</span>
+                      <span class="class-name">WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest</span>
                   </div> <!-- main-panel-header rounded-window-top -->
+                  <div class="main-panel-content rounded-window-bottom">
+                      <div class="method">
+                          <div class="method-content">
+                              <a name="applyLoan">
+                              </a> <!-- applyLoan -->
+                              <span class="method-name">applyLoan</span>
+                          </div> <!-- method-content -->
+                      </div> <!-- method -->
+                      <div class="method">
+                          <div class="method-content">
+                              <a name="goToLoanPage">
+                              </a> <!-- goToLoanPage -->
+                              <span class="method-name">goToLoanPage</span>
+                          </div> <!-- method-content -->
+                      </div> <!-- method -->
+                  </div> <!-- main-panel-content rounded-window-bottom -->
+              </div> <!-- suite-All_loan_apply_with_guarantor-class-passed -->
+              <div class="suite-All_loan_apply_with_guarantor-class-passed">
+            <div class="main-panel-header rounded-window-top">
+                <img src="passed.png"/>
+                <span class="class-name">ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
                   <div class="main-panel-content rounded-window-bottom">
                       <div class="method">
                           <div class="method-content">
@@ -231,10 +388,25 @@
                   </div> <!-- main-panel-content rounded-window-bottom -->
               </div> <!-- suite-All_loan_apply_with_guarantor-class-passed -->
               <div class="suite-All_loan_apply_with_guarantor-class-passed">
-            <div class="main-panel-header rounded-window-top">
-                <img src="passed.png"/>
-                <span class="class-name">OtherProductLoanTest.ApplyOtherProductWithGuarantorTest</span>
+                  <div class="main-panel-header rounded-window-top">
+                      <img src="passed.png"/>
+                      <span class="class-name">CMSLoanTest.ApplyCMSLoanWithGuarantorTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+                <div class="method">
+                    <div class="method-content">
+                        <a name="goToLoanPage">
+                        </a> <!-- goToLoanPage -->
+                        <span class="method-name">goToLoanPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+              </div> <!-- suite-All_loan_apply_with_guarantor-class-passed -->
+              <div class="suite-All_loan_apply_with_guarantor-class-passed">
+                  <div class="main-panel-header rounded-window-top">
+                      <img src="passed.png"/>
+                      <span class="class-name">OtherProductLoanTest.ApplyOtherProductWithGuarantorTest</span>
+                  </div> <!-- main-panel-header rounded-window-top -->
                   <div class="main-panel-content rounded-window-bottom">
                       <div class="method">
                           <div class="method-content">
@@ -256,28 +428,6 @@
                   <div class="main-panel-header rounded-window-top">
                       <img src="passed.png"/>
                       <span class="class-name">LongTermLoanTest.ApplyLongTermWithGuarantorTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-                <div class="method">
-                    <div class="method-content">
-                        <a name="addGuarantor">
-                        </a> <!-- addGuarantor -->
-                        <span class="method-name">addGuarantor</span>
-                    </div> <!-- method-content -->
-                </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                    <a name="addlongtermloan">
-                    </a> <!-- addlongtermloan -->
-                    <span class="method-name">addlongtermloan</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-              </div> <!-- suite-All_loan_apply_with_guarantor-class-passed -->
-              <div class="suite-All_loan_apply_with_guarantor-class-passed">
-                  <div class="main-panel-header rounded-window-top">
-                      <img src="passed.png"/>
-                      <span class="class-name">CMSLoanTest.ApplyCMSLoanWithGuarantorTest</span>
                   </div> <!-- main-panel-header rounded-window-top -->
                   <div class="main-panel-content rounded-window-bottom">
                       <div class="method">
@@ -289,38 +439,9 @@
                       </div> <!-- method -->
                       <div class="method">
                           <div class="method-content">
-                              <a name="applyLoan">
-                              </a> <!-- applyLoan -->
-                              <span class="method-name">applyLoan</span>
-                          </div> <!-- method-content -->
-                      </div> <!-- method -->
-                      <div class="method">
-                          <div class="method-content">
-                              <a name="goToLoanPage">
-                              </a> <!-- goToLoanPage -->
-                              <span class="method-name">goToLoanPage</span>
-                          </div> <!-- method-content -->
-                      </div> <!-- method -->
-                  </div> <!-- main-panel-content rounded-window-bottom -->
-              </div> <!-- suite-All_loan_apply_with_guarantor-class-passed -->
-              <div class="suite-All_loan_apply_with_guarantor-class-passed">
-                  <div class="main-panel-header rounded-window-top">
-                      <img src="passed.png"/>
-                      <span class="class-name">WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest</span>
-                  </div> <!-- main-panel-header rounded-window-top -->
-                  <div class="main-panel-content rounded-window-bottom">
-                      <div class="method">
-                          <div class="method-content">
-                              <a name="applyLoan">
-                              </a> <!-- applyLoan -->
-                              <span class="method-name">applyLoan</span>
-                          </div> <!-- method-content -->
-                      </div> <!-- method -->
-                      <div class="method">
-                          <div class="method-content">
-                              <a name="goToLoanPage">
-                              </a> <!-- goToLoanPage -->
-                              <span class="method-name">goToLoanPage</span>
+                              <a name="addlongtermloan">
+                              </a> <!-- addlongtermloan -->
+                              <span class="method-name">addlongtermloan</span>
                           </div> <!-- method-content -->
                       </div> <!-- method -->
                   </div> <!-- main-panel-content rounded-window-bottom -->
@@ -432,56 +553,56 @@
                   data.setCell(0, 0, 0)
                   data.setCell(0, 1, 'applyLoan')
                   data.setCell(0, 2, 'WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest')
-                  data.setCell(0, 3, 9032);
+                  data.setCell(0, 3, 9850);
                   data.setCell(1, 0, 1)
-                  data.setCell(1, 1, 'addlongtermloan')
-                  data.setCell(1, 2, 'LongTermLoanTest.ApplyLongTermWithGuarantorTest')
-                  data.setCell(1, 3, 5879);
+                  data.setCell(1, 1, 'addGuarantor')
+                  data.setCell(1, 2, 'CMSLoanTest.ApplyCMSLoanWithGuarantorTest')
+                  data.setCell(1, 3, 9254);
                   data.setCell(2, 0, 2)
-                  data.setCell(2, 1, 'addlongtermloan')
-                  data.setCell(2, 2, 'OtherProductLoanTest.ApplyOtherProductWithGuarantorTest')
-                  data.setCell(2, 3, 5245);
+                  data.setCell(2, 1, 'applyLoan')
+                  data.setCell(2, 2, 'CMSLoanTest.ApplyCMSLoanWithGuarantorTest')
+                  data.setCell(2, 3, 7805);
                   data.setCell(3, 0, 3)
-                  data.setCell(3, 1, 'addGuarantor')
-                  data.setCell(3, 2, 'CMSLoanTest.ApplyCMSLoanWithGuarantorTest')
-                  data.setCell(3, 3, 4936);
+                  data.setCell(3, 1, 'addlongtermloan')
+                  data.setCell(3, 2, 'LongTermLoanTest.ApplyLongTermWithGuarantorTest')
+                  data.setCell(3, 3, 6386);
                   data.setCell(4, 0, 4)
-                  data.setCell(4, 1, 'addGuarantor')
-                  data.setCell(4, 2, 'ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest')
-                  data.setCell(4, 3, 4911);
+                  data.setCell(4, 1, 'addlongtermloan')
+                  data.setCell(4, 2, 'OtherProductLoanTest.ApplyOtherProductWithGuarantorTest')
+                  data.setCell(4, 3, 5731);
                   data.setCell(5, 0, 5)
                   data.setCell(5, 1, 'addGuarantor')
-                  data.setCell(5, 2, 'OtherProductLoanTest.ApplyOtherProductWithGuarantorTest')
-                  data.setCell(5, 3, 4864);
+                  data.setCell(5, 2, 'LongTermLoanTest.ApplyLongTermWithGuarantorTest')
+                  data.setCell(5, 3, 5344);
                   data.setCell(6, 0, 6)
                   data.setCell(6, 1, 'addGuarantor')
-                  data.setCell(6, 2, 'LongTermLoanTest.ApplyLongTermWithGuarantorTest')
-                  data.setCell(6, 3, 4689);
+                  data.setCell(6, 2, 'ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest')
+                  data.setCell(6, 3, 5190);
                   data.setCell(7, 0, 7)
-                  data.setCell(7, 1, 'applyLoan')
-                  data.setCell(7, 2, 'ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest')
-                  data.setCell(7, 3, 4553);
+                  data.setCell(7, 1, 'addGuarantor')
+                  data.setCell(7, 2, 'OtherProductLoanTest.ApplyOtherProductWithGuarantorTest')
+                  data.setCell(7, 3, 4961);
                   data.setCell(8, 0, 8)
                   data.setCell(8, 1, 'applyLoan')
-                  data.setCell(8, 2, 'CMSLoanTest.ApplyCMSLoanWithGuarantorTest')
-                  data.setCell(8, 3, 4313);
+                  data.setCell(8, 2, 'ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest')
+                  data.setCell(8, 3, 4738);
                   data.setCell(9, 0, 9)
                   data.setCell(9, 1, 'goToLoanPage')
-                  data.setCell(9, 2, 'ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest')
-                  data.setCell(9, 3, 1042);
+                  data.setCell(9, 2, 'CMSLoanTest.ApplyCMSLoanWithGuarantorTest')
+                  data.setCell(9, 3, 1267);
                   data.setCell(10, 0, 10)
                   data.setCell(10, 1, 'goToLoanPage')
-                  data.setCell(10, 2, 'WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest')
-                  data.setCell(10, 3, 179);
+                  data.setCell(10, 2, 'ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest')
+                  data.setCell(10, 3, 1007);
                   data.setCell(11, 0, 11)
                   data.setCell(11, 1, 'goToLoanPage')
-                  data.setCell(11, 2, 'CMSLoanTest.ApplyCMSLoanWithGuarantorTest')
-                  data.setCell(11, 3, 175);
+                  data.setCell(11, 2, 'WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest')
+                  data.setCell(11, 3, 202);
                   window.suiteTableData['All_loan_apply_with_guarantor']= { tableData: data, tableDiv: 'times-div-All_loan_apply_with_guarantor'}
                   return data;
                   }
               </script>
-                <span class="suite-total-time">Total running time: 49 seconds</span>
+                <span class="suite-total-time">Total running time: 1 minutes</span>
                 <div id="times-div-All_loan_apply_with_guarantor">
                 </div> <!-- times-div-All_loan_apply_with_guarantor -->
             </div> <!-- times-div -->
@@ -514,15 +635,15 @@
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">goToLoanPage</span>
-                  <span class="method-start">9994 ms</span>
+                  <span class="method-start">13155 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">applyLoan</span>
-                  <span class="method-start">10182 ms</span>
+                  <span class="method-start">13372 ms</span>
               </div> <!-- test-method -->
                 <div class="configuration-class after">
                     <span class="method-name">quit</span>
-                    <span class="method-start">19215 ms</span>
+                    <span class="method-start">23224 ms</span>
                 </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
               <div class="chronological-class">
@@ -530,15 +651,15 @@
                   <!-- chronological-class-name -->
                   <div class="configuration-class before">
                       <span class="method-name">setup</span>
-                      <span class="method-start">19530 ms</span>
+                      <span class="method-start">23521 ms</span>
                   </div> <!-- configuration-class before -->
                   <div class="test-method">
                       <span class="method-name">addlongtermloan</span>
-                      <span class="method-start">26670 ms</span>
+                      <span class="method-start">31399 ms</span>
                   </div> <!-- test-method -->
                   <div class="test-method">
                       <span class="method-name">addGuarantor</span>
-                      <span class="method-start">32551 ms</span>
+                      <span class="method-start">37786 ms</span>
                   </div> <!-- test-method -->
               </div> <!-- chronological-class -->
               <div class="chronological-class">
@@ -546,19 +667,23 @@
                   <!-- chronological-class-name -->
                   <div class="configuration-class before">
                       <span class="method-name">setup</span>
-                      <span class="method-start">37247 ms</span>
+                      <span class="method-start">43139 ms</span>
                   </div> <!-- configuration-class before -->
                   <div class="test-method">
                       <span class="method-name">goToLoanPage</span>
-                      <span class="method-start">44284 ms</span>
+                      <span class="method-start">112715 ms</span>
                   </div> <!-- test-method -->
                   <div class="test-method">
+                      <img src="failed.png">
+                      </img>
                       <span class="method-name">applyLoan</span>
-                      <span class="method-start">44462 ms</span>
+                      <span class="method-start">113983 ms</span>
                   </div> <!-- test-method -->
                   <div class="test-method">
+                      <img src="failed.png">
+                      </img>
                       <span class="method-name">addGuarantor</span>
-                      <span class="method-start">48777 ms</span>
+                      <span class="method-start">122244 ms</span>
                   </div> <!-- test-method -->
               </div> <!-- chronological-class -->
               <div class="chronological-class">
@@ -566,15 +691,15 @@
                   <!-- chronological-class-name -->
                   <div class="configuration-class before">
                       <span class="method-name">setup</span>
-                      <span class="method-start">53721 ms</span>
+                      <span class="method-start">132365 ms</span>
                   </div> <!-- configuration-class before -->
                   <div class="test-method">
                       <span class="method-name">addlongtermloan</span>
-                      <span class="method-start">60197 ms</span>
+                      <span class="method-start">140716 ms</span>
                   </div> <!-- test-method -->
                   <div class="test-method">
                       <span class="method-name">addGuarantor</span>
-                      <span class="method-start">65443 ms</span>
+                      <span class="method-start">146448 ms</span>
                   </div> <!-- test-method -->
               </div> <!-- chronological-class -->
               <div class="chronological-class">
@@ -582,19 +707,19 @@
                   <!-- chronological-class-name -->
                   <div class="configuration-class before">
                       <span class="method-name">setup</span>
-                      <span class="method-start">70317 ms</span>
+                      <span class="method-start">151420 ms</span>
                   </div> <!-- configuration-class before -->
                   <div class="test-method">
                       <span class="method-name">goToLoanPage</span>
-                      <span class="method-start">77438 ms</span>
+                      <span class="method-start">160048 ms</span>
                   </div> <!-- test-method -->
                   <div class="test-method">
                       <span class="method-name">applyLoan</span>
-                      <span class="method-start">78480 ms</span>
+                      <span class="method-start">161056 ms</span>
                   </div> <!-- test-method -->
                   <div class="test-method">
                       <span class="method-name">addGuarantor</span>
-                      <span class="method-start">83034 ms</span>
+                      <span class="method-start">165795 ms</span>
                   </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

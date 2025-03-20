@@ -4,15 +4,15 @@
     <listeners>
         <listener class-name="Base.ChainTestListener"/>
     </listeners>
-    <test thread-count="5" name="Short Term Loan(failed)">
+    <test thread-count="5" name="CMS loan with guarantor(failed)">
         <classes>
-            <class name="ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest">
+            <class name="CMSLoanTest.ApplyCMSLoanWithGuarantorTest">
                 <methods>
-                    <include name="addGuarantor"/>
                     <include name="applyLoan"/>
                     <include name="setup"/>
+                    <include name="addGuarantor"/>
                 </methods>
-            </class> <!-- ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest -->
+            </class> <!-- CMSLoanTest.ApplyCMSLoanWithGuarantorTest -->
         </classes>
-    </test> <!-- Short Term Loan(failed) -->
+    </test> <!-- CMS loan with guarantor(failed) -->
 </suite> <!-- Failed suite [All loan apply with guarantor] -->
