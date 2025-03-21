@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Approve All Loan">
+    <listeners>
+        <listener class-name="Base.ChainTestListener"/>
+    </listeners>
+    <test name="Short Term Loan approve with guarantor">
+        <classes>
+            <class name="ShortTermLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest"/>
+            <class name="ShortTermLoanTest.ApproveShortTermLoanAdminTest"/>
+        </classes>
+    </test>
+</suite>

@@ -21,11 +21,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.time.Duration;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class ApplyWeekendLoanWithGuarantorTest extends BaseClassUAT2 {
 
@@ -47,7 +43,7 @@ public class ApplyWeekendLoanWithGuarantorTest extends BaseClassUAT2 {
     String excelPath = "src/main/java/data/LendingData.xlsx";
     Browserintialize("chrome", "https://uatxpresso.roinet.in/Login.aspx");
     ChainTestListener.log("log chrom");
-    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     excelUtil = new ExcelUtil(excelPath);
     homePage = new HomePage();
     loginPage = new LoginPage();
@@ -56,7 +52,7 @@ public class ApplyWeekendLoanWithGuarantorTest extends BaseClassUAT2 {
     guarantorPage = new GuarantorPage();
     softAssert = new SoftAssert();
     dbMTEST = new DbMTEST();
-    String cspUser = excelUtil.getCellData("WeekendLoan", 16, 1).trim();
+    String cspUser = excelUtil.getCellData(prop.getProperty("WeekendSheetName"), 16, 1).trim();
     System.out.println("checking the user.: " + cspUser);
     String getChannelId = "select userid from tm_user where usercode='" + cspUser + "'";
 
@@ -75,38 +71,38 @@ public class ApplyWeekendLoanWithGuarantorTest extends BaseClassUAT2 {
 
   }
 
-  @Test(priority = 1, testName = "click add loan to navigate to loan page",groups = {"regression"})
+  @Test(priority = 1, testName = "click add loan to navigate to loan page")
   public void goToLoanPage() throws IOException {
     ChainTestListener.log("log chrom");
     weekendLoanResultPage.clickAddButton();
   }
 
-  @Test(priority = 2, testName = "apply for loan with guarantor.",groups = {"integration"})
+  @Test(priority = 2, testName = "apply for loan with guarantor.")
   public void applyLoan() throws Exception {
     ChainTestListener.log("log chrom");
-    String spouse = excelUtil.getCellData("WeekendLoan", 1, 1);
-    String loanAmount = excelUtil.getCellData("WeekendLoan", 2, 1);
-    String gstStmt = excelUtil.getCellData("WeekendLoan", 3, 1);
-    String bankStmt = excelUtil.getCellData("WeekendLoan", 4, 1);
-    String otherDoc = excelUtil.getCellData("WeekendLoan", 5, 1);
-    String chequeScan = excelUtil.getCellData("WeekendLoan", 6, 1);
-    String chequeNumber = excelUtil.getCellData("WeekendLoan", 7, 1);
-    String chequeBank = excelUtil.getCellData("WeekendLoan", 8, 1);
-    String chequeOf = excelUtil.getCellData("WeekendLoan", 9, 1);
-    String apprEmail = excelUtil.getCellData("WeekendLoan", 10, 1);
-    String panNumber = excelUtil.getCellData("WeekendLoan", 11, 1);
-    String panDoc = excelUtil.getCellData("WeekendLoan", 12, 1);
-    String aadharNumber = excelUtil.getCellData("WeekendLoan", 13, 1);
-    String aadharDoc = excelUtil.getCellData("WeekendLoan", 14, 1);
-    String cibilDoc = excelUtil.getCellData("WeekendLoan", 15, 1);
-    String walletExposureAmt = excelUtil.getCellData("WeekendLoan", 23, 1);
-    String resStability = excelUtil.getCellData("WeekendLoan", 24, 1);
+    String spouse = excelUtil.getCellData(prop.getProperty("WeekendSheetName"), 1, 1);
+    String loanAmount = excelUtil.getCellData(prop.getProperty("WeekendSheetName"), 2, 1);
+    String gstStmt = excelUtil.getCellData(prop.getProperty("WeekendSheetName"), 3, 1);
+    String bankStmt = excelUtil.getCellData(prop.getProperty("WeekendSheetName"), 4, 1);
+    String otherDoc = excelUtil.getCellData(prop.getProperty("WeekendSheetName"), 5, 1);
+    String chequeScan = excelUtil.getCellData(prop.getProperty("WeekendSheetName"), 6, 1);
+    String chequeNumber = excelUtil.getCellData(prop.getProperty("WeekendSheetName"), 7, 1);
+    String chequeBank = excelUtil.getCellData(prop.getProperty("WeekendSheetName"), 8, 1);
+    String chequeOf = excelUtil.getCellData(prop.getProperty("WeekendSheetName"), 9, 1);
+    String apprEmail = excelUtil.getCellData(prop.getProperty("WeekendSheetName"), 10, 1);
+    String panNumber = excelUtil.getCellData(prop.getProperty("WeekendSheetName"), 11, 1);
+    String panDoc = excelUtil.getCellData(prop.getProperty("WeekendSheetName"), 12, 1);
+    String aadharNumber = excelUtil.getCellData(prop.getProperty("WeekendSheetName"), 13, 1);
+    String aadharDoc = excelUtil.getCellData(prop.getProperty("WeekendSheetName"), 14, 1);
+    String cibilDoc = excelUtil.getCellData(prop.getProperty("WeekendSheetName"), 15, 1);
+    String walletExposureAmt = excelUtil.getCellData(prop.getProperty("WeekendSheetName"), 23, 1);
+    String resStability = excelUtil.getCellData(prop.getProperty("WeekendSheetName"), 24, 1);
     addWeekendLoanPage.fillLoanDetails(spouse, loanAmount, gstStmt, bankStmt, otherDoc,
           chequeScan, chequeNumber, chequeBank, walletExposureAmt, resStability, chequeOf, apprEmail, panNumber, panDoc, aadharNumber,
           aadharDoc, cibilDoc);
     addWeekendLoanPage.clickSaveButton();
     String loanNumber = addWeekendLoanPage.getLoanNumber();
-    File file = new File("loanNumber.txt");
+    File file = new File("weekendLoanNumber.txt");
     try {
       // Check if the file exists
       if (!file.exists()) {
@@ -138,6 +134,10 @@ public class ApplyWeekendLoanWithGuarantorTest extends BaseClassUAT2 {
     String weekendResult = driver.getWindowHandle();
     Set<String> windowSet = driver.getWindowHandles();
     Iterator<String> i = windowSet.iterator();
+    int max = 9999;
+    int min = 1111;
+    Random random = new Random();
+    int pannumber = random.nextInt(max - min + 1) + min;
     while (i.hasNext()) {
       String guarantorWindow = i.next();
       if (!weekendResult.equals(guarantorWindow)) {
@@ -145,7 +145,7 @@ public class ApplyWeekendLoanWithGuarantorTest extends BaseClassUAT2 {
 
         guarantorPage.enterGuarantorDetail("DELHI & NCR", "GURGAON", "Rohit Mathur", "8290336521", "rohit.mathur@roinet.in",
               "Salaried", "friend", "3", "ABCDE TOWER 10, FLAT 903, NEAR HUDA MARKET, TWIN TOWER", "123456"
-              , "536350660843", "BXRPM9931K", panDoc, aadharDoc, bankStmt, "no","22/07/1993","Male");
+              , "536350660843", "BXRPM" + pannumber + "K", panDoc, aadharDoc, bankStmt, "no", "22/07/1993", "Male");
         guarantorPage.clickSaveButton();
       }
 

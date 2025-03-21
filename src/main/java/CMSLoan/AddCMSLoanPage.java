@@ -104,12 +104,22 @@ public class AddCMSLoanPage extends BaseClassUAT2 {
 
   @FindBy(name = "ctl00$ContentPlaceHolder1$txtTotalLoanExposure")
   WebElement txtTotalLoanExposure;
+  @FindBy(name = "ctl00$ContentPlaceHolder1$txtApprovedRemarks")
+  WebElement txtApprovedRemarks;
 
+  @FindBy(name = "ctl00$ContentPlaceHolder1$fluEmailDocument")
+  WebElement fluEmailDocument;
 
   public AddCMSLoanPage() {
     PageFactory.initElements(driver, this);
     wait = new WebDriverWait(driver, Duration.ofSeconds(60));
     action = new Actions(driver);
+  }
+
+  public void addApprovalRemark(String approvalRemark) {
+    wait.until(ExpectedConditions.visibilityOf(txtApprovedRemarks));
+    action.moveToElement(txtApprovedRemarks).perform();
+    txtApprovedRemarks.sendKeys(approvalRemark);
   }
 
   public void fillLoanDetails(String spouseName, String stability, String exposure, String loanAmt, String tenureDays, String gstFile
@@ -145,7 +155,12 @@ public class AddCMSLoanPage extends BaseClassUAT2 {
     fileUploadCIBIL.sendKeys(cibilFile);
   }
 
+  public void attachapprovalEmailDoc(String emailDoc) {
+    action.moveToElement(fluEmailDocument).perform();
+    fluEmailDocument.sendKeys(emailDoc);
+  }
   public void clickSaveButton() {
+    action.moveToElement(btnSave).perform();
     btnSave.click();
   }
 

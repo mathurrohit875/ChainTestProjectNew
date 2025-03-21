@@ -86,6 +86,9 @@ public class AddShortTermLoanPage extends BaseClassUAT2 {
   @FindBy(name = "ctl00$ContentPlaceHolder1$btnAssign")
   WebElement btnAssign;
 
+  @FindBy(name = "ctl00$ContentPlaceHolder1$btnGoAhead")
+  WebElement btnGoAhead;
+
  /* @FindBy(name="ctl00$ContentPlaceHolder1$txtPenaltyAmount")
   WebElement txtPenaltyAmount;*/
 
@@ -126,11 +129,20 @@ public class AddShortTermLoanPage extends BaseClassUAT2 {
   @FindBy(name = "ctl00$ContentPlaceHolder1$txtTotalLoanExposure")
   WebElement txtTotalLoanExposure;
 
+  @FindBy(name = "ctl00$ContentPlaceHolder1$txtApprovedRemarks")
+  WebElement txtApprovedRemarks;
+  @FindBy(name = "ctl00$ContentPlaceHolder1$fluEmailDocument")
+  WebElement fluEmailDocument;
 
   public AddShortTermLoanPage() {
     PageFactory.initElements(driver, this);
     wait = new WebDriverWait(driver, Duration.ofSeconds(60));
     action = new Actions(driver);
+  }
+
+  public void attachapprovalEmailDoc(String emailDoc) {
+    action.moveToElement(fluEmailDocument).perform();
+    fluEmailDocument.sendKeys(emailDoc);
   }
 
   public void fillLoanDetails(String spouseName, String stability, String exposure, String loanAmt, String gstFile
@@ -157,6 +169,7 @@ public class AddShortTermLoanPage extends BaseClassUAT2 {
     updBankStatement.sendKeys(bankstmt);
     updOtherDocs.sendKeys(otherDoc);
     updChequeScanCopies.sendKeys(chequeScanCopy);
+    action.moveToElement(txtChequeNos).perform();
     txtChequeNos.sendKeys(chequeNo);
     txtChequeBank.sendKeys(chequeBank);
 
@@ -175,6 +188,12 @@ public class AddShortTermLoanPage extends BaseClassUAT2 {
 
   public void clickSaveButton() {
     btnAssign.click();
+  }
+
+  public void btnGoAhead() {
+    wait.until(ExpectedConditions.visibilityOf(btnGoAhead));
+    action.moveToElement(btnGoAhead).perform();
+    btnGoAhead.click();
   }
 
   public String getLoanNumber() throws Exception {
@@ -229,6 +248,12 @@ public class AddShortTermLoanPage extends BaseClassUAT2 {
     wait.until(ExpectedConditions.visibilityOf(ddlLoanStatus));
     Select select = new Select(ddlLoanStatus);
     select.selectByVisibleText(loanStatus);
+  }
+
+  public void addApprovalRemark(String approvalRemark) {
+    wait.until(ExpectedConditions.visibilityOf(txtApprovedRemarks));
+    action.moveToElement(txtApprovedRemarks).perform();
+    txtApprovedRemarks.sendKeys(approvalRemark);
   }
 
   public void changeGuarantorStatus(String guarantorStatus) {

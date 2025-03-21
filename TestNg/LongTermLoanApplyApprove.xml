@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Apply and Approve All Loan">
+    <listeners>
+        <listener class-name="Base.ChainTestListener"/>
+    </listeners>
+    <test name="Long Term Loan Apply and approve with guarantor">
+        <classes>
+            <class name="LongTermLoanTest.ApplyLongTermWithGuarantorTest"/>
+            <class name="LongTermLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest"/>
+            <class name="LongTermLoanTest.ApproveLongTermLoanAdminTest"/>
+        </classes>
+    </test>
+</suite>

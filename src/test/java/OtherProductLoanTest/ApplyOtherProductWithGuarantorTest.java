@@ -10,16 +10,13 @@ import Pages.HomePage;
 import Pages.LoginPage;
 import Utility.ExcelUtil;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import java.io.*;
-import java.time.Duration;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class ApplyOtherProductWithGuarantorTest extends BaseClassUAT2 {
 
@@ -40,7 +37,7 @@ public class ApplyOtherProductWithGuarantorTest extends BaseClassUAT2 {
   public void setup() throws IOException {
     String excelPath = "src/main/java/data/LendingData.xlsx";
     Browserintialize("chrome", "https://uatxpresso.roinet.in/Login.aspx");
-    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     excelUtil = new ExcelUtil(excelPath);
     otherProductLoanResultPage = new OtherProductLoanResultPage();
     homePage = new HomePage();
@@ -135,6 +132,10 @@ public class ApplyOtherProductWithGuarantorTest extends BaseClassUAT2 {
     String longTermResult = driver.getWindowHandle();
     Set<String> windowSet = driver.getWindowHandles();
     Iterator<String> i = windowSet.iterator();
+    int max = 9999;
+    int min = 1111;
+    Random random = new Random();
+    int pannumber = random.nextInt(max - min + 1) + min;
     while (i.hasNext()) {
       String guarantorWindow = i.next();
       if (!longTermResult.equals(guarantorWindow)) {
@@ -144,12 +145,17 @@ public class ApplyOtherProductWithGuarantorTest extends BaseClassUAT2 {
         String bankStatement = excelUtil.getCellData("OtherProductLoan", 15, 1).trim();
         guarantorPage.enterGuarantorDetail("DELHI & NCR", "GURGAON", "Rohit Mathur", "8290336521", "rohit.mathur@roinet.in",
               "Salaried", "friend", "3", "ABCDE TOWER 10, FLAT 903, NEAR HUDA MARKET, TWIN TOWER", "123456"
-              , "536350660843", "BXRPM9931K", panDocPath, aadharDocPath, bankStatement, "no", "22/07/1993", "Male");
+              , "536350660843", "BXRPM" + pannumber + "K", panDocPath, aadharDocPath, bankStatement, "no", "22/07/1993", "Male");
         guarantorPage.clickSaveButton();
       }
 
     }
     driver.switchTo().window(longTermResult);
+  }
+
+  @AfterClass
+  public void quit() {
+    driver.quit();
   }
 }
 

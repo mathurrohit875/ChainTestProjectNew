@@ -10,6 +10,7 @@ import Pages.HomePage;
 import Pages.LoginPage;
 import Utility.ExcelUtil;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -17,8 +18,8 @@ import org.testng.asserts.SoftAssert;
 import java.io.*;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.time.Duration;
 import java.util.Iterator;
+import java.util.Random;
 import java.util.Set;
 
 public class ApplyLongTermWithGuarantorTest extends BaseClassUAT2 {
@@ -40,7 +41,7 @@ public class ApplyLongTermWithGuarantorTest extends BaseClassUAT2 {
     String excelPath = "src/main/java/data/LendingData.xlsx";
     Browserintialize("chrome", "https://uatxpresso.roinet.in/Login.aspx");
     ChainTestListener.log("log chrom");
-    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     excelUtil = new ExcelUtil(excelPath);
     homePage = new HomePage();
     loginPage = new LoginPage();
@@ -49,7 +50,7 @@ public class ApplyLongTermWithGuarantorTest extends BaseClassUAT2 {
     guarantorPage = new GuarantorPage();
     softAssert = new SoftAssert();
     dbMTEST = new DbMTEST();
-    String cspUser = excelUtil.getCellData("LoanDetail", 37, 1).trim();
+    String cspUser = excelUtil.getCellData(prop.getProperty("longTermSheetName"), 37, 1).trim();
     System.out.println("checking the user.: " + cspUser);
     String getChannelId = "select userid from tm_user where usercode='" + cspUser + "'";
 
@@ -70,32 +71,32 @@ public class ApplyLongTermWithGuarantorTest extends BaseClassUAT2 {
   @Test(priority = 1, testName = "adding loan request")
   public void addlongtermloan() throws Exception {
     longTermResultPage.clickAddLoanButton();
-    String walletExposureAmt = excelUtil.getCellData("LoanDetail", 34, 1);
-    String resStability = excelUtil.getCellData("LoanDetail", 35, 1);
-    String spouse = excelUtil.getCellData("LoanDetail", 36, 1);
+    String walletExposureAmt = excelUtil.getCellData(prop.getProperty("longTermSheetName"), 34, 1);
+    String resStability = excelUtil.getCellData(prop.getProperty("longTermSheetName"), 35, 1);
+    String spouse = excelUtil.getCellData(prop.getProperty("longTermSheetName"), 36, 1);
 
     addLongTermLoan.enterLoanAmount("200000", walletExposureAmt, resStability, spouse);
     addLongTermLoan.DurationInMonth("3 Months");
     addLongTermLoan.SelectFrequency("Daily");
     addLongTermLoan.clickCheckbox();
-    String panNumber = excelUtil.getCellData("LoanDetail", 6, 1).trim();
-    String panDocPath = excelUtil.getCellData("LoanDetail", 7, 1).trim();
-    String aadharNumber = excelUtil.getCellData("LoanDetail", 8, 1).trim();
-    String aadharDocPath = excelUtil.getCellData("LoanDetail", 9, 1).trim();
-    String chequeScanCopyDoc = excelUtil.getCellData("LoanDetail", 10, 1).trim();
-    String chequeNumber = excelUtil.getCellData("LoanDetail", 11, 1).trim();
-    String chequeBank = excelUtil.getCellData("LoanDetail", 12, 1).trim();
-    String chequeOption = excelUtil.getCellData("LoanDetail", 13, 1).trim();
-    String gstDoc = excelUtil.getCellData("LoanDetail", 14, 1).trim();
-    String bankStatement = excelUtil.getCellData("LoanDetail", 15, 1).trim();
-    String otherDoc = excelUtil.getCellData("LoanDetail", 16, 1).trim();
-    String apprEmail = excelUtil.getCellData("LoanDetail", 17, 1).trim();
-    String ledgIncome = excelUtil.getCellData("LoanDetail", 18, 1).trim();
-    String shopowner = excelUtil.getCellData("LoanDetail", 19, 1).trim();
-    String otherBusiness = excelUtil.getCellData("LoanDetail", 20, 1).trim();
-    String operator = excelUtil.getCellData("LoanDetail", 21, 1).trim();
-    String otherloan = excelUtil.getCellData("LoanDetail", 22, 1).trim();
-    String cibil = excelUtil.getCellData("LoanDetail", 23, 1).trim();
+    String panNumber = excelUtil.getCellData(prop.getProperty("longTermSheetName"), 6, 1).trim();
+    String panDocPath = excelUtil.getCellData(prop.getProperty("longTermSheetName"), 7, 1).trim();
+    String aadharNumber = excelUtil.getCellData(prop.getProperty("longTermSheetName"), 8, 1).trim();
+    String aadharDocPath = excelUtil.getCellData(prop.getProperty("longTermSheetName"), 9, 1).trim();
+    String chequeScanCopyDoc = excelUtil.getCellData(prop.getProperty("longTermSheetName"), 10, 1).trim();
+    String chequeNumber = excelUtil.getCellData(prop.getProperty("longTermSheetName"), 11, 1).trim();
+    String chequeBank = excelUtil.getCellData(prop.getProperty("longTermSheetName"), 12, 1).trim();
+    String chequeOption = excelUtil.getCellData(prop.getProperty("longTermSheetName"), 13, 1).trim();
+    String gstDoc = excelUtil.getCellData(prop.getProperty("longTermSheetName"), 14, 1).trim();
+    String bankStatement = excelUtil.getCellData(prop.getProperty("longTermSheetName"), 15, 1).trim();
+    String otherDoc = excelUtil.getCellData(prop.getProperty("longTermSheetName"), 16, 1).trim();
+    String apprEmail = excelUtil.getCellData(prop.getProperty("longTermSheetName"), 17, 1).trim();
+    String ledgIncome = excelUtil.getCellData(prop.getProperty("longTermSheetName"), 18, 1).trim();
+    String shopowner = excelUtil.getCellData(prop.getProperty("longTermSheetName"), 19, 1).trim();
+    String otherBusiness = excelUtil.getCellData(prop.getProperty("longTermSheetName"), 20, 1).trim();
+    String operator = excelUtil.getCellData(prop.getProperty("longTermSheetName"), 21, 1).trim();
+    String otherloan = excelUtil.getCellData(prop.getProperty("longTermSheetName"), 22, 1).trim();
+    String cibil = excelUtil.getCellData(prop.getProperty("longTermSheetName"), 23, 1).trim();
 
     addLongTermLoan.EnterLoanDetails(panNumber, panDocPath, aadharNumber, aadharDocPath, chequeScanCopyDoc, chequeNumber, chequeBank, chequeOption, gstDoc, bankStatement, otherDoc, apprEmail, ledgIncome, shopowner, otherBusiness, operator, otherloan, cibil);
     addLongTermLoan.submitLoanRequest();
@@ -147,20 +148,29 @@ public class ApplyLongTermWithGuarantorTest extends BaseClassUAT2 {
     String longTermResult = driver.getWindowHandle();
     Set<String> windowSet = driver.getWindowHandles();
     Iterator<String> i = windowSet.iterator();
+    int max = 9999;
+    int min = 1111;
+    Random random = new Random();
+    int pannumber = random.nextInt(max - min + 1) + min;
     while (i.hasNext()) {
       String guarantorWindow = i.next();
       if (!longTermResult.equals(guarantorWindow)) {
         driver.switchTo().window(guarantorWindow);
-        String panDocPath = excelUtil.getCellData("LoanDetail", 7, 1).trim();
-        String aadharDocPath = excelUtil.getCellData("LoanDetail", 9, 1).trim();
-        String bankStatement = excelUtil.getCellData("LoanDetail", 15, 1).trim();
+        String panDocPath = excelUtil.getCellData(prop.getProperty("longTermSheetName"), 7, 1).trim();
+        String aadharDocPath = excelUtil.getCellData(prop.getProperty("longTermSheetName"), 9, 1).trim();
+        String bankStatement = excelUtil.getCellData(prop.getProperty("longTermSheetName"), 15, 1).trim();
         guarantorPage.enterGuarantorDetail("DELHI & NCR", "GURGAON", "Rohit Mathur", "8290336521", "rohit.mathur@roinet.in",
               "Salaried", "friend", "3", "ABCDE TOWER 10, FLAT 903, NEAR HUDA MARKET, TWIN TOWER", "123456"
-              , "536350660843", "BXRPM9931K", panDocPath, aadharDocPath, bankStatement, "no", "22/07/1993", "Male");
+              , "536350660843", "BXRPQ" + pannumber + "K", panDocPath, aadharDocPath, bankStatement, "no", "22/07/1993", "Male");
         guarantorPage.clickSaveButton();
       }
 
     }
     driver.switchTo().window(longTermResult);
+  }
+
+  @AfterClass
+  public void quit() {
+    driver.quit();
   }
 }

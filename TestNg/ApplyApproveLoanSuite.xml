@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Apply and Approve All Loan">
+    <listeners>
+        <listener class-name="Base.ChainTestListener"/>
+    </listeners>
+    <test name="Weekend Loan Apply and approve with guarantor">
+        <classes>
+            <class name="WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest"/>
+            <class name="WeekendLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest"/>
+            <class name="WeekendLoanTest.ApproveWeekendLoanAdminTest"/>
+        </classes>
+    </test>
+    <test name="Short Term Loan Apply and approve with guarantor">
+        <classes>
+            <class name="ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest"/>
+            <class name="ShortTermLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest"/>
+            <class name="ShortTermLoanTest.ApproveShortTermLoanAdminTest"/>
+        </classes>
+    </test>
+    <test name="CMS Loan Apply and approve with guarantor">
+        <classes>
+            <class name="CMSLoanTest.ApplyCMSLoanWithGuarantorTest"/>
+            <class name="CMSLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest"/>
+            <class name="CMSLoanTest.ApproveCMSLoanAdminTest"/>
+        </classes>
+    </test>
+    <test name="Other Product Loan Apply and approve with guarantor">
+        <classes>
+            <class name="OtherProductLoanTest.ApplyOtherProductWithGuarantorTest"/>
+            <class name="OtherProductLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest"/>
+            <class name="OtherProductLoanTest.ApproveOtherProductLoanAdminTest"/>
+        </classes>
+    </test>
+    <test name="Long Term Loan Apply and approve with guarantor">
+        <classes>
+            <class name="LongTermLoanTest.ApplyLongTermWithGuarantorTest"/>
+            <class name="LongTermLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest"/>
+            <class name="LongTermLoanTest.ApproveLongTermLoanAdminTest"/>
+        </classes>
+    </test>
+</suite>

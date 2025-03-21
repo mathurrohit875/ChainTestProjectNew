@@ -140,7 +140,15 @@ public class AddOtherProductLoan extends BaseClassUAT2 {
 
   @FindBy(name = "ctl00$ContentPlaceHolder1$txtApprovedRemarks")
   WebElement txtApprovedRemarks;
+  @FindBy(name = "ctl00$ContentPlaceHolder1$btnSave")
+  WebElement btnSave;
+  @FindBy(name = "ctl00$ContentPlaceHolder1$ddlGuarantorStatus")
+  WebElement ddlGuarantorStatus;
 
+  @FindBy(name = "ctl00$ContentPlaceHolder1$grdList$ctl02$btnViewDetails")
+  WebElement btnViewDetails;
+  @FindBy(name = "ctl00$ContentPlaceHolder1$fluEmailDocument")
+  WebElement fluEmailDocument;
   public AddOtherProductLoan() {
     PageFactory.initElements(driver, this);
     wait = new WebDriverWait(driver, Duration.ofSeconds(60));
@@ -237,6 +245,11 @@ public class AddOtherProductLoan extends BaseClassUAT2 {
 
   }
 
+  public void changeLoanStatus(String loanStatus) {
+    wait.until(ExpectedConditions.visibilityOf(ddlLoanStatus));
+    Select select = new Select(ddlLoanStatus);
+    select.selectByVisibleText(loanStatus);
+  }
   public void DurationInMonth(String duration) {
     select = new Select(durationInMonth);
     select.selectByVisibleText(duration);
@@ -283,6 +296,27 @@ public class AddOtherProductLoan extends BaseClassUAT2 {
     addLoanButton.click();
   }
 
+  public void addApprovalRemark(String approvalRemark) {
+    wait.until(ExpectedConditions.visibilityOf(txtApprovedRemarks));
+    action.moveToElement(txtApprovedRemarks).perform();
+    txtApprovedRemarks.sendKeys(approvalRemark);
+  }
+
+  public void attachapprovalEmailDoc(String emailDoc) {
+    action.moveToElement(fluEmailDocument).perform();
+    fluEmailDocument.sendKeys(emailDoc);
+  }
+
+  public void clickSaveButton() {
+    action.moveToElement(btnSave).perform();
+    btnSave.click();
+  }
+
+  public void changeGuarantorStatus(String guarantorStatus) {
+    wait.until(ExpectedConditions.visibilityOf(ddlGuarantorStatus));
+    Select select = new Select(ddlGuarantorStatus);
+    select.selectByVisibleText(guarantorStatus);
+  }
   public void enterLoanAmount(String loan, String exposure, String stability, String spouse) {
     wait.until(ExpectedConditions.visibilityOf(loanAmount));
     txtTotalLoanExposure.sendKeys(exposure);
@@ -358,8 +392,8 @@ public void addRemarks(String remark){
 public void btnGoAhead(){
     wait.until(ExpectedConditions.visibilityOf(btnGoAhead));
     btnGoAhead.click();
-    wait.until(ExpectedConditions.alertIsPresent());
-    driver.switchTo().alert().accept();
+  //wait.until(ExpectedConditions.alertIsPresent());
+  //driver.switchTo().alert().accept();
 }
   /*int installmentcalculate = 0;
   int previousBalance;

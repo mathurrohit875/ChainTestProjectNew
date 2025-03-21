@@ -22,7 +22,7 @@
                 <version>3.5.2</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>TestNg/ApplyAllLoanWithGuarantor.xml</suiteXmlFile>
+                        <suiteXmlFile>TestNg/ApplyApproveLoanSuite.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <!-- Ensure output directory is set -->
                     <reportsDirectory>${project.basedir}/test-output</reportsDirectory>

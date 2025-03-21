@@ -108,7 +108,8 @@ public class AddWeekendLoanPage extends BaseClassUAT2 {
   @FindBy(name="ctl00$ContentPlaceHolder1$txtResidenceStability")
   WebElement txtResidenceStability;
 
-
+  @FindBy(name = "ctl00$ContentPlaceHolder1$fluEmailDocument")
+  WebElement fluEmailDocument;
 
   public AddWeekendLoanPage() {
     PageFactory.initElements(driver, this);
@@ -150,6 +151,10 @@ public class AddWeekendLoanPage extends BaseClassUAT2 {
     btnSave.click();
   }
 
+  public void attachapprovalEmailDoc(String emailDoc) {
+    action.moveToElement(fluEmailDocument).perform();
+    fluEmailDocument.sendKeys(emailDoc);
+  }
   public String getLoanNumber() throws Exception {
     wait.until(ExpectedConditions.alertIsPresent());
     String alertTxt = driver.switchTo().alert().getText();

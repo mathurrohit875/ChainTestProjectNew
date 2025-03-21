@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="x-apple-disable-message-reformatting">
+    <title>ChainTest</title>
+    <style type="text/css">
+        body { font-family: -apple-system, system-ui, "Helvetica Neue", "Segoe UI", Arial, sans-serif; font-size: 13px; }
+        .bg-passed { background-color: rgb(168, 217, 167); }
+        .text-passed { color: #79B530; }
+        .bg-failed,.bg-undefined { background-color: rgb(254, 205, 204); }
+        .text-failed,.text-undefined { color: #e64b5d; }
+        .bg-skipped { background-color: #eee; }
+        .text-skipped { color: #e6e04c; }
+        .tag { background-color:#f6f7f9; }
+        pre {white-space: pre-wrap; margin-bottom: 0; max-height: 15rem; overflow-y: auto; }
+    </style>
+</head>
+<body bgcolor="#F7F8F9" leftmargin="0" marginheight="0" marginwidth="0" style="box-sizing:border-box;margin:0;padding:0;width:100%;word-break:break-word;-webkit-font-smoothing:antialiased;" topmargin="0"
+      yahoo="fix">
+<!-- title -->
+<table cellpadding="0" cellspacing="0" class="wrapper" role="presentation" width="100%">
+    <tr>
+        <td align="center">
+            <table>
+                <tr>
+                    <td width="650">
+                        <table style="padding: 20px;">
+                            <tr>
+                                <td>
+                                    <span class="bg-failed" style="margin-right:10px;padding:0px 5px;">FAILED</span>
+                                    <span style="">21 Mar 2025, 3:39:28 pm &middot; 21m 48s</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!-- stats -->
+<table align="center" style="margin-bottom:2px;" width="650">
+    <tbody>
+    <tr>
+        <td align="center" bgcolor="#FFFFFF">
+            <table width="100%">
+                <tbody>
+                <tr>
+                    <td style="padding:30px 40px 20px;" width="100">
+                        <p style="font-weight:500;color:#7E7E7E;margin:0;">Tests</p>
+                        <h1 style="font-size:34px;">27</h1>
+                    </td>
+                    <td style="padding:30px 40px 20px;" width="100">
+                        <p style="font-weight:500;color:#7E7E7E;margin:0;color:#79B530">Passed</p>
+                        <h1 style="font-size:34px;">18</h1>
+                    </td>
+                    <td style="padding:30px 40px 20px;" width="100">
+                        <p style="font-weight:500;color:#7E7E7E;margin:0;color:#e64b5d">Failed</p>
+                        <h1 style="font-size:34px;">9</h1>
+                    </td>
+                    <td style="padding:30px 40px 20px;" width="100">
+                        <p style="font-weight:500;color:#7E7E7E;margin:0;color:#e6e04c">Skipped</p>
+                        <h1 style="font-size:34px;">0</h1>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<!-- tags -->
+<table width="100%">
+    <tr>
+        <td align="center">
+            <table width="650">
+                <tr>
+                    <td bgcolor="#FFFFFF" style="padding:20px 40px;font-size:14px;">
+                        <span style="font-size:15px;font-weight:500;">Tags</span>
+                        <table>
+                            <tr>
+                                <td style="height:10px;"></td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr style="font-weight:500;">
+                                <td width="250">Name</td>
+                                <td width="23"></td>
+                                <td style="" width="60">Pass</td>
+                                <td class="padding" width="10"></td>
+                                <td style="" width="60">Fail</td>
+                                <td class="padding" width="10"></td>
+                                <td style="" width="60">Skip</td>
+                            </tr>
+                            <tr style="height:10px;"></tr>
+                            <tr>
+                                <td width="350">regression</td>
+                                <td width="23"></td>
+                                <td style="" width="60">1</td>
+                                <td class="padding" width="10"></td>
+                                <td style="" width="60">0</td>
+                                <td class="padding" width="10"></td>
+                                <td style="" width="60">0</td>
+                            </tr>
+                            <tr style="height:10px;"></tr>
+                            <tr>
+                                <td width="350">integration</td>
+                                <td width="23"></td>
+                                <td style="" width="60">1</td>
+                                <td class="padding" width="10"></td>
+                                <td style="" width="60">0</td>
+                                <td class="padding" width="10"></td>
+                                <td style="" width="60">0</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!-- tests -->
+<table width="100%">
+    <tr>
+        <td align="center">
+            <table width="650">
+                <tr>
+                    <td bgcolor="#FFF" style="padding:10px 20px;">
+                        <table>
+                            <tr>
+                                <td style="padding:10px;" width="650px">
+                                    <p class="text-failed"
+                                       style="font-size:14px;font-weight:500;margin:0;margin-bottom:5px;">
+                                        Apply and Approve All Loan
+                                    <p style="font-size:12px;margin:0;">
+                                        <span>21 Mar 2025, 3:39:28 pm / 21m 47s</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        goToLoanPage
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        applyLoan
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        WeekendLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        changeGuarantorStatusToEAgreementSignedDue
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        changeLoanStatusToEAgreementSignedDue
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-failed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        WeekendLoanTest.ApproveWeekendLoanAdminTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-failed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        openLoan
+                                    <pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : {*} Cannot mark status as Approved as the Guarantor PAN number is already associated with another Wallet Advance Acc. entry.}
+  (Session info: chrome=134.0.6998.118): {*} Cannot mark status as Approved as the Guarantor PAN number is already associated with another Wallet Advance Acc. entry.
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d102f41a0670e28216df3948baa5ea83, refresh {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\ROHIT~1.MAT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61848}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61848/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d102f41a0670e28216df3948baa5ea83
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:1100)
+	at WeekendLoanTest.ApproveWeekendLoanAdminTest.openLoan(ApproveWeekendLoanAdminTest.java:85)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        goToLoanPage
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        applyLoan
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        addGuarantor
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        ShortTermLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        changeGuarantorStatusToEAgreementSignedDue
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        changeLoanStatusToEAgreementSignedDue
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-failed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        ShortTermLoanTest.ApproveShortTermLoanAdminTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-failed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        openLoan
+                                    <pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Are you sure, want to submit loan application with status LoanApproved?}
+  (Session info: chrome=134.0.6998.118): Are you sure, want to submit loan application with status LoanApproved?
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [359e1ef756ba786187ec2f2a480d6ff9, refresh {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\ROHIT~1.MAT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62132}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62132/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 359e1ef756ba786187ec2f2a480d6ff9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:1100)
+	at ShortTermLoanTest.ApproveShortTermLoanAdminTest.openLoan(ApproveShortTermLoanAdminTest.java:86)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        CMSLoanTest.ApplyCMSLoanWithGuarantorTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        goToLoanPage
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        applyLoan
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        addGuarantor
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        CMSLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        changeGuarantorStatusToEAgreementSignedDue
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        changeLoanStatusToEAgreementSignedDue
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-failed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        CMSLoanTest.ApproveCMSLoanAdminTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-failed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        openLoan
+                                    <pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 60.000
+  (Session info: chrome=134.0.6998.118)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7f23426c1de50fedea0671d6ce9d24f9, clickElement {id=f.0A7C8B5B4F1D990104E6E985602C8700.d.6DF29A0171AE7282608AFDB2AE5388FF.e.420}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\ROHIT~1.MAT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62425/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7f23426c1de50fedea0671d6ce9d24f9)] -> name: ctl00$ContentPlaceHolder1$btnSave]
+Session ID: 7f23426c1de50fedea0671d6ce9d24f9
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at CMSLoan.AddCMSLoanPage.clickSaveButton(AddCMSLoanPage.java:162)
+	at CMSLoanTest.ApproveCMSLoanAdminTest.openLoan(ApproveCMSLoanAdminTest.java:85)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        OtherProductLoanTest.ApplyOtherProductWithGuarantorTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        addlongtermloan
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        addGuarantor
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        OtherProductLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        changeGuarantorStatusToEAgreementSignedDue
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        changeLoanStatusToEAgreementSignedDue
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-failed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        OtherProductLoanTest.ApproveOtherProductLoanAdminTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-failed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        openLoan
+                                    <pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 60.000
+  (Session info: chrome=134.0.6998.118)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a1adc999e7cdf365dc4cf2a83cdf0f47, clickElement {id=f.97476C8853090FCF9304BEAEEDCE7EA7.d.D2817B2AD182E28E7B5120B639FB4CE7.e.554}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\ROHIT~1.MAT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62759}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62759/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a1adc999e7cdf365dc4cf2a83cdf0f47)] -> name: ctl00$ContentPlaceHolder1$btnGoAhead]
+Session ID: a1adc999e7cdf365dc4cf2a83cdf0f47
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at OtherProductsLoan.AddOtherProductLoan.btnGoAhead(AddOtherProductLoan.java:390)
+	at OtherProductLoanTest.ApproveOtherProductLoanAdminTest.openLoan(ApproveOtherProductLoanAdminTest.java:83)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-failed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        LongTermLoanTest.ApplyLongTermWithGuarantorTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-failed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        addlongtermloan
+                                    <pre>java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" because "this.sheet" is null
+	at Utility.ExcelUtil.getCellData(ExcelUtil.java:58)
+	at LongTermLoanTest.ApplyLongTermWithGuarantorTest.setup(ApplyLongTermWithGuarantorTest.java:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-failed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        addGuarantor
+                                    <pre>java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" because "this.sheet" is null
+	at Utility.ExcelUtil.getCellData(ExcelUtil.java:58)
+	at LongTermLoanTest.ApplyLongTermWithGuarantorTest.setup(ApplyLongTermWithGuarantorTest.java:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-failed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        LongTermLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-failed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        changeGuarantorStatusToEAgreementSignedDue
+                                    <pre>java.lang.UnsupportedOperationException: You may not select an option in disabled select
+	at org.openqa.selenium.support.ui.Select.assertSelectIsEnabled(Select.java:327)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:111)
+	at LongTermLoan.AddLongTermLoan.changeGuarantorStatus(AddLongTermLoan.java:158)
+	at LongTermLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest.changeGuarantorStatusToEAgreementSignedDue(LoanGuarantorPendingToEAgreementSignedDueTest.java:60)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-failed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        changeLoanStatusToEAgreementSignedDue
+                                    <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.name: ctl00$ContentPlaceHolder1$txtLoanNo' (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at LongTermLoan.LongTermResultPage.enterLoanNumber(LongTermResultPage.java:280)
+	at LongTermLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest.readLoanNumber(LoanGuarantorPendingToEAgreementSignedDueTest.java:96)
+	at LongTermLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest.changeLoanStatusToEAgreementSignedDue(LoanGuarantorPendingToEAgreementSignedDueTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='ctl00$ContentPlaceHolder1$txtLoanNo']"}
+  (Session info: chrome=134.0.6998.118)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [26ffa7df74d72c8039bf077d8ff605d6, findElement {using=name, value=ctl00$ContentPlaceHolder1$txtLoanNo}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\ROHIT~1.MAT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62922}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62922/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 26ffa7df74d72c8039bf077d8ff605d6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 28 more
+</pre>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-failed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        LongTermLoanTest.ApproveLongTermLoanAdminTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-failed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        openLoan
+                                    <pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 60.000
+  (Session info: chrome=134.0.6998.118)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f4eeea37e127c7a9c7f48cdd5121ec36, clickElement {id=f.58551F69267B74D7D8BFA1F59E9C35D5.d.B1800C914B10FF4D0232EA1FBF27669F.e.783}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\ROHIT~1.MAT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63068}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63068/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f4eeea37e127c7a9c7f48cdd5121ec36)] -> name: ctl00$ContentPlaceHolder1$btnGoAhead]
+Session ID: f4eeea37e127c7a9c7f48cdd5121ec36
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at LongTermLoan.AddLongTermLoan.btnGoAhead(AddLongTermLoan.java:390)
+	at LongTermLoanTest.ApproveLongTermLoanAdminTest.openLoan(ApproveLongTermLoanAdminTest.java:87)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td height="100"></td>
+    </tr>
+</table>
+</body>
+</html>

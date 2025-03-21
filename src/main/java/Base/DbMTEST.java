@@ -30,13 +30,12 @@ public class DbMTEST {
   }
 
   // Inside your dbMTEST class:
-  public int executeUpdate(String query) {
+  public void executeUpdate(String query) {
 
     try (Statement stmt = connection.createStatement()) {
-      return stmt.executeUpdate(query);
+      stmt.executeUpdate(query);
     } catch (SQLException e) {
       System.out.println(e.getMessage());
-      return 0;
     }
     /*int rowsAffected = 0;
     try {

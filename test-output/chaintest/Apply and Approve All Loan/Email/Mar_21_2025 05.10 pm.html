@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="x-apple-disable-message-reformatting">
+    <title>ChainTest</title>
+    <style type="text/css">
+        body { font-family: -apple-system, system-ui, "Helvetica Neue", "Segoe UI", Arial, sans-serif; font-size: 13px; }
+        .bg-passed { background-color: rgb(168, 217, 167); }
+        .text-passed { color: #79B530; }
+        .bg-failed,.bg-undefined { background-color: rgb(254, 205, 204); }
+        .text-failed,.text-undefined { color: #e64b5d; }
+        .bg-skipped { background-color: #eee; }
+        .text-skipped { color: #e6e04c; }
+        .tag { background-color:#f6f7f9; }
+        pre {white-space: pre-wrap; margin-bottom: 0; max-height: 15rem; overflow-y: auto; }
+    </style>
+</head>
+<body bgcolor="#F7F8F9" leftmargin="0" marginheight="0" marginwidth="0" style="box-sizing:border-box;margin:0;padding:0;width:100%;word-break:break-word;-webkit-font-smoothing:antialiased;" topmargin="0"
+      yahoo="fix">
+<!-- title -->
+<table cellpadding="0" cellspacing="0" class="wrapper" role="presentation" width="100%">
+    <tr>
+        <td align="center">
+            <table>
+                <tr>
+                    <td width="650">
+                        <table style="padding: 20px;">
+                            <tr>
+                                <td>
+                                    <span class="bg-failed" style="margin-right:10px;padding:0px 5px;">FAILED</span>
+                                    <span style="">21 Mar 2025, 5:10:53 pm &middot; 19m 7s</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!-- stats -->
+<table align="center" style="margin-bottom:2px;" width="650">
+    <tbody>
+    <tr>
+        <td align="center" bgcolor="#FFFFFF">
+            <table width="100%">
+                <tbody>
+                <tr>
+                    <td style="padding:30px 40px 20px;" width="100">
+                        <p style="font-weight:500;color:#7E7E7E;margin:0;">Tests</p>
+                        <h1 style="font-size:34px;">27</h1>
+                    </td>
+                    <td style="padding:30px 40px 20px;" width="100">
+                        <p style="font-weight:500;color:#7E7E7E;margin:0;color:#79B530">Passed</p>
+                        <h1 style="font-size:34px;">23</h1>
+                    </td>
+                    <td style="padding:30px 40px 20px;" width="100">
+                        <p style="font-weight:500;color:#7E7E7E;margin:0;color:#e64b5d">Failed</p>
+                        <h1 style="font-size:34px;">4</h1>
+                    </td>
+                    <td style="padding:30px 40px 20px;" width="100">
+                        <p style="font-weight:500;color:#7E7E7E;margin:0;color:#e6e04c">Skipped</p>
+                        <h1 style="font-size:34px;">0</h1>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<!-- tags -->
+<table width="100%">
+    <tr>
+        <td align="center">
+            <table width="650">
+                <tr>
+                    <td bgcolor="#FFFFFF" style="padding:20px 40px;font-size:14px;">
+                        <span style="font-size:15px;font-weight:500;">Tags</span>
+                        <table>
+                            <tr>
+                                <td style="height:10px;"></td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr style="font-weight:500;">
+                                <td width="250">Name</td>
+                                <td width="23"></td>
+                                <td style="" width="60">Pass</td>
+                                <td class="padding" width="10"></td>
+                                <td style="" width="60">Fail</td>
+                                <td class="padding" width="10"></td>
+                                <td style="" width="60">Skip</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!-- tests -->
+<table width="100%">
+    <tr>
+        <td align="center">
+            <table width="650">
+                <tr>
+                    <td bgcolor="#FFF" style="padding:10px 20px;">
+                        <table>
+                            <tr>
+                                <td style="padding:10px;" width="650px">
+                                    <p class="text-failed"
+                                       style="font-size:14px;font-weight:500;margin:0;margin-bottom:5px;">
+                                        Apply and Approve All Loan
+                                    <p style="font-size:12px;margin:0;">
+                                        <span>21 Mar 2025, 5:10:54 pm / 19m 6s</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        goToLoanPage
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        applyLoan
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        WeekendLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        changeGuarantorStatusToEAgreementSignedDue
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        changeLoanStatusToEAgreementSignedDue
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-failed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        WeekendLoanTest.ApproveWeekendLoanAdminTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-failed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        openLoan
+                                    <pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 60.000
+  (Session info: chrome=134.0.6998.118)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7ba2b4c53880d1c708b2b49bea64efbe, clickElement {id=f.8F559B8EB4153B78D4384B778C88A1BD.d.2C056A07910B11453C1390F54AA595F9.e.410}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\ROHIT~1.MAT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50207}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50207/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7ba2b4c53880d1c708b2b49bea64efbe)] -> name: ctl00$ContentPlaceHolder1$btnSave]
+Session ID: 7ba2b4c53880d1c708b2b49bea64efbe
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at WeekendLoan.AddWeekendLoanPage.clickSaveButton(AddWeekendLoanPage.java:151)
+	at WeekendLoanTest.ApproveWeekendLoanAdminTest.openLoan(ApproveWeekendLoanAdminTest.java:85)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        goToLoanPage
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        applyLoan
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        addGuarantor
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        ShortTermLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        changeGuarantorStatusToEAgreementSignedDue
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        changeLoanStatusToEAgreementSignedDue
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        ShortTermLoanTest.ApproveShortTermLoanAdminTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        openLoan
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        CMSLoanTest.ApplyCMSLoanWithGuarantorTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        goToLoanPage
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        applyLoan
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        addGuarantor
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        CMSLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        changeGuarantorStatusToEAgreementSignedDue
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        changeLoanStatusToEAgreementSignedDue
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-failed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        CMSLoanTest.ApproveCMSLoanAdminTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-failed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        openLoan
+                                    <pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 60.000
+  (Session info: chrome=134.0.6998.118)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c5e40745dabe0b34933fd24449da2e15, clickElement {id=f.2A744A71210D4DBAE3D51EDEA8B19E72.d.FA263902F4B4592CE5643FB442785162.e.416}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\ROHIT~1.MAT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50790}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50790/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c5e40745dabe0b34933fd24449da2e15)] -> name: ctl00$ContentPlaceHolder1$btnSave]
+Session ID: c5e40745dabe0b34933fd24449da2e15
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at CMSLoan.AddCMSLoanPage.clickSaveButton(AddCMSLoanPage.java:162)
+	at CMSLoanTest.ApproveCMSLoanAdminTest.openLoan(ApproveCMSLoanAdminTest.java:86)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        OtherProductLoanTest.ApplyOtherProductWithGuarantorTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        addlongtermloan
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        addGuarantor
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        OtherProductLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        changeGuarantorStatusToEAgreementSignedDue
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        changeLoanStatusToEAgreementSignedDue
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-failed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        OtherProductLoanTest.ApproveOtherProductLoanAdminTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-failed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        openLoan
+                                    <pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 60.000
+  (Session info: chrome=134.0.6998.118)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f067ad6ea96cb705bcacfad087ff98a9, clickElement {id=f.8B17C3AEC4A2D24342911356B5E4998E.d.29F83CF46B1DFF49105E3B1531355991.e.556}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\ROHIT~1.MAT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51079}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51079/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f067ad6ea96cb705bcacfad087ff98a9)] -> name: ctl00$ContentPlaceHolder1$btnGoAhead]
+Session ID: f067ad6ea96cb705bcacfad087ff98a9
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at OtherProductsLoan.AddOtherProductLoan.btnGoAhead(AddOtherProductLoan.java:390)
+	at OtherProductLoanTest.ApproveOtherProductLoanAdminTest.openLoan(ApproveOtherProductLoanAdminTest.java:84)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        LongTermLoanTest.ApplyLongTermWithGuarantorTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        addlongtermloan
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        addGuarantor
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        LongTermLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        changeGuarantorStatusToEAgreementSignedDue
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-passed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        changeLoanStatusToEAgreementSignedDue
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg-failed" style="padding:7px 10px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        LongTermLoanTest.ApproveLongTermLoanAdminTest
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-failed" style="padding:7px 20px;" width="650px">
+                                    <p style="font-size:13px;margin:0;">
+                                        openLoan
+                                    <pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 60.000
+  (Session info: chrome=134.0.6998.118)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dab25f4602fdaa0bdcab361bd57e7b3f, clickElement {id=f.F048365008FC7A7B253FC209C7A64EE3.d.13927505B2AACA8A0C24912023284A2D.e.781}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\ROHIT~1.MAT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51367}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51367/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (dab25f4602fdaa0bdcab361bd57e7b3f)] -> name: ctl00$ContentPlaceHolder1$btnGoAhead]
+Session ID: dab25f4602fdaa0bdcab361bd57e7b3f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at LongTermLoan.AddLongTermLoan.btnGoAhead(AddLongTermLoan.java:390)
+	at LongTermLoanTest.ApproveLongTermLoanAdminTest.openLoan(ApproveLongTermLoanAdminTest.java:88)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height:10px"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td height="100"></td>
+    </tr>
+</table>
+</body>
+</html>

@@ -8,255 +8,649 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-    <tr>
-        <th colspan="8">All loan apply with guarantor</th>
-    </tr>
-    <tr>
-        <td><a href="#t0">Weekend Loan Apply with guarantor</a></td>
-        <td class="num">2</td>
-        <td class="num">0</td>
-        <td class="num">0</td>
-        <td class="num">0</td>
-        <td class="num">19,499</td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr class="stripe">
-        <td><a href="#t1">Long Term loan with guarantor</a></td>
-        <td class="num">2</td>
-        <td class="num">0</td>
-        <td class="num">0</td>
-        <td class="num">0</td>
-        <td class="num">19,431</td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td><a href="#t2">CMS loan with guarantor</a></td>
-        <td class="num">3</td>
-        <td class="num">0</td>
-        <td class="num">0</td>
-        <td class="num">0</td>
-        <td class="num">16,856</td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr class="stripe">
-        <td><a href="#t3">Other Product Loan with guarantor</a></td>
-        <td class="num">2</td>
-        <td class="num">0</td>
-        <td class="num">0</td>
-        <td class="num">0</td>
-        <td class="num">18,663</td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td><a href="#t4">Short Term Loan</a></td>
-        <td class="num">3</td>
-        <td class="num">0</td>
-        <td class="num">0</td>
-        <td class="num">0</td>
-        <td class="num">19,520</td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <th>Total</th>
-        <th class="num">12</th>
-        <th class="num">0</th>
-        <th class="num">0</th>
-        <th class="num">0</th>
-        <th class="num">93,969</th>
-        <th colspan="2"></th>
-    </tr>
+	<tr>
+		<th colspan="8">Apply and Approve All Loan</th>
+	</tr>
+	<tr>
+		<td><a href="#t0">Weekend Loan Apply and approve with guarantor</a></td>
+		<td class="num">4</td>
+		<td class="num">0</td>
+		<td class="num">0</td>
+		<td class="num attn">1</td>
+		<td class="num">233,489</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr class="stripe">
+		<td><a href="#t1">Short Term Loan Apply and approve with guarantor</a></td>
+		<td class="num">6</td>
+		<td class="num">0</td>
+		<td class="num">0</td>
+		<td class="num">0</td>
+		<td class="num">229,820</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><a href="#t2">CMS Loan Apply and approve with guarantor</a></td>
+		<td class="num">5</td>
+		<td class="num">0</td>
+		<td class="num">0</td>
+		<td class="num attn">1</td>
+		<td class="num">224,237</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr class="stripe">
+		<td><a href="#t3">Other Product Loan Apply and approve with guarantor</a></td>
+		<td class="num">4</td>
+		<td class="num">0</td>
+		<td class="num">0</td>
+		<td class="num attn">1</td>
+		<td class="num">227,710</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><a href="#t4">Long Term Loan Apply and approve with guarantor</a></td>
+		<td class="num">4</td>
+		<td class="num">0</td>
+		<td class="num">0</td>
+		<td class="num attn">1</td>
+		<td class="num">231,049</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<th>Total</th>
+		<th class="num">23</th>
+		<th class="num">0</th>
+		<th class="num">0</th>
+		<th class="num attn">4</th>
+		<th class="num">1,146,305</th>
+		<th colspan="2"></th>
+	</tr>
 </table>
 <table id='summary'>
-    <thead>
-    <tr>
-        <th>Class</th>
-        <th>Method</th>
-        <th>Start</th>
-        <th>Time (ms)</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <th colspan="4">All loan apply with guarantor</th>
-    </tr>
-    </tbody>
-    <tbody id="t0">
-    <tr>
-        <th colspan="4">Weekend Loan Apply with guarantor &#8212; passed</th>
-    </tr>
-    <tr class="passedeven">
-        <td rowspan="2">WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest</td>
-        <td><a href="#m0">applyLoan</a></td>
-        <td rowspan="1">1742453424670</td>
-        <td rowspan="1">9066</td>
-    </tr>
-    <tr class="passedeven">
-        <td><a href="#m1">goToLoanPage</a></td>
-        <td rowspan="1">1742453424453</td>
-        <td rowspan="1">200</td>
-    </tr>
-    </tbody>
-    <tbody id="t1">
-    <tr>
-        <th colspan="4">Long Term loan with guarantor &#8212; passed</th>
-    </tr>
-    <tr class="passedeven">
-        <td rowspan="2">LongTermLoanTest.ApplyLongTermWithGuarantorTest</td>
-        <td><a href="#m2">addGuarantor</a></td>
-        <td rowspan="1">1742453448229</td>
-        <td rowspan="1">5239</td>
-    </tr>
-    <tr class="passedeven">
-        <td><a href="#m3">addlongtermloan</a></td>
-        <td rowspan="1">1742453442419</td>
-        <td rowspan="1">5809</td>
-    </tr>
-    </tbody>
-    <tbody id="t2">
-    <tr>
-        <th colspan="4">CMS loan with guarantor &#8212; passed</th>
-    </tr>
-    <tr class="passedeven">
-        <td rowspan="3">CMSLoanTest.ApplyCMSLoanWithGuarantorTest</td>
-        <td><a href="#m4">addGuarantor</a></td>
-        <td rowspan="1">1742453465023</td>
-        <td rowspan="1">5308</td>
-    </tr>
-    <tr class="passedeven">
-        <td><a href="#m5">applyLoan</a></td>
-        <td rowspan="1">1742453460676</td>
-        <td rowspan="1">4345</td>
-    </tr>
-    <tr class="passedeven">
-        <td><a href="#m6">goToLoanPage</a></td>
-        <td rowspan="1">1742453460545</td>
-        <td rowspan="1">130</td>
-    </tr>
-    </tbody>
-    <tbody id="t3">
-    <tr>
-        <th colspan="4">Other Product Loan with guarantor &#8212; passed</th>
-    </tr>
-    <tr class="passedeven">
-        <td rowspan="2">OtherProductLoanTest.ApplyOtherProductWithGuarantorTest</td>
-        <td><a href="#m7">addGuarantor</a></td>
-        <td rowspan="1">1742453483971</td>
-        <td rowspan="1">5030</td>
-    </tr>
-    <tr class="passedeven">
-        <td><a href="#m8">addlongtermloan</a></td>
-        <td rowspan="1">1742453478251</td>
-        <td rowspan="1">5717</td>
-    </tr>
-    </tbody>
-    <tbody id="t4">
-    <tr>
-        <th colspan="4">Short Term Loan &#8212; passed</th>
-    </tr>
-    <tr class="passedeven">
-        <td rowspan="3">ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest</td>
-        <td><a href="#m9">addGuarantor</a></td>
-        <td rowspan="1">1742453502457</td>
-        <td rowspan="1">6073</td>
-    </tr>
-    <tr class="passedeven">
-        <td><a href="#m10">applyLoan</a></td>
-        <td rowspan="1">1742453497417</td>
-        <td rowspan="1">5039</td>
-    </tr>
-    <tr class="passedeven">
-        <td><a href="#m11">goToLoanPage</a></td>
-        <td rowspan="1">1742453496341</td>
-        <td rowspan="1">1076</td>
-    </tr>
-    </tbody>
+	<thead>
+	<tr>
+		<th>Class</th>
+		<th>Method</th>
+		<th>Start</th>
+		<th>Time (ms)</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<th colspan="4">Apply and Approve All Loan</th>
+	</tr>
+	</tbody>
+	<tbody id="t0">
+	<tr>
+		<th colspan="4">Weekend Loan Apply and approve with guarantor &#8212; failed</th>
+	</tr>
+	<tr class="failedeven">
+		<td rowspan="1">WeekendLoanTest.ApproveWeekendLoanAdminTest</td>
+		<td><a href="#m0">openLoan</a></td>
+		<td rowspan="1">1742557424038</td>
+		<td rowspan="1">63575</td>
+	</tr>
+	<tr>
+		<th colspan="4">Weekend Loan Apply and approve with guarantor &#8212; passed</th>
+	</tr>
+	<tr class="passedeven">
+		<td rowspan="2">WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest</td>
+		<td><a href="#m1">applyLoan</a></td>
+		<td rowspan="1">1742557268575</td>
+		<td rowspan="1">10444</td>
+	</tr>
+	<tr class="passedeven">
+		<td><a href="#m2">goToLoanPage</a></td>
+		<td rowspan="1">1742557268428</td>
+		<td rowspan="1">143</td>
+	</tr>
+	<tr class="passedodd">
+		<td rowspan="2">WeekendLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest</td>
+		<td><a href="#m3">changeGuarantorStatusToEAgreementSignedDue</a></td>
+		<td rowspan="1">1742557348309</td>
+		<td rowspan="1">4896</td>
+	</tr>
+	<tr class="passedodd">
+		<td><a href="#m4">changeLoanStatusToEAgreementSignedDue</a></td>
+		<td rowspan="1">1742557353206</td>
+		<td rowspan="1">3423</td>
+	</tr>
+	</tbody>
+	<tbody id="t1">
+	<tr>
+		<th colspan="4">Short Term Loan Apply and approve with guarantor &#8212; passed</th>
+	</tr>
+	<tr class="passedeven">
+		<td rowspan="3">ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest</td>
+		<td><a href="#m5">addGuarantor</a></td>
+		<td rowspan="1">1742557504121</td>
+		<td rowspan="1">5432</td>
+	</tr>
+	<tr class="passedeven">
+		<td><a href="#m6">applyLoan</a></td>
+		<td rowspan="1">1742557498198</td>
+		<td rowspan="1">5922</td>
+	</tr>
+	<tr class="passedeven">
+		<td><a href="#m7">goToLoanPage</a></td>
+		<td rowspan="1">1742557497098</td>
+		<td rowspan="1">1099</td>
+	</tr>
+	<tr class="passedodd">
+		<td rowspan="1">ShortTermLoanTest.ApproveShortTermLoanAdminTest</td>
+		<td><a href="#m8">openLoan</a></td>
+		<td rowspan="1">1742557652617</td>
+		<td rowspan="1">65005</td>
+	</tr>
+	<tr class="passedeven">
+		<td rowspan="2">ShortTermLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest</td>
+		<td><a href="#m9">changeGuarantorStatusToEAgreementSignedDue</a></td>
+		<td rowspan="1">1742557576468</td>
+		<td rowspan="1">4070</td>
+	</tr>
+	<tr class="passedeven">
+		<td><a href="#m10">changeLoanStatusToEAgreementSignedDue</a></td>
+		<td rowspan="1">1742557580539</td>
+		<td rowspan="1">4471</td>
+	</tr>
+	</tbody>
+	<tbody id="t2">
+	<tr>
+		<th colspan="4">CMS Loan Apply and approve with guarantor &#8212; failed</th>
+	</tr>
+	<tr class="failedeven">
+		<td rowspan="1">CMSLoanTest.ApproveCMSLoanAdminTest</td>
+		<td><a href="#m11">openLoan</a></td>
+		<td rowspan="1">1742557878316</td>
+		<td rowspan="1">63418</td>
+	</tr>
+	<tr>
+		<th colspan="4">CMS Loan Apply and approve with guarantor &#8212; passed</th>
+	</tr>
+	<tr class="passedeven">
+		<td rowspan="3">CMSLoanTest.ApplyCMSLoanWithGuarantorTest</td>
+		<td><a href="#m12">addGuarantor</a></td>
+		<td rowspan="1">1742557731723</td>
+		<td rowspan="1">5375</td>
+	</tr>
+	<tr class="passedeven">
+		<td><a href="#m13">applyLoan</a></td>
+		<td rowspan="1">1742557726905</td>
+		<td rowspan="1">4817</td>
+	</tr>
+	<tr class="passedeven">
+		<td><a href="#m14">goToLoanPage</a></td>
+		<td rowspan="1">1742557726757</td>
+		<td rowspan="1">146</td>
+	</tr>
+	<tr class="passedodd">
+		<td rowspan="2">CMSLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest</td>
+		<td><a href="#m15">changeGuarantorStatusToEAgreementSignedDue</a></td>
+		<td rowspan="1">1742557803848</td>
+		<td rowspan="1">3529</td>
+	</tr>
+	<tr class="passedodd">
+		<td><a href="#m16">changeLoanStatusToEAgreementSignedDue</a></td>
+		<td rowspan="1">1742557807378</td>
+		<td rowspan="1">3682</td>
+	</tr>
+	</tbody>
+	<tbody id="t3">
+	<tr>
+		<th colspan="4">Other Product Loan Apply and approve with guarantor &#8212; failed</th>
+	</tr>
+	<tr class="failedeven">
+		<td rowspan="1">OtherProductLoanTest.ApproveOtherProductLoanAdminTest</td>
+		<td><a href="#m17">openLoan</a></td>
+		<td rowspan="1">1742558105460</td>
+		<td rowspan="1">63992</td>
+	</tr>
+	<tr>
+		<th colspan="4">Other Product Loan Apply and approve with guarantor &#8212; passed</th>
+	</tr>
+	<tr class="passedeven">
+		<td rowspan="2">OtherProductLoanTest.ApplyOtherProductWithGuarantorTest</td>
+		<td><a href="#m18">addGuarantor</a></td>
+		<td rowspan="1">1742557957535</td>
+		<td rowspan="1">5237</td>
+	</tr>
+	<tr class="passedeven">
+		<td><a href="#m19">addlongtermloan</a></td>
+		<td rowspan="1">1742557950592</td>
+		<td rowspan="1">6942</td>
+	</tr>
+	<tr class="passedodd">
+		<td rowspan="2">OtherProductLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest</td>
+		<td><a href="#m20">changeGuarantorStatusToEAgreementSignedDue</a></td>
+		<td rowspan="1">1742558029512</td>
+		<td rowspan="1">3737</td>
+	</tr>
+	<tr class="passedodd">
+		<td><a href="#m21">changeLoanStatusToEAgreementSignedDue</a></td>
+		<td rowspan="1">1742558033249</td>
+		<td rowspan="1">4252</td>
+	</tr>
+	</tbody>
+	<tbody id="t4">
+	<tr>
+		<th colspan="4">Long Term Loan Apply and approve with guarantor &#8212; failed</th>
+	</tr>
+	<tr class="failedeven">
+		<td rowspan="1">LongTermLoanTest.ApproveLongTermLoanAdminTest</td>
+		<td><a href="#m22">openLoan</a></td>
+		<td rowspan="1">1742558336457</td>
+		<td rowspan="1">64041</td>
+	</tr>
+	<tr>
+		<th colspan="4">Long Term Loan Apply and approve with guarantor &#8212; passed</th>
+	</tr>
+	<tr class="passedeven">
+		<td rowspan="2">LongTermLoanTest.ApplyLongTermWithGuarantorTest</td>
+		<td><a href="#m23">addGuarantor</a></td>
+		<td rowspan="1">1742558187173</td>
+		<td rowspan="1">6219</td>
+	</tr>
+	<tr class="passedeven">
+		<td><a href="#m24">addlongtermloan</a></td>
+		<td rowspan="1">1742558180275</td>
+		<td rowspan="1">6897</td>
+	</tr>
+	<tr class="passedodd">
+		<td rowspan="2">LongTermLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest</td>
+		<td><a href="#m25">changeGuarantorStatusToEAgreementSignedDue</a></td>
+		<td rowspan="1">1742558260552</td>
+		<td rowspan="1">4080</td>
+	</tr>
+	<tr class="passedodd">
+		<td><a href="#m26">changeLoanStatusToEAgreementSignedDue</a></td>
+		<td rowspan="1">1742558264633</td>
+		<td rowspan="1">4659</td>
+	</tr>
+	</tbody>
 </table>
-<h2>Weekend Loan Apply with guarantor</h2>
-<h3 id="m0">WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest#applyLoan</h3>
+<h2>Weekend Loan Apply and approve with guarantor</h2>
+<h3 id="m0">WeekendLoanTest.ApproveWeekendLoanAdminTest#openLoan</h3>
 <table class="result">
-    <tr>
-        <th class="invisible"/>
-    </tr>
+	<tr>
+		<th>Exception</th>
+	</tr>
+	<tr>
+		<td>
+			<div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from
+				renderer: 60.000
+				(Session info: chrome=134.0.6998.118)
+				Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+				System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;,
+				java.version: &apos;22.0.1&apos;
+				Driver info: org.openqa.selenium.chrome.ChromeDriver
+				Command: [7ba2b4c53880d1c708b2b49bea64efbe, clickElement
+				{id=f.8F559B8EB4153B78D4384B778C88A1BD.d.2C056A07910B11453C1390F54AA595F9.e.410}]
+				Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome:
+				{chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\ROHIT~1.MAT\AppDat...},
+				fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50207}, networkConnectionEnabled:
+				false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp:
+				ws://localhost:50207/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true,
+				strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000},
+				unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true,
+				webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true,
+				webauthn:virtualAuthenticators: true}
+				Element: [[ChromeDriver: chrome on windows (7ba2b4c53880d1c708b2b49bea64efbe)] -&gt; name:
+				ctl00$ContentPlaceHolder1$btnSave]
+				Session ID: 7ba2b4c53880d1c708b2b49bea64efbe
+				at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+				at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+				at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+				at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+				at
+				org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+				at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+				at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+				at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+				at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+				at
+				org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+				at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+				at WeekendLoan.AddWeekendLoanPage.clickSaveButton(AddWeekendLoanPage.java:151)
+				at WeekendLoanTest.ApproveWeekendLoanAdminTest.openLoan(ApproveWeekendLoanAdminTest.java:85)
+				at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+				at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+				at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+				... Removed 27 stack frames
+			</div>
+		</td>
+	</tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest#goToLoanPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Long Term loan with guarantor</h2>
-<h3 id="m2">LongTermLoanTest.ApplyLongTermWithGuarantorTest#addGuarantor</h3>
+<h3 id="m1">WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest#applyLoan</h3>
 <table class="result">
-    <tr>
-        <th class="invisible"/>
-    </tr>
+	<tr>
+		<th class="invisible"/>
+	</tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">LongTermLoanTest.ApplyLongTermWithGuarantorTest#addlongtermloan</h3>
+<h3 id="m2">WeekendLoanTest.ApplyWeekendLoanWithGuarantorTest#goToLoanPage</h3>
 <table class="result">
-    <tr>
-        <th class="invisible"/>
-    </tr>
+	<tr>
+		<th class="invisible"/>
+	</tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2>CMS loan with guarantor</h2>
-<h3 id="m4">CMSLoanTest.ApplyCMSLoanWithGuarantorTest#addGuarantor</h3>
+<h3 id="m3">
+	WeekendLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest#changeGuarantorStatusToEAgreementSignedDue</h3>
 <table class="result">
-    <tr>
-        <th class="invisible"/>
-    </tr>
+	<tr>
+		<th class="invisible"/>
+	</tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">CMSLoanTest.ApplyCMSLoanWithGuarantorTest#applyLoan</h3>
+<h3 id="m4">WeekendLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest#changeLoanStatusToEAgreementSignedDue</h3>
 <table class="result">
-    <tr>
-        <th class="invisible"/>
-    </tr>
+	<tr>
+		<th class="invisible"/>
+	</tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">CMSLoanTest.ApplyCMSLoanWithGuarantorTest#goToLoanPage</h3>
+<h2>Short Term Loan Apply and approve with guarantor</h2>
+<h3 id="m5">ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest#addGuarantor</h3>
 <table class="result">
-    <tr>
-        <th class="invisible"/>
-    </tr>
+	<tr>
+		<th class="invisible"/>
+	</tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Other Product Loan with guarantor</h2>
-<h3 id="m7">OtherProductLoanTest.ApplyOtherProductWithGuarantorTest#addGuarantor</h3>
+<h3 id="m6">ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest#applyLoan</h3>
 <table class="result">
-    <tr>
-        <th class="invisible"/>
-    </tr>
+	<tr>
+		<th class="invisible"/>
+	</tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">OtherProductLoanTest.ApplyOtherProductWithGuarantorTest#addlongtermloan</h3>
+<h3 id="m7">ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest#goToLoanPage</h3>
 <table class="result">
-    <tr>
-        <th class="invisible"/>
-    </tr>
+	<tr>
+		<th class="invisible"/>
+	</tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Short Term Loan</h2>
-<h3 id="m9">ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest#addGuarantor</h3>
+<h3 id="m8">ShortTermLoanTest.ApproveShortTermLoanAdminTest#openLoan</h3>
 <table class="result">
-    <tr>
-        <th class="invisible"/>
-    </tr>
+	<tr>
+		<th class="invisible"/>
+	</tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest#applyLoan</h3>
+<h3 id="m9">
+	ShortTermLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest#changeGuarantorStatusToEAgreementSignedDue</h3>
 <table class="result">
-    <tr>
-        <th class="invisible"/>
-    </tr>
+	<tr>
+		<th class="invisible"/>
+	</tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">ShortTermLoanTest.ApplyShortTermLoanWithGuarantorTest#goToLoanPage</h3>
+<h3 id="m10">ShortTermLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest#changeLoanStatusToEAgreementSignedDue</h3>
 <table class="result">
-    <tr>
-        <th class="invisible"/>
-    </tr>
+	<tr>
+		<th class="invisible"/>
+	</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2>CMS Loan Apply and approve with guarantor</h2>
+<h3 id="m11">CMSLoanTest.ApproveCMSLoanAdminTest#openLoan</h3>
+<table class="result">
+	<tr>
+		<th>Exception</th>
+	</tr>
+	<tr>
+		<td>
+			<div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from
+				renderer: 60.000
+				(Session info: chrome=134.0.6998.118)
+				Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+				System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;,
+				java.version: &apos;22.0.1&apos;
+				Driver info: org.openqa.selenium.chrome.ChromeDriver
+				Command: [c5e40745dabe0b34933fd24449da2e15, clickElement
+				{id=f.2A744A71210D4DBAE3D51EDEA8B19E72.d.FA263902F4B4592CE5643FB442785162.e.416}]
+				Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome:
+				{chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\ROHIT~1.MAT\AppDat...},
+				fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50790}, networkConnectionEnabled:
+				false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp:
+				ws://localhost:50790/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true,
+				strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000},
+				unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true,
+				webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true,
+				webauthn:virtualAuthenticators: true}
+				Element: [[ChromeDriver: chrome on windows (c5e40745dabe0b34933fd24449da2e15)] -&gt; name:
+				ctl00$ContentPlaceHolder1$btnSave]
+				Session ID: c5e40745dabe0b34933fd24449da2e15
+				at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+				at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+				at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+				at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+				at
+				org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+				at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+				at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+				at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+				at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+				at
+				org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+				at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+				at CMSLoan.AddCMSLoanPage.clickSaveButton(AddCMSLoanPage.java:162)
+				at CMSLoanTest.ApproveCMSLoanAdminTest.openLoan(ApproveCMSLoanAdminTest.java:86)
+				at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+				at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+				at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+				... Removed 27 stack frames
+			</div>
+		</td>
+	</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">CMSLoanTest.ApplyCMSLoanWithGuarantorTest#addGuarantor</h3>
+<table class="result">
+	<tr>
+		<th class="invisible"/>
+	</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">CMSLoanTest.ApplyCMSLoanWithGuarantorTest#applyLoan</h3>
+<table class="result">
+	<tr>
+		<th class="invisible"/>
+	</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">CMSLoanTest.ApplyCMSLoanWithGuarantorTest#goToLoanPage</h3>
+<table class="result">
+	<tr>
+		<th class="invisible"/>
+	</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">CMSLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest#changeGuarantorStatusToEAgreementSignedDue</h3>
+<table class="result">
+	<tr>
+		<th class="invisible"/>
+	</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">CMSLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest#changeLoanStatusToEAgreementSignedDue</h3>
+<table class="result">
+	<tr>
+		<th class="invisible"/>
+	</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Other Product Loan Apply and approve with guarantor</h2>
+<h3 id="m17">OtherProductLoanTest.ApproveOtherProductLoanAdminTest#openLoan</h3>
+<table class="result">
+	<tr>
+		<th>Exception</th>
+	</tr>
+	<tr>
+		<td>
+			<div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from
+				renderer: 60.000
+				(Session info: chrome=134.0.6998.118)
+				Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+				System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;,
+				java.version: &apos;22.0.1&apos;
+				Driver info: org.openqa.selenium.chrome.ChromeDriver
+				Command: [f067ad6ea96cb705bcacfad087ff98a9, clickElement
+				{id=f.8B17C3AEC4A2D24342911356B5E4998E.d.29F83CF46B1DFF49105E3B1531355991.e.556}]
+				Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome:
+				{chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\ROHIT~1.MAT\AppDat...},
+				fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51079}, networkConnectionEnabled:
+				false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp:
+				ws://localhost:51079/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true,
+				strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000},
+				unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true,
+				webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true,
+				webauthn:virtualAuthenticators: true}
+				Element: [[ChromeDriver: chrome on windows (f067ad6ea96cb705bcacfad087ff98a9)] -&gt; name:
+				ctl00$ContentPlaceHolder1$btnGoAhead]
+				Session ID: f067ad6ea96cb705bcacfad087ff98a9
+				at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+				at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+				at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+				at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+				at
+				org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+				at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+				at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+				at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+				at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+				at
+				org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+				at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+				at OtherProductsLoan.AddOtherProductLoan.btnGoAhead(AddOtherProductLoan.java:390)
+				at
+				OtherProductLoanTest.ApproveOtherProductLoanAdminTest.openLoan(ApproveOtherProductLoanAdminTest.java:84)
+				at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+				at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+				at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+				... Removed 27 stack frames
+			</div>
+		</td>
+	</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">OtherProductLoanTest.ApplyOtherProductWithGuarantorTest#addGuarantor</h3>
+<table class="result">
+	<tr>
+		<th class="invisible"/>
+	</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">OtherProductLoanTest.ApplyOtherProductWithGuarantorTest#addlongtermloan</h3>
+<table class="result">
+	<tr>
+		<th class="invisible"/>
+	</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">
+	OtherProductLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest#changeGuarantorStatusToEAgreementSignedDue</h3>
+<table class="result">
+	<tr>
+		<th class="invisible"/>
+	</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">
+	OtherProductLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest#changeLoanStatusToEAgreementSignedDue</h3>
+<table class="result">
+	<tr>
+		<th class="invisible"/>
+	</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Long Term Loan Apply and approve with guarantor</h2>
+<h3 id="m22">LongTermLoanTest.ApproveLongTermLoanAdminTest#openLoan</h3>
+<table class="result">
+	<tr>
+		<th>Exception</th>
+	</tr>
+	<tr>
+		<td>
+			<div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from
+				renderer: 60.000
+				(Session info: chrome=134.0.6998.118)
+				Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+				System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;,
+				java.version: &apos;22.0.1&apos;
+				Driver info: org.openqa.selenium.chrome.ChromeDriver
+				Command: [dab25f4602fdaa0bdcab361bd57e7b3f, clickElement
+				{id=f.F048365008FC7A7B253FC209C7A64EE3.d.13927505B2AACA8A0C24912023284A2D.e.781}]
+				Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome:
+				{chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\ROHIT~1.MAT\AppDat...},
+				fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51367}, networkConnectionEnabled:
+				false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp:
+				ws://localhost:51367/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true,
+				strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000},
+				unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true,
+				webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true,
+				webauthn:virtualAuthenticators: true}
+				Element: [[ChromeDriver: chrome on windows (dab25f4602fdaa0bdcab361bd57e7b3f)] -&gt; name:
+				ctl00$ContentPlaceHolder1$btnGoAhead]
+				Session ID: dab25f4602fdaa0bdcab361bd57e7b3f
+				at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+				at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+				at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+				at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+				at
+				org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+				at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+				at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+				at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+				at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+				at
+				org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+				at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+				at LongTermLoan.AddLongTermLoan.btnGoAhead(AddLongTermLoan.java:390)
+				at LongTermLoanTest.ApproveLongTermLoanAdminTest.openLoan(ApproveLongTermLoanAdminTest.java:88)
+				at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+				at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+				at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+				... Removed 27 stack frames
+			</div>
+		</td>
+	</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">LongTermLoanTest.ApplyLongTermWithGuarantorTest#addGuarantor</h3>
+<table class="result">
+	<tr>
+		<th class="invisible"/>
+	</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">LongTermLoanTest.ApplyLongTermWithGuarantorTest#addlongtermloan</h3>
+<table class="result">
+	<tr>
+		<th class="invisible"/>
+	</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">
+	LongTermLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest#changeGuarantorStatusToEAgreementSignedDue</h3>
+<table class="result">
+	<tr>
+		<th class="invisible"/>
+	</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m26">LongTermLoanTest.LoanGuarantorPendingToEAgreementSignedDueTest#changeLoanStatusToEAgreementSignedDue</h3>
+<table class="result">
+	<tr>
+		<th class="invisible"/>
+	</tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body>
