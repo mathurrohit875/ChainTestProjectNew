@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All loan apply with guarantor">
-    <listeners>
+    <!--<listeners>
         <listener class-name="Base.ChainTestListener"/>
-    </listeners>
-    <test name="">
+    </listeners>-->
+    <test name="Force fail">
         <classes>
             <class name="ForceFailPackage.ForceFail"/>
         </classes>

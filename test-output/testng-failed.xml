@@ -1,51 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Apply and Approve All Loan]" guice-stage="DEVELOPMENT">
-    <listeners>
-        <listener class-name="Base.ChainTestListener"/>
-    </listeners>
-    <test thread-count="5" name="Weekend Loan Apply and approve with guarantor(failed)">
+<suite name="Failed suite [All loan apply with guarantor]" guice-stage="DEVELOPMENT">
+    <test thread-count="5" name="Force fail(failed)">
         <classes>
-            <class name="WeekendLoanTest.ApproveWeekendLoanAdminTest">
+            <class name="ForceFailPackage.ForceFail">
                 <methods>
-                    <include name="openLoan"/>
-                    <include name="quit"/>
-                    <include name="setup"/>
+                    <include name="fail"/>
                 </methods>
-            </class> <!-- WeekendLoanTest.ApproveWeekendLoanAdminTest -->
+            </class> <!-- ForceFailPackage.ForceFail -->
         </classes>
-    </test> <!-- Weekend Loan Apply and approve with guarantor(failed) -->
-    <test thread-count="5" name="CMS Loan Apply and approve with guarantor(failed)">
-        <classes>
-            <class name="CMSLoanTest.ApproveCMSLoanAdminTest">
-                <methods>
-                    <include name="setup"/>
-                    <include name="quit"/>
-                    <include name="openLoan"/>
-                </methods>
-            </class> <!-- CMSLoanTest.ApproveCMSLoanAdminTest -->
-        </classes>
-    </test> <!-- CMS Loan Apply and approve with guarantor(failed) -->
-    <test thread-count="5" name="Other Product Loan Apply and approve with guarantor(failed)">
-        <classes>
-            <class name="OtherProductLoanTest.ApproveOtherProductLoanAdminTest">
-                <methods>
-                    <include name="openLoan"/>
-                    <include name="setup"/>
-                    <include name="quit"/>
-                </methods>
-            </class> <!-- OtherProductLoanTest.ApproveOtherProductLoanAdminTest -->
-        </classes>
-    </test> <!-- Other Product Loan Apply and approve with guarantor(failed) -->
-    <test thread-count="5" name="Long Term Loan Apply and approve with guarantor(failed)">
-        <classes>
-            <class name="LongTermLoanTest.ApproveLongTermLoanAdminTest">
-                <methods>
-                    <include name="openLoan"/>
-                    <include name="setup"/>
-                    <include name="quit"/>
-                </methods>
-            </class> <!-- LongTermLoanTest.ApproveLongTermLoanAdminTest -->
-        </classes>
-    </test> <!-- Long Term Loan Apply and approve with guarantor(failed) -->
-</suite> <!-- Failed suite [Apply and Approve All Loan] -->
+    </test> <!-- Force fail(failed) -->
+</suite> <!-- Failed suite [All loan apply with guarantor] -->
